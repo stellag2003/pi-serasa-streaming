@@ -130,9 +130,9 @@
             this.panel3.Controls.Add(this.panel6);
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.panel4);
-            this.panel3.Location = new System.Drawing.Point(12, 276);
+            this.panel3.Location = new System.Drawing.Point(21, 277);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(928, 141);
+            this.panel3.Size = new System.Drawing.Size(902, 141);
             this.panel3.TabIndex = 2;
             // 
             // label3
@@ -150,7 +150,7 @@
             // 
             this.panel7.BackColor = System.Drawing.Color.Gray;
             this.panel7.Controls.Add(this.pictureBox9);
-            this.panel7.Location = new System.Drawing.Point(689, 23);
+            this.panel7.Location = new System.Drawing.Point(699, 23);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(200, 100);
             this.panel7.TabIndex = 3;
@@ -227,9 +227,9 @@
             this.panel8.Controls.Add(this.panel10);
             this.panel8.Controls.Add(this.panel11);
             this.panel8.Controls.Add(this.panel12);
-            this.panel8.Location = new System.Drawing.Point(12, 453);
+            this.panel8.Location = new System.Drawing.Point(22, 446);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(928, 141);
+            this.panel8.Size = new System.Drawing.Size(901, 141);
             this.panel8.TabIndex = 4;
             // 
             // label4
@@ -430,7 +430,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(948, 657);
+            this.ClientSize = new System.Drawing.Size(948, 630);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
