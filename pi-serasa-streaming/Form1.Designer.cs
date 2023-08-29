@@ -28,23 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.filmesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sériesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.documentáriosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.infantilToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.panel12 = new System.Windows.Forms.Panel();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -53,10 +60,26 @@
             this.wilBitTextBox1 = new WiLBiT.WiLBiTTextBox();
             this.iconMenuItem1 = new FontAwesome.Sharp.IconMenuItem();
             this.panel1.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
             this.panel3.SuspendLayout();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel8.SuspendLayout();
+            this.panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.panel11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.panel12.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.wilBitPanel1.SuspendLayout();
@@ -65,56 +88,25 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.panel1.Controls.Add(this.menuStrip1);
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(0, 50);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(948, 190);
+            this.panel1.Size = new System.Drawing.Size(948, 205);
             this.panel1.TabIndex = 0;
             // 
-            // menuStrip1
+            // pictureBox1
             // 
-            this.menuStrip1.BackColor = System.Drawing.Color.Silver;
-            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.filmesToolStripMenuItem,
-            this.sériesToolStripMenuItem,
-            this.documentáriosToolStripMenuItem,
-            this.infantilToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.menuStrip1.Size = new System.Drawing.Size(948, 190);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // filmesToolStripMenuItem
-            // 
-            this.filmesToolStripMenuItem.Font = new System.Drawing.Font("Ebrima", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.filmesToolStripMenuItem.Name = "filmesToolStripMenuItem";
-            this.filmesToolStripMenuItem.Size = new System.Drawing.Size(52, 186);
-            this.filmesToolStripMenuItem.Text = "Filmes";
-            // 
-            // sériesToolStripMenuItem
-            // 
-            this.sériesToolStripMenuItem.Name = "sériesToolStripMenuItem";
-            this.sériesToolStripMenuItem.Size = new System.Drawing.Size(49, 186);
-            this.sériesToolStripMenuItem.Text = "Séries";
-            // 
-            // documentáriosToolStripMenuItem
-            // 
-            this.documentáriosToolStripMenuItem.Name = "documentáriosToolStripMenuItem";
-            this.documentáriosToolStripMenuItem.Size = new System.Drawing.Size(100, 186);
-            this.documentáriosToolStripMenuItem.Text = "Documentários";
-            // 
-            // infantilToolStripMenuItem
-            // 
-            this.infantilToolStripMenuItem.Name = "infantilToolStripMenuItem";
-            this.infantilToolStripMenuItem.Size = new System.Drawing.Size(56, 186);
-            this.infantilToolStripMenuItem.Text = "Infantil";
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-34, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1048, 205);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // iconPictureBox3
             // 
-            this.iconPictureBox3.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.iconPictureBox3.BackColor = System.Drawing.Color.DimGray;
             this.iconPictureBox3.ForeColor = System.Drawing.Color.Black;
             this.iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.Sistrix;
             this.iconPictureBox3.IconColor = System.Drawing.Color.Black;
@@ -130,92 +122,196 @@
             // panel3
             // 
             this.panel3.AutoScroll = true;
+            this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.panel7);
             this.panel3.Controls.Add(this.panel6);
             this.panel3.Controls.Add(this.panel5);
             this.panel3.Controls.Add(this.panel4);
-            this.panel3.Location = new System.Drawing.Point(12, 266);
+            this.panel3.Location = new System.Drawing.Point(12, 276);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(928, 141);
             this.panel3.TabIndex = 2;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(22, -2);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(128, 18);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Mais assistidos";
+            // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.Gray;
+            this.panel7.Controls.Add(this.pictureBox9);
             this.panel7.Location = new System.Drawing.Point(689, 23);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(223, 100);
+            this.panel7.Size = new System.Drawing.Size(200, 100);
             this.panel7.TabIndex = 3;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(200, 100);
+            this.pictureBox9.TabIndex = 3;
+            this.pictureBox9.TabStop = false;
             // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.Gray;
+            this.panel6.Controls.Add(this.pictureBox4);
             this.panel6.Location = new System.Drawing.Point(470, 23);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(200, 100);
             this.panel6.TabIndex = 2;
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(200, 100);
+            this.pictureBox4.TabIndex = 2;
+            this.pictureBox4.TabStop = false;
+            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Gray;
+            this.panel5.Controls.Add(this.pictureBox3);
             this.panel5.Location = new System.Drawing.Point(247, 23);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(200, 100);
             this.panel5.TabIndex = 1;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(200, 100);
+            this.pictureBox3.TabIndex = 1;
+            this.pictureBox3.TabStop = false;
+            // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Gray;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.pictureBox2);
             this.panel4.Location = new System.Drawing.Point(22, 23);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(200, 100);
             this.panel4.TabIndex = 0;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(-1, -1);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(200, 100);
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
             // panel8
             // 
             this.panel8.AutoScroll = true;
+            this.panel8.Controls.Add(this.label4);
             this.panel8.Controls.Add(this.panel9);
             this.panel8.Controls.Add(this.panel10);
             this.panel8.Controls.Add(this.panel11);
             this.panel8.Controls.Add(this.panel12);
-            this.panel8.Location = new System.Drawing.Point(12, 445);
+            this.panel8.Location = new System.Drawing.Point(12, 453);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(928, 141);
             this.panel8.TabIndex = 4;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(22, -3);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(133, 18);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Recomendados";
+            // 
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.Gray;
+            this.panel9.Controls.Add(this.pictureBox8);
             this.panel9.Location = new System.Drawing.Point(689, 22);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(223, 100);
+            this.panel9.Size = new System.Drawing.Size(200, 100);
             this.panel9.TabIndex = 3;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(200, 100);
+            this.pictureBox8.TabIndex = 4;
+            this.pictureBox8.TabStop = false;
             // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.Gray;
+            this.panel10.Controls.Add(this.pictureBox5);
             this.panel10.Location = new System.Drawing.Point(470, 22);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(200, 100);
             this.panel10.TabIndex = 2;
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(200, 100);
+            this.pictureBox5.TabIndex = 3;
+            this.pictureBox5.TabStop = false;
+            // 
             // panel11
             // 
             this.panel11.BackColor = System.Drawing.Color.Gray;
+            this.panel11.Controls.Add(this.pictureBox6);
             this.panel11.Location = new System.Drawing.Point(247, 22);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(200, 100);
             this.panel11.TabIndex = 1;
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(200, 100);
+            this.pictureBox6.TabIndex = 4;
+            this.pictureBox6.TabStop = false;
+            // 
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.Gray;
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel12.Controls.Add(this.pictureBox7);
             this.panel12.Location = new System.Drawing.Point(22, 22);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(200, 100);
             this.panel12.TabIndex = 0;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(-1, -1);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(200, 100);
+            this.pictureBox7.TabIndex = 5;
+            this.pictureBox7.TabStop = false;
             // 
             // iconPictureBox1
             // 
@@ -233,11 +329,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(435, 15);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(99, 22);
+            this.label2.Size = new System.Drawing.Size(88, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "Resenhas";
             // 
@@ -256,13 +352,13 @@
             // 
             // wilBitPanel1
             // 
-            this.wilBitPanel1.BackColor = System.Drawing.Color.Gray;
-            this.wilBitPanel1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.wilBitPanel1.BackColor = System.Drawing.SystemColors.WindowText;
+            this.wilBitPanel1.BorderColor = System.Drawing.Color.White;
             this.wilBitPanel1.BorderRadius = 6;
             this.wilBitPanel1.BorderSize = 0;
             this.wilBitPanel1.Controls.Add(this.label1);
-            this.wilBitPanel1.ForeColor = System.Drawing.Color.White;
-            this.wilBitPanel1.Location = new System.Drawing.Point(261, 3);
+            this.wilBitPanel1.ForeColor = System.Drawing.Color.RosyBrown;
+            this.wilBitPanel1.Location = new System.Drawing.Point(260, 3);
             this.wilBitPanel1.Name = "wilBitPanel1";
             this.wilBitPanel1.Size = new System.Drawing.Size(168, 46);
             this.wilBitPanel1.TabIndex = 0;
@@ -270,19 +366,19 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(32, 12);
+            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(36, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 22);
+            this.label1.Size = new System.Drawing.Size(95, 18);
             this.label1.TabIndex = 3;
             this.label1.Text = "Produções";
             // 
             // wilBitTextBox1
             // 
-            this.wilBitTextBox1.BackColor = System.Drawing.Color.Silver;
-            this.wilBitTextBox1.BorderColor = System.Drawing.Color.Silver;
-            this.wilBitTextBox1.BorderFocusColor = System.Drawing.Color.Silver;
+            this.wilBitTextBox1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.wilBitTextBox1.BorderColor = System.Drawing.Color.DimGray;
+            this.wilBitTextBox1.BorderFocusColor = System.Drawing.Color.DimGray;
             this.wilBitTextBox1.BorderRadius = 4;
             this.wilBitTextBox1.BorderSize = 2;
             this.wilBitTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -313,22 +409,37 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DimGray;
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(948, 657);
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
-            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
             this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            this.panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            this.panel9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            this.panel10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.panel11.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.panel12.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -358,11 +469,17 @@
         private Label label1;
         private WiLBiT.WiLBiTTextBox wilBitTextBox1;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
-        private MenuStrip menuStrip1;
-        private ToolStripMenuItem filmesToolStripMenuItem;
-        private ToolStripMenuItem sériesToolStripMenuItem;
-        private ToolStripMenuItem documentáriosToolStripMenuItem;
-        private ToolStripMenuItem infantilToolStripMenuItem;
         private FontAwesome.Sharp.IconMenuItem iconMenuItem1;
+        private Label label3;
+        private Label label4;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox9;
+        private PictureBox pictureBox4;
+        private PictureBox pictureBox3;
+        private PictureBox pictureBox2;
+        private PictureBox pictureBox8;
+        private PictureBox pictureBox5;
+        private PictureBox pictureBox6;
+        private PictureBox pictureBox7;
     }
 }
