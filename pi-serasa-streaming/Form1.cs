@@ -11,5 +11,10 @@ namespace pi_serasa_streaming
         {
 
         }
+
+        private void açãoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
