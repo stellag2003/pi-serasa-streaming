@@ -55,6 +55,7 @@
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.wilBitPanel1 = new WiLBiT.WiLBiTPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.wilBitTextBox1 = new WiLBiT.WiLBiTTextBox();
@@ -82,6 +83,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
             this.wilBitPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -89,6 +91,7 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.iconPictureBox3);
             this.panel1.Location = new System.Drawing.Point(0, 50);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(948, 205);
@@ -106,13 +109,13 @@
             // 
             // iconPictureBox3
             // 
-            this.iconPictureBox3.BackColor = System.Drawing.Color.DimGray;
+            this.iconPictureBox3.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.iconPictureBox3.ForeColor = System.Drawing.Color.Black;
             this.iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.Sistrix;
             this.iconPictureBox3.IconColor = System.Drawing.Color.Black;
             this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox3.IconSize = 27;
-            this.iconPictureBox3.Location = new System.Drawing.Point(860, 16);
+            this.iconPictureBox3.Location = new System.Drawing.Point(837, 75);
             this.iconPictureBox3.Name = "iconPictureBox3";
             this.iconPictureBox3.Size = new System.Drawing.Size(28, 27);
             this.iconPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -340,7 +343,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Controls.Add(this.iconPictureBox3);
+            this.panel2.Controls.Add(this.iconPictureBox2);
             this.panel2.Controls.Add(this.wilBitPanel1);
             this.panel2.Controls.Add(this.wilBitTextBox1);
             this.panel2.Controls.Add(this.label2);
@@ -350,15 +353,32 @@
             this.panel2.Size = new System.Drawing.Size(1362, 59);
             this.panel2.TabIndex = 1;
             // 
+            // iconPictureBox2
+            // 
+            this.iconPictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.iconPictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.iconPictureBox2.ForeColor = System.Drawing.Color.Gray;
+            this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.Sistrix;
+            this.iconPictureBox2.IconColor = System.Drawing.Color.Gray;
+            this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox2.IconSize = 27;
+            this.iconPictureBox2.Location = new System.Drawing.Point(872, 13);
+            this.iconPictureBox2.Name = "iconPictureBox2";
+            this.iconPictureBox2.Size = new System.Drawing.Size(27, 27);
+            this.iconPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.iconPictureBox2.TabIndex = 4;
+            this.iconPictureBox2.TabStop = false;
+            // 
             // wilBitPanel1
             // 
-            this.wilBitPanel1.BackColor = System.Drawing.SystemColors.WindowText;
-            this.wilBitPanel1.BorderColor = System.Drawing.Color.White;
+            this.wilBitPanel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.wilBitPanel1.BorderColor = System.Drawing.Color.Peru;
             this.wilBitPanel1.BorderRadius = 6;
             this.wilBitPanel1.BorderSize = 0;
             this.wilBitPanel1.Controls.Add(this.label1);
+            this.wilBitPanel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.wilBitPanel1.ForeColor = System.Drawing.Color.RosyBrown;
-            this.wilBitPanel1.Location = new System.Drawing.Point(260, 3);
+            this.wilBitPanel1.Location = new System.Drawing.Point(261, 3);
             this.wilBitPanel1.Name = "wilBitPanel1";
             this.wilBitPanel1.Size = new System.Drawing.Size(168, 46);
             this.wilBitPanel1.TabIndex = 0;
@@ -376,14 +396,14 @@
             // 
             // wilBitTextBox1
             // 
-            this.wilBitTextBox1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.wilBitTextBox1.BackColor = System.Drawing.Color.Black;
             this.wilBitTextBox1.BorderColor = System.Drawing.Color.DimGray;
             this.wilBitTextBox1.BorderFocusColor = System.Drawing.Color.DimGray;
             this.wilBitTextBox1.BorderRadius = 4;
             this.wilBitTextBox1.BorderSize = 2;
             this.wilBitTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.wilBitTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.wilBitTextBox1.Location = new System.Drawing.Point(734, 14);
+            this.wilBitTextBox1.Location = new System.Drawing.Point(728, 11);
             this.wilBitTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.wilBitTextBox1.Multiline = false;
             this.wilBitTextBox1.Name = "wilBitTextBox1";
@@ -391,7 +411,7 @@
             this.wilBitTextBox1.PasswordChar = false;
             this.wilBitTextBox1.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.wilBitTextBox1.PlaceholderText = "";
-            this.wilBitTextBox1.Size = new System.Drawing.Size(154, 29);
+            this.wilBitTextBox1.Size = new System.Drawing.Size(160, 29);
             this.wilBitTextBox1.TabIndex = 1;
             this.wilBitTextBox1.Texts = "";
             this.wilBitTextBox1.UnderlinedStyle = false;
@@ -443,6 +463,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             this.wilBitPanel1.ResumeLayout(false);
             this.wilBitPanel1.PerformLayout();
             this.ResumeLayout(false);
@@ -481,5 +502,6 @@
         private PictureBox pictureBox5;
         private PictureBox pictureBox6;
         private PictureBox pictureBox7;
+        private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
     }
 }
