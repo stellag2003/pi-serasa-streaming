@@ -6,5 +6,10 @@ namespace pi_serasa_streaming
         {
             InitializeComponent();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
