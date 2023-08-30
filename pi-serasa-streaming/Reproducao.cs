@@ -8,6 +8,7 @@ using System.Web;
 
 namespace pi_serasa_streaming
 {
+
     internal class Reproducao
     {
         int id;
@@ -15,5 +16,7 @@ namespace pi_serasa_streaming
         int dataTime;
         string genero;
         int avaliacao;
+
     }
+
 }

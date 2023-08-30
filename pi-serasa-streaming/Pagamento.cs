@@ -11,5 +11,7 @@ namespace pi_serasa_streaming
         int id;
         bool usuarioPremium;
         Usuario usuario;
+
+
     }
 }

@@ -12,7 +12,7 @@ namespace ConexaoBDComTelas
     internal class Conexao
     {
        const string host = "localhost";
-       const string banco = "08_lista_tarefas";
+       const string banco = "streamingdadosslq";
        const string usuario = "root";
        const string senha = "senac";
 
