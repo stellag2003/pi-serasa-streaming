@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.painelCadastro = new System.Windows.Forms.Panel();
+            this.txtSenha = new System.Windows.Forms.TextBox();
+            this.txtData = new System.Windows.Forms.MaskedTextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnTermos = new System.Windows.Forms.RadioButton();
+            this.comboGenero = new System.Windows.Forms.ComboBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -48,13 +48,13 @@
             // painelCadastro
             // 
             this.painelCadastro.BackColor = System.Drawing.Color.Black;
+            this.painelCadastro.Controls.Add(this.txtSenha);
+            this.painelCadastro.Controls.Add(this.txtData);
             this.painelCadastro.Controls.Add(this.button1);
-            this.painelCadastro.Controls.Add(this.radioButton1);
-            this.painelCadastro.Controls.Add(this.comboBox1);
-            this.painelCadastro.Controls.Add(this.textBox4);
-            this.painelCadastro.Controls.Add(this.textBox3);
-            this.painelCadastro.Controls.Add(this.textBox2);
-            this.painelCadastro.Controls.Add(this.textBox1);
+            this.painelCadastro.Controls.Add(this.btnTermos);
+            this.painelCadastro.Controls.Add(this.comboGenero);
+            this.painelCadastro.Controls.Add(this.txtEmail);
+            this.painelCadastro.Controls.Add(this.txtNome);
             this.painelCadastro.Controls.Add(this.label5);
             this.painelCadastro.Controls.Add(this.label4);
             this.painelCadastro.Controls.Add(this.label3);
@@ -66,6 +66,24 @@
             this.painelCadastro.Size = new System.Drawing.Size(396, 597);
             this.painelCadastro.TabIndex = 0;
             // 
+            // txtSenha
+            // 
+            this.txtSenha.Location = new System.Drawing.Point(52, 295);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
+            this.txtSenha.Size = new System.Drawing.Size(268, 23);
+            this.txtSenha.TabIndex = 22;
+            this.txtSenha.UseSystemPasswordChar = true;
+            // 
+            // txtData
+            // 
+            this.txtData.Location = new System.Drawing.Point(52, 357);
+            this.txtData.Mask = "00/00/0000";
+            this.txtData.Name = "txtData";
+            this.txtData.Size = new System.Drawing.Size(267, 23);
+            this.txtData.TabIndex = 21;
+            this.txtData.ValidatingType = typeof(System.DateTime);
+            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(112, 542);
@@ -74,54 +92,46 @@
             this.button1.TabIndex = 20;
             this.button1.Text = "Cadastrar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // radioButton1
+            // btnTermos
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.ForeColor = System.Drawing.Color.White;
-            this.radioButton1.Location = new System.Drawing.Point(16, 484);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(366, 19);
-            this.radioButton1.TabIndex = 19;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Eu li e concordo com os Termos de Uso e Política de Privacidade.";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.btnTermos.AutoSize = true;
+            this.btnTermos.ForeColor = System.Drawing.Color.White;
+            this.btnTermos.Location = new System.Drawing.Point(16, 484);
+            this.btnTermos.Name = "btnTermos";
+            this.btnTermos.Size = new System.Drawing.Size(366, 19);
+            this.btnTermos.TabIndex = 19;
+            this.btnTermos.TabStop = true;
+            this.btnTermos.Text = "Eu li e concordo com os Termos de Uso e Política de Privacidade.";
+            this.btnTermos.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // comboGenero
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(52, 419);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(267, 23);
-            this.comboBox1.TabIndex = 1;
+            this.comboGenero.FormattingEnabled = true;
+            this.comboGenero.Items.AddRange(new object[] {
+            "feminino\t",
+            "masculino",
+            "prefiro não declarar"});
+            this.comboGenero.Location = new System.Drawing.Point(52, 419);
+            this.comboGenero.Name = "comboGenero";
+            this.comboGenero.Size = new System.Drawing.Size(267, 23);
+            this.comboGenero.TabIndex = 1;
             // 
-            // textBox4
+            // txtEmail
             // 
-            this.textBox4.Location = new System.Drawing.Point(51, 229);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(268, 23);
-            this.textBox4.TabIndex = 16;
+            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtEmail.Location = new System.Drawing.Point(51, 229);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(268, 23);
+            this.txtEmail.TabIndex = 16;
             // 
-            // textBox3
+            // txtNome
             // 
-            this.textBox3.Location = new System.Drawing.Point(52, 295);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(267, 23);
-            this.textBox3.TabIndex = 15;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(52, 357);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(267, 23);
-            this.textBox2.TabIndex = 14;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(51, 168);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(268, 23);
-            this.textBox1.TabIndex = 13;
+            this.txtNome.Location = new System.Drawing.Point(51, 168);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(268, 23);
+            this.txtNome.TabIndex = 13;
             // 
             // label5
             // 
@@ -215,11 +225,11 @@
         private Label label2;
         private Label lblEmail;
         private Button button1;
-        private RadioButton radioButton1;
-        private ComboBox comboBox1;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private RadioButton btnTermos;
+        private ComboBox comboGenero;
+        private TextBox txtEmail;
+        private TextBox txtNome;
+        private MaskedTextBox txtData;
+        private TextBox txtSenha;
     }
 }
