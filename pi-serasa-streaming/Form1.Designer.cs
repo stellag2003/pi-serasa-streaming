@@ -53,13 +53,13 @@
             this.panel12 = new System.Windows.Forms.Panel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
             this.wilBitPanel1 = new WiLBiT.WiLBiTPanel();
-            this.label1 = new System.Windows.Forms.Label();
             this.wilBitTextBox1 = new WiLBiT.WiLBiTTextBox();
             this.iconMenuItem1 = new FontAwesome.Sharp.IconMenuItem();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnResenha = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
@@ -329,24 +329,13 @@
             this.iconPictureBox1.TabIndex = 2;
             this.iconPictureBox1.TabStop = false;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(435, 15);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 18);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Resenhas";
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.Controls.Add(this.btnResenha);
             this.panel2.Controls.Add(this.iconPictureBox2);
             this.panel2.Controls.Add(this.wilBitPanel1);
             this.panel2.Controls.Add(this.wilBitTextBox1);
-            this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.iconPictureBox1);
             this.panel2.Location = new System.Drawing.Point(0, 2);
             this.panel2.Name = "panel2";
@@ -375,24 +364,13 @@
             this.wilBitPanel1.BorderColor = System.Drawing.Color.Peru;
             this.wilBitPanel1.BorderRadius = 6;
             this.wilBitPanel1.BorderSize = 0;
-            this.wilBitPanel1.Controls.Add(this.label1);
+            this.wilBitPanel1.Controls.Add(this.button1);
             this.wilBitPanel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.wilBitPanel1.ForeColor = System.Drawing.Color.RosyBrown;
             this.wilBitPanel1.Location = new System.Drawing.Point(261, 3);
             this.wilBitPanel1.Name = "wilBitPanel1";
             this.wilBitPanel1.Size = new System.Drawing.Size(168, 46);
             this.wilBitPanel1.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(36, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 18);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Produções";
             // 
             // wilBitTextBox1
             // 
@@ -425,6 +403,33 @@
             this.iconMenuItem1.Size = new System.Drawing.Size(32, 19);
             this.iconMenuItem1.Text = "iconMenuItem1";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(45, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(111, 36);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Produções";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // btnResenha
+            // 
+            this.btnResenha.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnResenha.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnResenha.FlatAppearance.BorderSize = 0;
+            this.btnResenha.ForeColor = System.Drawing.Color.White;
+            this.btnResenha.Location = new System.Drawing.Point(435, 7);
+            this.btnResenha.Name = "btnResenha";
+            this.btnResenha.Size = new System.Drawing.Size(111, 36);
+            this.btnResenha.TabIndex = 1;
+            this.btnResenha.Text = "Resenhas";
+            this.btnResenha.UseVisualStyleBackColor = false;
+            this.btnResenha.Click += new System.EventHandler(this.btnResenha_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -437,6 +442,7 @@
             this.Controls.Add(this.panel2);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
@@ -462,10 +468,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
             this.wilBitPanel1.ResumeLayout(false);
-            this.wilBitPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -484,10 +488,8 @@
         private Panel panel11;
         private Panel panel12;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
-        private Label label2;
         private Panel panel2;
         private WiLBiT.WiLBiTPanel wilBitPanel1;
-        private Label label1;
         private WiLBiT.WiLBiTTextBox wilBitTextBox1;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
         private FontAwesome.Sharp.IconMenuItem iconMenuItem1;
@@ -503,5 +505,7 @@
         private PictureBox pictureBox6;
         private PictureBox pictureBox7;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
+        private Button btnResenha;
+        private Button button1;
     }
 }

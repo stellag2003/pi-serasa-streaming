@@ -16,5 +16,10 @@ namespace pi_serasa_streaming
         {
             InitializeComponent();
         }
+
+        private void iconPictureBox6_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("!");
+        }
     }
 }
