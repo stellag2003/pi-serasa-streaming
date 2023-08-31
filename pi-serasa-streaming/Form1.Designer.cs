@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -64,7 +63,6 @@
             this.panel14 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
@@ -93,36 +91,21 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.iconPictureBox3);
             this.panel1.Location = new System.Drawing.Point(0, 50);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(948, 205);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-34, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(-83, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1050, 205);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // iconPictureBox3
-            // 
-            this.iconPictureBox3.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.iconPictureBox3.ForeColor = System.Drawing.Color.Black;
-            this.iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.Sistrix;
-            this.iconPictureBox3.IconColor = System.Drawing.Color.Black;
-            this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox3.IconSize = 27;
-            this.iconPictureBox3.Location = new System.Drawing.Point(837, 75);
-            this.iconPictureBox3.Name = "iconPictureBox3";
-            this.iconPictureBox3.Size = new System.Drawing.Size(28, 27);
-            this.iconPictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.iconPictureBox3.TabIndex = 3;
-            this.iconPictureBox3.TabStop = false;
             // 
             // panel3
             // 
@@ -152,7 +135,7 @@
             // 
             this.panel7.BackColor = System.Drawing.Color.Gray;
             this.panel7.Controls.Add(this.pictureBox9);
-            this.panel7.Location = new System.Drawing.Point(699, 23);
+            this.panel7.Location = new System.Drawing.Point(689, 23);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(200, 100);
             this.panel7.TabIndex = 3;
@@ -325,11 +308,12 @@
             this.iconPictureBox1.IconColor = System.Drawing.SystemColors.AppWorkspace;
             this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox1.IconSize = 28;
-            this.iconPictureBox1.Location = new System.Drawing.Point(927, 5);
+            this.iconPictureBox1.Location = new System.Drawing.Point(932, 3);
             this.iconPictureBox1.Name = "iconPictureBox1";
             this.iconPictureBox1.Size = new System.Drawing.Size(31, 28);
             this.iconPictureBox1.TabIndex = 2;
             this.iconPictureBox1.TabStop = false;
+            this.iconPictureBox1.Click += new System.EventHandler(this.iconPictureBox1_Click);
             // 
             // panel2
             // 
@@ -403,7 +387,7 @@
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(45, 4);
+            this.button1.Location = new System.Drawing.Point(27, 7);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(111, 36);
             this.button1.TabIndex = 0;
@@ -443,7 +427,7 @@
             // 
             // panel14
             // 
-            this.panel14.Location = new System.Drawing.Point(1101, 135);
+            this.panel14.Location = new System.Drawing.Point(1040, 155);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(200, 100);
             this.panel14.TabIndex = 5;
@@ -464,7 +448,6 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.panel7.ResumeLayout(false);
@@ -510,7 +493,6 @@
         private Panel panel2;
         private WiLBiT.WiLBiTPanel wilBitPanel1;
         private WiLBiT.WiLBiTTextBox wilBitTextBox1;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
         private FontAwesome.Sharp.IconMenuItem iconMenuItem1;
         private Label label3;
         private Label label4;

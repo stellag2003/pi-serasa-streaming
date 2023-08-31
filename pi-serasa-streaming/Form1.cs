@@ -38,7 +38,7 @@ namespace pi_serasa_streaming
             // }
 
             WindowState = FormWindowState.Maximized;
-            panel2.Location = new Point(ClientSize.Width / 2 - panel2.Size.Width / 2 , ClientSize.Height / 2 - panel2.Size.Height / 2);
+            panel13.Location = new Point(ClientSize.Width / 2 - panel13.Size.Width / 2 , ClientSize.Height / 2 - panel13.Size.Height / 2);
 
 
         }
@@ -55,6 +55,16 @@ namespace pi_serasa_streaming
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void iconPictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
