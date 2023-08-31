@@ -10,15 +10,20 @@ namespace pi_serasa_streaming
 {
     internal class Usuario
     {
-        int id;
-        string nome;
-        string email;
-        string senha;
-        bool moderador;
-        string genero;
-        int dataNascimento;
-        bool premium;
+        public int id;
+        public string nome;
+        public string email;
+        public string senha;
+        public bool moderador;
+        public string genero;
+        public int dataNascimento;
+        public bool premium;
 
+
+        public Usuario()
+        {
+
+        }
         public Usuario(int id, string nome, string email, string senha, bool moderador, string genero, int dataNascimento, bool premium)
         {
             this.id = id;
@@ -31,21 +36,21 @@ namespace pi_serasa_streaming
             this.premium= premium;
         }
 
-        public List<Usuario> buscaTodos()
+       
+        public List<Usuario> BuscaTodos()
         {
             string query = "SELECT * FROM usuario;";
-            Conexao.executaQuery(query);
             DataTable tabela = Conexao.executaQuery(query);
 
-            List<Usuario> tarefas = new List<Usuario>();
-            //Para cada linha dentro da tabela.rows
-            //Ele guarda na variável linha o valor do loop atual dentro da tabela
+            List<Usuario> usuarios = new List<Usuario>();
+
             foreach (DataRow linha in tabela.Rows)
             {
                 Usuario usuario = carregaDados(linha);
-                usuario.Add(usuario);
+                usuarios.Add(usuario);
             }
-            return usuario;
+
+            return usuarios;
         }
 
 
@@ -113,9 +118,9 @@ namespace pi_serasa_streaming
 
         }
 
-        public Usuario BuscarPorPremium(string senha)
+        public Usuario BuscarPorPremium(bool premium)
         {
-            string query = $"SELECT * FROM usuario WHERE senha= {senha};";
+            string query = $"SELECT * FROM usuario WHERE premium= {premium};";
             DataTable tabela = Conexao.executaQuery(query);
             Usuario usuario = carregaDados(tabela.Rows[0]);
             return usuario;
@@ -126,10 +131,10 @@ namespace pi_serasa_streaming
 
 
 
-        public void Insere(Tarefa tarefa)
+        public void Insere(Usuario usuario)
         {
-            int concluido = tarefa.concluido == true ? 1 : 0;
-            string query = $"INSERT INTO tarefas (descricao,concluido) VALUES('{tarefa.descricao}',{concluido});";
+          
+            string query = $"INSERT INTO usuario (id,nome,email,senha,moderador,genero,data_nascimento,premium) VALUES('{usuario.id}',{nome},{email},{senha},{moderador},{genero},{dataNascimento},{premium});";
             Conexao.executaQuery(query);
         }
 
