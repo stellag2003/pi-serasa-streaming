@@ -73,16 +73,17 @@
             this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(268, 23);
             this.txtSenha.TabIndex = 22;
+            this.txtSenha.Text = "123333";
             this.txtSenha.UseSystemPasswordChar = true;
             // 
             // txtData
             // 
             this.txtData.Location = new System.Drawing.Point(52, 357);
-            this.txtData.Mask = "00/00/0000";
+            this.txtData.Mask = "0000-00-00";
             this.txtData.Name = "txtData";
             this.txtData.Size = new System.Drawing.Size(267, 23);
             this.txtData.TabIndex = 21;
-            this.txtData.ValidatingType = typeof(System.DateTime);
+            this.txtData.Text = "20001210";
             // 
             // button1
             // 
@@ -97,6 +98,7 @@
             // btnTermos
             // 
             this.btnTermos.AutoSize = true;
+            this.btnTermos.Checked = true;
             this.btnTermos.ForeColor = System.Drawing.Color.White;
             this.btnTermos.Location = new System.Drawing.Point(16, 484);
             this.btnTermos.Name = "btnTermos";
@@ -117,6 +119,7 @@
             this.comboGenero.Name = "comboGenero";
             this.comboGenero.Size = new System.Drawing.Size(267, 23);
             this.comboGenero.TabIndex = 1;
+            this.comboGenero.Text = "feminino";
             // 
             // txtEmail
             // 
@@ -125,6 +128,7 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(268, 23);
             this.txtEmail.TabIndex = 16;
+            this.txtEmail.Text = "dadadda";
             // 
             // txtNome
             // 
@@ -132,6 +136,7 @@
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(268, 23);
             this.txtNome.TabIndex = 13;
+            this.txtNome.Text = "asdasd";
             // 
             // label5
             // 
@@ -207,7 +212,7 @@
             this.ClientSize = new System.Drawing.Size(800, 647);
             this.Controls.Add(this.painelCadastro);
             this.Name = "TelaCadastroU";
-            this.Text = "TelaCadastroU";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.TelaCadastroU_Load);
             this.painelCadastro.ResumeLayout(false);
             this.painelCadastro.PerformLayout();

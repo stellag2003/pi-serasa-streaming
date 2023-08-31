@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConexaoBDComTelas
+namespace pi_serasa_streaming
 {
     internal class Tarefa
     {

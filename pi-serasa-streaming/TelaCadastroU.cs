@@ -42,23 +42,22 @@ namespace pi_serasa_streaming
             string nome = txtNome.Text;
             string email = txtEmail.Text;
             string senha = txtSenha.Text;
-            string datadeNascimento = txtData.Text;
-            
-            
+            string data_nascimento = txtData.Text;
+            string genero = comboGenero.Text;
 
-            Usuario usuario = new Usuario(nome, email, senha,datadeNascimento);
-            usuarios.Add(usuario);
 
-            
-            if (nome == txtNome.Text && senha == txtSenha.Text && email == txtEmail.Text && btnTermos.Checked==true)
+
+
+            if (nome == "" || senha == "" || email == "" || genero == "" || data_nascimento == "" || btnTermos.Checked == false) 
             {
-                MessageBox.Show(" Cadastro conclúido com sucesso!");
-                painelCadastro.Visible = true;
+                MessageBox.Show("Usuário já cadastrado ou campo incorreto!");
             }
             else
             {
-                MessageBox.Show("Usuário já cadastrado ou campo incorreto!");
-               
+                Usuario usuario = new Usuario(0, nome, email, senha, false, genero, data_nascimento, false);
+                usuario.Insere(usuario);
+                MessageBox.Show(" Cadastro conclúido com sucesso!");
+                painelCadastro.Visible = true;
             }
 
             limpaCampos();

@@ -7,13 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConexaoBDComTelas
+namespace pi_serasa_streaming
 {
     internal class Conexao
     {
-       const string host = "localhost";
+       const string host = "10.60.45.23";
        const string banco = "streamingdadosslq";
-       const string usuario = "root";
+       const string usuario = "senac";
        const string senha = "senac";
 
         const string dadosConexao = $"Server={host};Database={banco};Uid={usuario};Pwd={senha};";
@@ -30,7 +30,7 @@ namespace ConexaoBDComTelas
             {
                 conexao.Open();
 
-
+                
                 MySqlCommand comando = new MySqlCommand(query, conexao);
 
                 MySqlDataReader dados = comando.ExecuteReader();
@@ -49,6 +49,7 @@ namespace ConexaoBDComTelas
             {
                 Console.WriteLine("Erro ao realizar consulta: ");
                 Console.WriteLine(erro.Message);
+                MessageBox.Show(erro.Message);
                 return null;
             }
 

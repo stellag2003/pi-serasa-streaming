@@ -1,4 +1,4 @@
-﻿using ConexaoBDComTelas;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -19,16 +19,17 @@ namespace pi_serasa_streaming
         string dataNascimento;
         bool premium;
 
+
         public Usuario(int id, string nome, string email, string senha, bool moderador, string genero, string dataNascimento, bool premium)
         {
             this.id = id;
             this.nome = nome;
             this.email = email;
-            this.senha = senha; 
-            this.moderador= moderador;
-            this.genero= genero;
-            this.dataNascimento= dataNascimento;
-            this.premium= premium;
+            this.senha = senha;
+            this.moderador = moderador;
+            this.genero = genero;
+            this.dataNascimento = dataNascimento;
+            this.premium = premium;
         }
 
         public List<Usuario> buscaTodos()
@@ -117,13 +118,7 @@ namespace pi_serasa_streaming
 
         public void Insere(Usuario usuario)
         {
-            string email = usuario.email;
-            string nome = usuario.nome;
-            string senha = usuario.senha;
-            string dataNascimento = usuario.dataNascimento;
-            string genero = usuario.genero;
-
-            string query = $"INSERT INTO usuario (nome,email, senha, data_nascimento,genero) VALUES('{usuario.nome}',{usuario.email},{usuario.senha}, {usuario.dataNascimento}, {usuario.genero});";
+            string query = $"INSERT INTO usuario (nome,email, senha, data_nascimento,genero) VALUES('{usuario.nome}','{usuario.email}','{usuario.senha}', '{usuario.dataNascimento}', '{usuario.genero}');";
             Conexao.executaQuery(query);
         }
 
