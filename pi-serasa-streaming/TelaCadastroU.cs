@@ -42,10 +42,11 @@ namespace pi_serasa_streaming
             string nome = txtNome.Text;
             string email = txtEmail.Text;
             string senha = txtSenha.Text;
+            string datadeNascimento = txtData.Text;
             
             
 
-            Usuario usuario = new Usuario(nome, email, senha);
+            Usuario usuario = new Usuario(nome, email, senha,datadeNascimento);
             usuarios.Add(usuario);
 
             

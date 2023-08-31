@@ -11,14 +11,15 @@ namespace pi_serasa_streaming
         public string nome;
         public string email;
         public string senha;
+        public string datadeNascimento;
        
 
-        public Usuario(string nome, string email, string password)
+        public Usuario(string nome, string email, string password, string datadeNascimento)
         {
             this.nome = nome;
             this.email = email;
             this.senha = password;
-            
+            this.datadeNascimento = datadeNascimento;
         }
 
     }
