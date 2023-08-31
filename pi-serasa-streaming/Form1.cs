@@ -3,27 +3,21 @@ namespace pi_serasa_streaming
     public partial class Form1 : Form
     {
     
-        List<string> filmes = new List<string>();
 
         public Form1()
         {
             InitializeComponent();
         }
 
-        void geraForm(string filmes)
+        void CarregaForm(Form form)
         {
-            Panel panel = new Panel();
-            panel.Name = "panel";
-            panel.BackColor = Color.AliceBlue;
-            panel.Size = new Size(100, 100);
+            form.TopLevel = false;
+            panel14.Controls.Clear();
+            panel14.Controls.Add(form);
+            form.Location = new Point(panel14.Width / 2 - form.Width / 2, panel14.Height / 2 - form.Height / 2);
+            form.Show();
 
-            Label label = new Label();
-            // label.name =...
-            label.Text = filmes;
-            label.AutoSize = true;
-            label.Location = new Point(0, 0);
         }
-
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -37,19 +31,14 @@ namespace pi_serasa_streaming
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            filmes.Clear();
-            for (int i = 0; i < filmes.Count; i++)
-            {
-                filmes.Add(filmes[i]);
-            }
+            //  filmes.Clear();
+            // for (int i = 0; i < filmes.Count; i++)
+            // {
+            //     filmes.Add(filmes[i]);
+            // }
 
-            Resenha resenha = new Resenha();
-            resenha.TopLevel = false;
-            panel1.Controls.Add(resenha);
-            resenha.Show();
-            resenha.Location = new Point(0, 0);
-
-            geraForm();
+            WindowState = FormWindowState.Maximized;
+            panel2.Location = new Point(ClientSize.Width / 2 - panel2.Size.Width / 2 , ClientSize.Height / 2 - panel2.Size.Height / 2);
 
 
         }
@@ -61,7 +50,13 @@ namespace pi_serasa_streaming
 
         private void btnResenha_Click(object sender, EventArgs e)
         {
-            
+
+            CarregaForm(new Resenha());
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

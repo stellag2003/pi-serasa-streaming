@@ -21,5 +21,11 @@ namespace pi_serasa_streaming
         {
             MessageBox.Show("!");
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+            WindowState = FormWindowState.Maximized;
+            panel1.Location = new Point(ClientSize.Width / 2 - panel1.Size.Width / 2 , ClientSize.Height / 2 - panel1.Size.Height / 2);
+        }
     }
 }

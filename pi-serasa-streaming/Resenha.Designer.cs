@@ -80,6 +80,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(995, 577);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // iconPictureBox8
             // 
@@ -89,7 +90,7 @@
             this.iconPictureBox8.IconColor = System.Drawing.Color.Gray;
             this.iconPictureBox8.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox8.IconSize = 41;
-            this.iconPictureBox8.Location = new System.Drawing.Point(509, 312);
+            this.iconPictureBox8.Location = new System.Drawing.Point(518, 321);
             this.iconPictureBox8.Name = "iconPictureBox8";
             this.iconPictureBox8.Size = new System.Drawing.Size(41, 44);
             this.iconPictureBox8.TabIndex = 15;
@@ -103,7 +104,7 @@
             this.iconPictureBox9.IconColor = System.Drawing.Color.Gray;
             this.iconPictureBox9.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconPictureBox9.IconSize = 41;
-            this.iconPictureBox9.Location = new System.Drawing.Point(509, 111);
+            this.iconPictureBox9.Location = new System.Drawing.Point(518, 111);
             this.iconPictureBox9.Name = "iconPictureBox9";
             this.iconPictureBox9.Size = new System.Drawing.Size(41, 44);
             this.iconPictureBox9.TabIndex = 14;
@@ -324,7 +325,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(976, 588);
+            this.BackColor = System.Drawing.Color.Black;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ClientSize = new System.Drawing.Size(1219, 724);
             this.Controls.Add(this.panel1);
             this.Name = "Resenha";
             this.Text = "Resenha";
