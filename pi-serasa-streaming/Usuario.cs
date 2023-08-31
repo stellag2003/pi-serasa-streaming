@@ -16,10 +16,10 @@ namespace pi_serasa_streaming
         string senha;
         bool moderador;
         string genero;
-        int dataNascimento;
+        string dataNascimento;
         bool premium;
 
-        public Usuario(int id, string nome, string email, string senha, bool moderador, string genero, int dataNascimento, bool premium)
+        public Usuario(int id, string nome, string email, string senha, bool moderador, string genero, string dataNascimento, bool premium)
         {
             this.id = id;
             this.nome = nome;
@@ -33,19 +33,18 @@ namespace pi_serasa_streaming
 
         public List<Usuario> buscaTodos()
         {
-            string query = "SELECT * FROM usuario;";
-            Conexao.executaQuery(query);
-            DataTable tabela = Conexao.executaQuery(query);
 
-            List<Usuario> tarefas = new List<Usuario>();
-            //Para cada linha dentro da tabela.rows
-            //Ele guarda na variável linha o valor do loop atual dentro da tabela
+            List<Usuario> usuarios = new List<Usuario>();
+
+            string query = "SELECT * FROM usuario;";
+            DataTable tabela = Conexao.executaQuery(query);
+            
             foreach (DataRow linha in tabela.Rows)
             {
                 Usuario usuario = carregaDados(linha);
-                usuario.Add(usuario);
+                usuarios.Add(usuario);
             }
-            return usuario;
+            return usuarios;
         }
 
 
@@ -77,14 +76,7 @@ namespace pi_serasa_streaming
             return usuario;
         }
 
-        public Usuario BuscarPorSenha(string senha)
-        {
-            string query = $"SELECT * FROM usuario WHERE senha= {senha};";
-            DataTable tabela = Conexao.executaQuery(query);
-            Usuario usuario = carregaDados(tabela.Rows[0]);
-            return usuario;
 
-        }
 
         public Usuario BuscarPorModerador(bool moderador)
         {
@@ -104,7 +96,7 @@ namespace pi_serasa_streaming
 
         }
 
-        public Usuario BuscarPorDataNascimento(int dataNascimento)
+        public Usuario BuscarPorDataNascimento(string dataNascimento)
         {
             string query = $"SELECT * FROM usuario WHERE data_nascimento= {dataNascimento};";
             DataTable tabela = Conexao.executaQuery(query);
@@ -123,13 +115,15 @@ namespace pi_serasa_streaming
         }
 
 
-
-
-
-        public void Insere(Tarefa tarefa)
+        public void Insere(Usuario usuario)
         {
-            int concluido = tarefa.concluido == true ? 1 : 0;
-            string query = $"INSERT INTO tarefas (descricao,concluido) VALUES('{tarefa.descricao}',{concluido});";
+            string email = usuario.email;
+            string nome = usuario.nome;
+            string senha = usuario.senha;
+            string dataNascimento = usuario.dataNascimento;
+            string genero = usuario.genero;
+
+            string query = $"INSERT INTO usuario (nome,email, senha, data_nascimento,genero) VALUES('{usuario.nome}',{usuario.email},{usuario.senha}, {usuario.dataNascimento}, {usuario.genero});";
             Conexao.executaQuery(query);
         }
 
@@ -144,7 +138,7 @@ namespace pi_serasa_streaming
             string senha= linha["senha"].ToString();
             bool moderador = linha["moderador"].ToString() == "1" ? true : false;
             string genero = linha["genero"].ToString();
-            int dataNascimento = int.Parse(linha["data_nascimento"].ToString());
+            string dataNascimento = linha["data_nascimento"].ToString();
             bool premium = linha["premium"].ToString() == "1" ? true : false;
 
 
