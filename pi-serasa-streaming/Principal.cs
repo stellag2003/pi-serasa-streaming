@@ -30,7 +30,8 @@ namespace pi_serasa_streaming
         private void Principal_Load(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Maximized;
-            painel.Location = new Point(ClientSize.Width / 2 - painel.Size.Width / 2, ClientSize.Height / 2 - painel.Size.Height / 2);
+            painel.Location = new Point();
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -41,6 +42,16 @@ namespace pi_serasa_streaming
         private void btnResenha_Click(object sender, EventArgs e)
         {
             CarregaForm(new Resenha());
+            btnResenha.BackColor = Color.Gray;
+            btnProducoes.BackColor = Color.Black;
+
+        }
+
+        private void btnProducoes_Click(object sender, EventArgs e)
+        {
+            CarregaForm(new Principal());
+            btnProducoes.BackColor = Color.Gray;
+            btnResenha.BackColor = Color.Black;
         }
     }
 }

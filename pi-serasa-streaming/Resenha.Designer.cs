@@ -40,13 +40,6 @@
             this.iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.iconPictureBox3 = new FontAwesome.Sharp.IconPictureBox();
-            this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
-            this.wilBitPanel1 = new WiLBiT.WiLBiTPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.wilBitTextBox1 = new WiLBiT.WiLBiTTextBox();
-            this.lblResenha = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox9)).BeginInit();
@@ -55,10 +48,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
-            this.wilBitPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -75,8 +64,7 @@
             this.panel1.Controls.Add(this.iconPictureBox5);
             this.panel1.Controls.Add(this.iconPictureBox4);
             this.panel1.Controls.Add(this.iconPictureBox1);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(1, -1);
+            this.panel1.Location = new System.Drawing.Point(10, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(995, 577);
             this.panel1.TabIndex = 0;
@@ -221,113 +209,13 @@
             this.iconPictureBox1.TabIndex = 3;
             this.iconPictureBox1.TabStop = false;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Controls.Add(this.iconPictureBox3);
-            this.panel2.Controls.Add(this.iconPictureBox2);
-            this.panel2.Controls.Add(this.wilBitPanel1);
-            this.panel2.Controls.Add(this.wilBitTextBox1);
-            this.panel2.Controls.Add(this.lblResenha);
-            this.panel2.Location = new System.Drawing.Point(0, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(977, 59);
-            this.panel2.TabIndex = 2;
-            // 
-            // iconPictureBox3
-            // 
-            this.iconPictureBox3.ForeColor = System.Drawing.Color.Gray;
-            this.iconPictureBox3.IconChar = FontAwesome.Sharp.IconChar.User;
-            this.iconPictureBox3.IconColor = System.Drawing.Color.Gray;
-            this.iconPictureBox3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox3.IconSize = 28;
-            this.iconPictureBox3.Location = new System.Drawing.Point(905, 15);
-            this.iconPictureBox3.Name = "iconPictureBox3";
-            this.iconPictureBox3.Size = new System.Drawing.Size(31, 28);
-            this.iconPictureBox3.TabIndex = 5;
-            this.iconPictureBox3.TabStop = false;
-            // 
-            // iconPictureBox2
-            // 
-            this.iconPictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.iconPictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.iconPictureBox2.ForeColor = System.Drawing.Color.Gray;
-            this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.Sistrix;
-            this.iconPictureBox2.IconColor = System.Drawing.Color.Gray;
-            this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox2.IconSize = 27;
-            this.iconPictureBox2.Location = new System.Drawing.Point(872, 13);
-            this.iconPictureBox2.Name = "iconPictureBox2";
-            this.iconPictureBox2.Size = new System.Drawing.Size(27, 27);
-            this.iconPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.iconPictureBox2.TabIndex = 4;
-            this.iconPictureBox2.TabStop = false;
-            // 
-            // wilBitPanel1
-            // 
-            this.wilBitPanel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.wilBitPanel1.BorderColor = System.Drawing.Color.Peru;
-            this.wilBitPanel1.BorderRadius = 6;
-            this.wilBitPanel1.BorderSize = 0;
-            this.wilBitPanel1.Controls.Add(this.label1);
-            this.wilBitPanel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.wilBitPanel1.ForeColor = System.Drawing.Color.RosyBrown;
-            this.wilBitPanel1.Location = new System.Drawing.Point(261, 3);
-            this.wilBitPanel1.Name = "wilBitPanel1";
-            this.wilBitPanel1.Size = new System.Drawing.Size(168, 46);
-            this.wilBitPanel1.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(36, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 18);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Produções";
-            // 
-            // wilBitTextBox1
-            // 
-            this.wilBitTextBox1.BackColor = System.Drawing.Color.Black;
-            this.wilBitTextBox1.BorderColor = System.Drawing.Color.DimGray;
-            this.wilBitTextBox1.BorderFocusColor = System.Drawing.Color.DimGray;
-            this.wilBitTextBox1.BorderRadius = 4;
-            this.wilBitTextBox1.BorderSize = 2;
-            this.wilBitTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.wilBitTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.wilBitTextBox1.Location = new System.Drawing.Point(728, 11);
-            this.wilBitTextBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.wilBitTextBox1.Multiline = false;
-            this.wilBitTextBox1.Name = "wilBitTextBox1";
-            this.wilBitTextBox1.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.wilBitTextBox1.PasswordChar = false;
-            this.wilBitTextBox1.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.wilBitTextBox1.PlaceholderText = "";
-            this.wilBitTextBox1.Size = new System.Drawing.Size(160, 29);
-            this.wilBitTextBox1.TabIndex = 1;
-            this.wilBitTextBox1.Texts = "";
-            this.wilBitTextBox1.UnderlinedStyle = false;
-            // 
-            // lblResenha
-            // 
-            this.lblResenha.AutoSize = true;
-            this.lblResenha.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblResenha.ForeColor = System.Drawing.Color.White;
-            this.lblResenha.Location = new System.Drawing.Point(435, 15);
-            this.lblResenha.Name = "lblResenha";
-            this.lblResenha.Size = new System.Drawing.Size(88, 18);
-            this.lblResenha.TabIndex = 1;
-            this.lblResenha.Text = "Resenhas";
-            // 
             // Resenha
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1219, 724);
+            this.ClientSize = new System.Drawing.Size(1017, 602);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Resenha";
@@ -341,12 +229,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
-            this.wilBitPanel1.ResumeLayout(false);
-            this.wilBitPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -354,13 +236,6 @@
         #endregion
 
         private Panel panel1;
-        private Panel panel2;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
-        private WiLBiT.WiLBiTPanel wilBitPanel1;
-        private Label label1;
-        private WiLBiT.WiLBiTTextBox wilBitTextBox1;
-        private Label lblResenha;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox3;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox7;
         private Label label4;
