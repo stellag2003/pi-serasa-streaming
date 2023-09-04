@@ -31,10 +31,10 @@ namespace pi_serasa_streaming
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //  filmes.Clear();
-            // for (int i = 0; i < filmes.Count; i++)
+             //filmes.Clear();
+             //for (int i = 0; i < filmes.Count; i++)
             // {
-            //     filmes.Add(filmes[i]);
+                // filmes.Add(filmes[i]);
             // }
 
             WindowState = FormWindowState.Maximized;

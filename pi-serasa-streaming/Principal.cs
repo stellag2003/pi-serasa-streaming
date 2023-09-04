@@ -14,6 +14,8 @@ namespace pi_serasa_streaming
 {
     public partial class Principal : Form
     {
+
+        List <Reproducao> reproducoes = new List <Reproducao> ();
         public Principal()
         {
             InitializeComponent();
@@ -27,10 +29,20 @@ namespace pi_serasa_streaming
             form.Show();
 
         }
+
+        void renderizaInterface()
+        {
+           
+
+
+        }
+
+
         private void Principal_Load(object sender, EventArgs e)
         {
-            WindowState = FormWindowState.Maximized;
-            painel.Location = new Point();
+          Reproducao reproducao = new Reproducao();
+          reproducoes = reproducao.buscaTodosFilmes();
+            
 
         }
 
@@ -41,10 +53,11 @@ namespace pi_serasa_streaming
 
         private void btnResenha_Click(object sender, EventArgs e)
         {
+            
             CarregaForm(new Resenha());
             btnResenha.BackColor = Color.Gray;
             btnProducoes.BackColor = Color.Black;
-
+            
         }
 
         private void btnProducoes_Click(object sender, EventArgs e)
@@ -52,6 +65,18 @@ namespace pi_serasa_streaming
             CarregaForm(new Principal());
             btnProducoes.BackColor = Color.Gray;
             btnResenha.BackColor = Color.Black;
+            
+            
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

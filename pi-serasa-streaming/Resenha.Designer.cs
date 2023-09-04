@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnComentar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtComentario = new System.Windows.Forms.TextBox();
             this.iconPictureBox8 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox9 = new FontAwesome.Sharp.IconPictureBox();
             this.iconPictureBox7 = new FontAwesome.Sharp.IconPictureBox();
@@ -53,6 +56,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.Controls.Add(this.btnComentar);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.txtComentario);
             this.panel1.Controls.Add(this.iconPictureBox8);
             this.panel1.Controls.Add(this.iconPictureBox9);
             this.panel1.Controls.Add(this.iconPictureBox7);
@@ -69,6 +75,38 @@
             this.panel1.Size = new System.Drawing.Size(995, 577);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // btnComentar
+            // 
+            this.btnComentar.Location = new System.Drawing.Point(108, 507);
+            this.btnComentar.Name = "btnComentar";
+            this.btnComentar.Size = new System.Drawing.Size(160, 23);
+            this.btnComentar.TabIndex = 18;
+            this.btnComentar.Text = "Comentar";
+            this.btnComentar.UseVisualStyleBackColor = true;
+            this.btnComentar.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Black;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
+            this.label1.Location = new System.Drawing.Point(32, 395);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(146, 17);
+            this.label1.TabIndex = 17;
+            this.label1.Text = "Deixe seu comentário:";
+            // 
+            // txtComentario
+            // 
+            this.txtComentario.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.txtComentario.Location = new System.Drawing.Point(32, 420);
+            this.txtComentario.Multiline = true;
+            this.txtComentario.Name = "txtComentario";
+            this.txtComentario.Size = new System.Drawing.Size(304, 67);
+            this.txtComentario.TabIndex = 16;
+            this.txtComentario.TextChanged += new System.EventHandler(this.txtComentario_TextChanged);
             // 
             // iconPictureBox8
             // 
@@ -247,5 +285,8 @@
         private FontAwesome.Sharp.IconPictureBox iconPictureBox4;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox8;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox9;
+        private Label label1;
+        private TextBox txtComentario;
+        private Button btnComentar;
     }
 }

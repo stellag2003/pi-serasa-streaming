@@ -19,6 +19,11 @@ namespace pi_serasa_streaming
         public string genero;
         public int avaliacao;
 
+        public Reproducao() 
+        {
+
+        }
+
         public Reproducao(int id, string nome, string tempo, string genero, int avaliacao)
         {
             this.id = id;
