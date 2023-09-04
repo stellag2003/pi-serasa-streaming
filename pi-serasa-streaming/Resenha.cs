@@ -33,16 +33,23 @@ namespace pi_serasa_streaming
 
         public void button1_Click(object sender, EventArgs e)
         {
-            Comentario comentario = new Comentario();
-            comentarios = comentario.(); 
-            txtComentario.Clear();
-
+            string comentario = txtComentario.Text;
+            Comentario comentario1= new Comentario();
+            comentario1.Insere(comentario);
 
 
         }
 
         public void txtComentario_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void Resenha_Load(object sender, EventArgs e)
+        {
+            Comentario comentario = new Comentario();
+            comentarios = comentario.buscaTodos();
+            txtComentario.Clear();
 
         }
     }

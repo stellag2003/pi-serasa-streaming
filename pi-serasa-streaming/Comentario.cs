@@ -51,11 +51,12 @@ namespace pi_serasa_streaming
 
         }
 
-        public Comentario AddComentario(string comentario)
+        
+        public void Insere(string comentario)
         {
-            string query = $"INSERT INTO reproducao (comentario) VALUES ('{comentario}');";
+            string query = $"INSERT INTO comentario (conteudo) VALUES ('{comentario}');";
+            Conexao.executaQuery(query);
         }
-
 
         public Comentario carregaDados(DataRow linha)
         {

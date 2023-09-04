@@ -40,8 +40,8 @@ namespace pi_serasa_streaming
 
         private void Principal_Load(object sender, EventArgs e)
         {
-          Reproducao reproducao = new Reproducao();
-          reproducoes = reproducao.buscaTodosFilmes();
+          //Reproducao reproducao = new Reproducao();
+          //reproducoes = reproducao.buscaTodosFilmes();
             
 
         }
