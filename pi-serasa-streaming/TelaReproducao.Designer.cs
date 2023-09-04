@@ -36,7 +36,7 @@
             // lblNomeFilme
             // 
             this.lblNomeFilme.AutoSize = true;
-            this.lblNomeFilme.Location = new System.Drawing.Point(76, 217);
+            this.lblNomeFilme.Location = new System.Drawing.Point(131, 169);
             this.lblNomeFilme.Name = "lblNomeFilme";
             this.lblNomeFilme.Size = new System.Drawing.Size(127, 15);
             this.lblNomeFilme.TabIndex = 0;
