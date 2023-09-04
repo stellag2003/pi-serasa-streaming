@@ -17,15 +17,19 @@ namespace pi_serasa_streaming
         public string nome;
         public string tempo;
         public string genero;
+        public string descricao;
         public int avaliacao;
+        public string link_filme;
 
-        public Reproducao(int id, string nome, string tempo, string genero, int avaliacao)
+        public Reproducao(int id, string nome, string tempo, string genero, string descricao, int avaliacao, string link_filme)
         {
             this.id = id;
             this.nome = nome;
             this.tempo = tempo;
             this.genero = genero;
+            this.descricao = descricao;
             this.avaliacao = avaliacao;
+            this.link_filme = link_filme;
         }
 
         public List<Reproducao> buscaTodosFilmes()
@@ -47,11 +51,27 @@ namespace pi_serasa_streaming
 
         public Reproducao BuscaFilmeNome(string nome)
         {
-            string query = $"SELECT * FROM reproducao WHERE nome;";
+            string query = $"SELECT * FROM reproducao WHERE {nome};";
             DataTable tabela = Conexao.executaQuery(query);
             Reproducao reproducao = carregaDados(tabela.Rows[0]);
             return reproducao;
         }
+
+        public Reproducao DescricaoFilme(string descricao)
+        {
+            string query = $"SELECT descricao FROM reproducao WHERE nome = {nome};";
+            DataTable tabela = Conexao.executaQuery(query);
+            Reproducao reproducao = carregaDados(tabela.Rows[0]);
+            return reproducao;
+        }
+        public Reproducao BuscaLink(string link_filme)
+        {
+            string query = $"SELECT link_filme FROM reproducao WHERE nome = {nome};";
+            DataTable tabela = Conexao.executaQuery(query);
+            Reproducao reproducao = carregaDados(tabela.Rows[0]);
+            return reproducao;
+        }
+
 
         public Reproducao carregaDados(DataRow linha)
         {
@@ -60,10 +80,11 @@ namespace pi_serasa_streaming
             string tempo = linha["tempo"].ToString();
             string genero = linha["genero"].ToString();
             int avaliacao = int.Parse(linha["avaliacao"].ToString());
+            string descricao = (linha["descricao"].ToString());
+            string link_filme = (linha["link_filme"].ToString());
 
 
-
-            Reproducao reproducao = new Reproducao(id, nome, tempo, genero, avaliacao);
+            Reproducao reproducao = new Reproducao(id, nome, tempo, genero, descricao, avaliacao, link_filme);
             return reproducao;
 
         }
