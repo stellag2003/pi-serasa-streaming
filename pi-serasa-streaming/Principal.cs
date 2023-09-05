@@ -36,12 +36,13 @@ namespace pi_serasa_streaming
             foreach(Reproducao reproducao in reproducoes) 
             {
                 
-                PictureBox imagem= new PictureBox();
+                PictureBox imagem = new PictureBox();
                 imagem.LoadAsync(reproducao.link_imagem);
                 imagem.SizeMode = PictureBoxSizeMode.Zoom;
-                imagem.Size = new Size(100, 100);
+                imagem.Size = new Size(200, 200);
                 panel3.Controls.Add(imagem);
                 imagem.Location = new Point(panel3.Width, 0);
+                //imagem.Click imagem.id
             }
 
         }

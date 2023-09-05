@@ -12,7 +12,7 @@ namespace pi_serasa_streaming
 {
     public partial class Resenha : Form
     {
-        List <Comentario> comentarios= new List <Comentario> ();
+        List <Comentario> comentarios = new List <Comentario> ();
         public Resenha()
         {
             InitializeComponent();
@@ -38,6 +38,13 @@ namespace pi_serasa_streaming
             comentario1.Insere(comentario);
 
 
+            TextBox textBox = new TextBox();
+            textBox1.Text = comentario;
+            
+
+            
+
+         
         }
 
         public void txtComentario_TextChanged(object sender, EventArgs e)
@@ -47,16 +54,16 @@ namespace pi_serasa_streaming
 
         private void Resenha_Load(object sender, EventArgs e)
         {
-            Comentario comentario = new Comentario();
-            comentarios = comentario.buscaTodos();
-            txtComentario.Clear();
+            //Comentario comentario = new Comentario();
+            //comentarios = comentario.Insere();
+            //txtComentario.Clear();
 
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             Comentario comentario = new Comentario();
-            comentarios= comentario.buscaTodos();
+            comentarios = comentario.buscaTodos();
             
         }
     }

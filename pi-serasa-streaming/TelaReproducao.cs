@@ -21,10 +21,10 @@ namespace pi_serasa_streaming
         private void TelaReproducao_Load(object sender, EventArgs e)
         {
 
-            Reproducao reproducao= new Reproducao();
-            Reproducao filme = reproducao.BuscaFilmeNome("Alto da compadecida");
+            //Reproducao reproducao= new Reproducao();
+            //Reproducao filme = reproducao.BuscaFilmeNome("Alto da compadecida");
 
-            lblDescricao.Text = filme.nome;
+            //lblDescricao.Text = filme.nome;
 
 
         }
