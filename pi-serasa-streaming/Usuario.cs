@@ -62,7 +62,7 @@ namespace pi_serasa_streaming
 
         public Usuario BuscarPorNome(string nome)
         {
-            string query = $"SELECT * FROM usuario WHERE nome= {nome};";
+            string query = $"SELECT * FROM usuario WHERE nome= '{nome}';";
             DataTable tabela = Conexao.executaQuery(query);
             Usuario usuario = carregaDados(tabela.Rows[0]);
             return usuario;
@@ -71,7 +71,7 @@ namespace pi_serasa_streaming
 
         public Usuario BuscarPorEmail(string email)
         {
-            string query = $"SELECT * FROM usuario WHERE email= {email};";
+            string query = $"SELECT * FROM usuario WHERE email= '{email}';";
             DataTable tabela = Conexao.executaQuery(query);
             Usuario usuario = carregaDados(tabela.Rows[0]);
             return usuario;
@@ -81,7 +81,7 @@ namespace pi_serasa_streaming
 
         public Usuario BuscarPorModerador(bool moderador)
         {
-            string query = $"SELECT * FROM usuario WHERE moderador= {moderador};";
+            string query = $"SELECT * FROM usuario WHERE moderador= '{moderador}';";
             DataTable tabela = Conexao.executaQuery(query);
             Usuario usuario = carregaDados(tabela.Rows[0]);
             return usuario;
@@ -90,7 +90,7 @@ namespace pi_serasa_streaming
 
         public Usuario BuscarPorGenero(string genero)
         {
-            string query = $"SELECT * FROM usuario WHERE genero= {genero};";
+            string query = $"SELECT * FROM usuario WHERE genero= '{genero}';";
             DataTable tabela = Conexao.executaQuery(query);
             Usuario usuario = carregaDados(tabela.Rows[0]);
             return usuario;
@@ -99,7 +99,7 @@ namespace pi_serasa_streaming
 
         public Usuario BuscarPorDataNascimento(string dataNascimento)
         {
-            string query = $"SELECT * FROM usuario WHERE data_nascimento= {dataNascimento};";
+            string query = $"SELECT * FROM usuario WHERE data_nascimento= '{dataNascimento}';";
             DataTable tabela = Conexao.executaQuery(query);
             Usuario usuario = carregaDados(tabela.Rows[0]);
             return usuario;
@@ -108,7 +108,7 @@ namespace pi_serasa_streaming
 
         public Usuario BuscarPorPremium(string senha)
         {
-            string query = $"SELECT * FROM usuario WHERE senha= {senha};";
+            string query = $"SELECT * FROM usuario WHERE senha= '{senha}';";
             DataTable tabela = Conexao.executaQuery(query);
             Usuario usuario = carregaDados(tabela.Rows[0]);
             return usuario;
