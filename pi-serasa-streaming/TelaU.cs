@@ -32,9 +32,17 @@ namespace pi_serasa_streaming
                 usuario = txtEmail.Text;
                 senha = txtSenha.Text;
 
-            
+            Principal usuarioPrincipal = new Principal();
+
+            usuarioPrincipal.Show();
             
            
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            TelaCadastroU telaCadastro = new TelaCadastroU();
+            telaCadastro.Show();
         }
     }
 }
