@@ -59,7 +59,7 @@ namespace pi_serasa_streaming
 
         public Reproducao BuscFilmeId(string id)
         {
-            string query = $"SELECT nome FROM streamingdadosslq.reproducao WHERE id = '{id}';";
+            string query = $"SELECT nome FROM streamingdadosslq.reproducao WHERE id = {id};";
             DataTable tabela = Conexao.executaQuery(query);
             Reproducao reproducao = carregaDados(tabela.Rows[0]);
             return reproducao;
@@ -68,7 +68,7 @@ namespace pi_serasa_streaming
 
         public Reproducao DescricaoFilme(string descricao, int id)
         {
-            string query = $"SELECT descricao FROM streamingdadosslq.reproducao WHERE id = '{id}';";
+            string query = $"SELECT descricao FROM streamingdadosslq.reproducao WHERE id = {id};";
             DataTable tabela = Conexao.executaQuery(query);
             Reproducao reproducao = carregaDados(tabela.Rows[0]);
             return reproducao;
@@ -76,7 +76,7 @@ namespace pi_serasa_streaming
 
         public Reproducao BuscaLink(string link_filme, int id)
         {
-            string query = $"SELECT link_filme FROM streamingdadosslq.reproducao WHERE id ='{id}';";
+            string query = $"SELECT link_filme FROM streamingdadosslq.reproducao WHERE id = {id};";
             DataTable tabela = Conexao.executaQuery(query);
             Reproducao reproducao = carregaDados(tabela.Rows[0]);
             return reproducao;
