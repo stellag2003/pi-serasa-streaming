@@ -29,14 +29,13 @@
         private void InitializeComponent()
         {
             this.painelU = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.btnEntrar = new System.Windows.Forms.Button();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.lblSenha = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.painelU.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,7 +46,6 @@
             this.painelU.Controls.Add(this.btnEntrar);
             this.painelU.Controls.Add(this.txtSenha);
             this.painelU.Controls.Add(this.txtEmail);
-            this.painelU.Controls.Add(this.label4);
             this.painelU.Controls.Add(this.lblSenha);
             this.painelU.Controls.Add(this.lblEmail);
             this.painelU.Controls.Add(this.label1);
@@ -57,10 +55,21 @@
             this.painelU.Size = new System.Drawing.Size(369, 337);
             this.painelU.TabIndex = 0;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(70, 311);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(211, 13);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Não possui uma conta? Criar uma conta";
+            // 
             // btnEntrar
             // 
             this.btnEntrar.ForeColor = System.Drawing.Color.Black;
-            this.btnEntrar.Location = new System.Drawing.Point(122, 237);
+            this.btnEntrar.Location = new System.Drawing.Point(126, 215);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(100, 23);
             this.btnEntrar.TabIndex = 6;
@@ -83,17 +92,6 @@
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(257, 23);
             this.txtEmail.TabIndex = 4;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(111, 201);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(120, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Esqueci minha senha?";
             // 
             // lblSenha
             // 
@@ -128,17 +126,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Login de Usuário";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(70, 311);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(211, 13);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Não possui uma conta? Criar uma conta";
-            // 
             // TelaU
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -161,7 +148,6 @@
         private Button btnEntrar;
         private TextBox txtSenha;
         private TextBox txtEmail;
-        private Label label4;
         private Label lblSenha;
         private Label lblEmail;
         private Label label1;
