@@ -12,6 +12,7 @@ namespace pi_serasa_streaming
 {
     public partial class TelaReproducao : Form
     {
+
         public TelaReproducao()
         {
             InitializeComponent();
@@ -19,7 +20,12 @@ namespace pi_serasa_streaming
 
         private void TelaReproducao_Load(object sender, EventArgs e)
         {
-            Reproducao reproducao = new Reproducao();
+
+            Reproducao reproducao= new Reproducao();
+            Reproducao filme = reproducao.BuscaFilmeNome("Alto da compadecida");
+
+            lblDescricao.Text = filme.nome;
+
 
         }
     }

@@ -21,6 +21,11 @@ namespace pi_serasa_streaming
         public int avaliacao;
         public string link_filme;
 
+        public Reproducao()
+        {
+
+        }
+
         public Reproducao(int id, string nome, string tempo, string genero, string descricao, int avaliacao, string link_filme)
         {
             this.id = id;
@@ -48,6 +53,16 @@ namespace pi_serasa_streaming
 
             return reproducoes;
         }
+
+
+        public Reproducao BuscaFilmeNome(int id)
+        {
+            string query = $"SELECT * FROM reproducao WHERE {id};";
+            DataTable tabela = Conexao.executaQuery(query);
+            Reproducao reproducao = carregaDados(tabela.Rows[0]);
+            return reproducao;
+        }
+
 
         public Reproducao BuscaFilmeNome(string nome)
         {
