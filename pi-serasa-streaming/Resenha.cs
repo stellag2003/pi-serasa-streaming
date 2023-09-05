@@ -52,5 +52,12 @@ namespace pi_serasa_streaming
             txtComentario.Clear();
 
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            Comentario comentario = new Comentario();
+            comentarios= comentario.buscaTodos();
+            
+        }
     }
 }
