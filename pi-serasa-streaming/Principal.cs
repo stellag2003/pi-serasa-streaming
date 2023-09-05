@@ -33,16 +33,25 @@ namespace pi_serasa_streaming
         void renderizaInterface()
         {
            
-
+            foreach(Reproducao reproducao in reproducoes) 
+            {
+                
+                PictureBox imagem= new PictureBox();
+                imagem.LoadAsync(reproducao.link_imagem);
+                imagem.SizeMode = PictureBoxSizeMode.Zoom;
+                imagem.Size = new Size(100, 100);
+                panel3.Controls.Add(imagem);
+                imagem.Location = new Point(panel3.Width, 0);
+            }
 
         }
 
 
         private void Principal_Load(object sender, EventArgs e)
         {
-          //Reproducao reproducao = new Reproducao();
-          //reproducoes = reproducao.buscaTodosFilmes();
-            
+            Reproducao reproducao = new Reproducao();
+            reproducoes = reproducao.buscaTodosFilmes();
+            renderizaInterface();
 
         }
 

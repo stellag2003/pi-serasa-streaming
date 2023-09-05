@@ -15,26 +15,24 @@ namespace pi_serasa_streaming
     {
         public int id;
         public string nome;
-        public string tempo;
-        public string genero;
         public string descricao;
         public int avaliacao;
         public string link_filme;
+        public string link_imagem;
 
         public Reproducao()
         {
 
         }
 
-        public Reproducao(int id, string nome, string tempo, string genero, string descricao, int avaliacao, string link_filme)
+        public Reproducao(int id, string nome,  string descricao, int avaliacao, string link_filme, string link_imagem)
         {
             this.id = id;
             this.nome = nome;
-            this.tempo = tempo;
-            this.genero = genero;
             this.descricao = descricao;
             this.avaliacao = avaliacao;
             this.link_filme = link_filme;
+            this.link_imagem= link_imagem;
         }
 
         public List<Reproducao> buscaTodosFilmes()
@@ -76,14 +74,14 @@ namespace pi_serasa_streaming
         {
             int id = int.Parse(linha["id"].ToString());
             string nome = (linha["nome"].ToString());
-            string tempo = linha["tempo"].ToString();
-            string genero = linha["genero"].ToString();
-            int avaliacao = int.Parse(linha["avaliacao"].ToString());
+            int avaliacao = linha["avaliacao"] == null ? int.Parse(linha["avaliacao"].ToString()) : 0;
             string descricao = (linha["descricao"].ToString());
             string link_filme = (linha["link_filme"].ToString());
+            string link_imagem = (linha["link_imagem"].ToString());
 
 
-            Reproducao reproducao = new Reproducao(id, nome, tempo, genero, descricao, avaliacao, link_filme);
+
+            Reproducao reproducao = new Reproducao(id, nome, descricao, avaliacao, link_filme, link_imagem);
             return reproducao;
 
         }
