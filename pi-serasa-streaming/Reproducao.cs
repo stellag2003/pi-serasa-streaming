@@ -66,7 +66,7 @@ namespace pi_serasa_streaming
 
         public Reproducao BuscaFilmeNome(string nome)
         {
-            string query = $"SELECT * FROM reproducao WHERE nome = '{nome}';";
+            string query = $"SELECT * FROM reproducao WHERE nome LIKE LOWER('%{nome}%');";
             DataTable tabela = Conexao.executaQuery(query);
             Reproducao reproducao = carregaDados(tabela.Rows[0]);
             return reproducao;
