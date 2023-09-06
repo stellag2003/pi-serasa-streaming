@@ -67,25 +67,25 @@
             // 
             // btnComentar
             // 
-            this.btnComentar.Location = new System.Drawing.Point(108, 507);
-            this.btnComentar.Name = "btnComentar";
-            this.btnComentar.Size = new System.Drawing.Size(160, 23);
-            this.btnComentar.TabIndex = 18;
-            this.btnComentar.Text = "Comentar";
-            this.btnComentar.UseVisualStyleBackColor = true;
-            this.btnComentar.Click += new System.EventHandler(this.button1_Click);
+            btnComentar.Location = new Point(108, 507);
+            btnComentar.Name = "btnComentar";
+            btnComentar.Size = new Size(160, 23);
+            btnComentar.TabIndex = 18;
+            btnComentar.Text = "Comentar";
+            btnComentar.UseVisualStyleBackColor = true;
+            btnComentar.Click += button1_Click;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Black;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(32, 395);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 17);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "Deixe seu comentário:";
+            label1.AutoSize = true;
+            label1.BackColor = Color.Black;
+            label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = SystemColors.Control;
+            label1.Location = new Point(32, 395);
+            label1.Name = "label1";
+            label1.Size = new Size(146, 17);
+            label1.TabIndex = 17;
+            label1.Text = "Deixe seu comentário:";
             // 
             // txtComentario
             // 
@@ -150,43 +150,52 @@
             // 
             // iconPictureBox5
             // 
-            this.iconPictureBox5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.iconPictureBox5.ForeColor = System.Drawing.Color.Yellow;
-            this.iconPictureBox5.IconChar = FontAwesome.Sharp.IconChar.Star;
-            this.iconPictureBox5.IconColor = System.Drawing.Color.Yellow;
-            this.iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox5.Location = new System.Drawing.Point(70, 324);
-            this.iconPictureBox5.Name = "iconPictureBox5";
-            this.iconPictureBox5.Size = new System.Drawing.Size(32, 32);
-            this.iconPictureBox5.TabIndex = 5;
-            this.iconPictureBox5.TabStop = false;
+            iconPictureBox5.BackColor = SystemColors.ActiveCaptionText;
+            iconPictureBox5.ForeColor = Color.Yellow;
+            iconPictureBox5.IconChar = FontAwesome.Sharp.IconChar.Star;
+            iconPictureBox5.IconColor = Color.Yellow;
+            iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconPictureBox5.Location = new Point(70, 324);
+            iconPictureBox5.Name = "iconPictureBox5";
+            iconPictureBox5.Size = new Size(32, 32);
+            iconPictureBox5.TabIndex = 5;
+            iconPictureBox5.TabStop = false;
             // 
             // iconPictureBox4
             // 
-            this.iconPictureBox4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.iconPictureBox4.ForeColor = System.Drawing.Color.Yellow;
-            this.iconPictureBox4.IconChar = FontAwesome.Sharp.IconChar.Star;
-            this.iconPictureBox4.IconColor = System.Drawing.Color.Yellow;
-            this.iconPictureBox4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox4.Location = new System.Drawing.Point(32, 324);
-            this.iconPictureBox4.Name = "iconPictureBox4";
-            this.iconPictureBox4.Size = new System.Drawing.Size(32, 32);
-            this.iconPictureBox4.TabIndex = 4;
-            this.iconPictureBox4.TabStop = false;
+            iconPictureBox4.BackColor = SystemColors.ActiveCaptionText;
+            iconPictureBox4.ForeColor = Color.Yellow;
+            iconPictureBox4.IconChar = FontAwesome.Sharp.IconChar.Star;
+            iconPictureBox4.IconColor = Color.Yellow;
+            iconPictureBox4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconPictureBox4.Location = new Point(32, 324);
+            iconPictureBox4.Name = "iconPictureBox4";
+            iconPictureBox4.Size = new Size(32, 32);
+            iconPictureBox4.TabIndex = 4;
+            iconPictureBox4.TabStop = false;
             // 
             // iconPictureBox1
             // 
-            this.iconPictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 192;
-            this.iconPictureBox1.Location = new System.Drawing.Point(32, 111);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(304, 192);
-            this.iconPictureBox1.TabIndex = 3;
-            this.iconPictureBox1.TabStop = false;
+            iconPictureBox1.BackColor = SystemColors.ActiveCaptionText;
+            iconPictureBox1.ForeColor = SystemColors.ControlText;
+            iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.None;
+            iconPictureBox1.IconColor = SystemColors.ControlText;
+            iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconPictureBox1.IconSize = 192;
+            iconPictureBox1.Location = new Point(32, 111);
+            iconPictureBox1.Name = "iconPictureBox1";
+            iconPictureBox1.Size = new Size(304, 192);
+            iconPictureBox1.TabIndex = 3;
+            iconPictureBox1.TabStop = false;
+            // 
+            // panel2
+            // 
+            panel2.Controls.Add(label4);
+            panel2.Controls.Add(iconPictureBox6);
+            panel2.Location = new Point(518, 96);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(328, 434);
+            panel2.TabIndex = 19;
             // 
             // panel2
             // 

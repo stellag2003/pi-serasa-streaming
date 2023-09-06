@@ -70,6 +70,12 @@ namespace pi_serasa_streaming
             return reproducao;
         }
 
+        public void AdicionarFilmes(Reproducao reproducao)
+        {
+            string query = $"INSERT INTO usuario (nome,descricao, link_filme, link_imagem) VALUES('{reproducao.nome}','{reproducao.descricao}','{reproducao.link_filme}', '{reproducao.link_imagem}');";
+            Conexao.executaQuery(query);
+        }
+
         public Reproducao carregaDados(DataRow linha)
         {
             int id = int.Parse(linha["id"].ToString());
