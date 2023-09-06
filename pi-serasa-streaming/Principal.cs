@@ -67,7 +67,6 @@ namespace pi_serasa_streaming
             CarregaForm(new Resenha());
             btnResenha.BackColor = Color.Gray;
             btnProducoes.BackColor = Color.Black;
-            
         }
 
         private void btnProducoes_Click(object sender, EventArgs e)
@@ -75,6 +74,7 @@ namespace pi_serasa_streaming
             CarregaForm(new Principal());
             btnProducoes.BackColor = Color.Gray;
             btnResenha.BackColor = Color.Black;
+            panel1.Controls.Clear();
             
             
         }
