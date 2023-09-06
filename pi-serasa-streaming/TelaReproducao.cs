@@ -28,14 +28,16 @@ namespace pi_serasa_streaming
             Reproducao filme = reproducao.BuscaPorId(5);
 
             WindowState = FormWindowState.Maximized;
-            pictureBox1.Location = new Point(ClientSize.Width / 2 - pictureBox1.Size.Width / 2, ClientSize.Height / 2 - pictureBox1.Height / 2);
+         
 
-            WindowState = FormWindowState.Maximized;
-            webView21.Location = new Point(ClientSize.Width / 2 - webView21.Size.Width / 2, ClientSize.Height / 2 - webView21.Height / 2);
+            pictureBox1.Size = new Size( ClientSize.Width , ClientSize.Height );
 
-            // ---------------------------------------------------
+            pictureBox1.Dock = DockStyle.Fill;
 
-           
+
+            
+
+
 
             lblNomefilme.Visible = true;
             lblDescricao.Visible = true;
@@ -70,6 +72,16 @@ namespace pi_serasa_streaming
         private void webView21_Click(object sender, EventArgs e)
         {
            
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblNomefilme_Click_1(object sender, EventArgs e)
+        {
 
         }
     }

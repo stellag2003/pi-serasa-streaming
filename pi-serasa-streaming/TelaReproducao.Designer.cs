@@ -40,38 +40,42 @@
             // webView21
             // 
             this.webView21.AllowExternalDrop = true;
+            this.webView21.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.webView21.CreationProperties = null;
             this.webView21.DefaultBackgroundColor = System.Drawing.Color.White;
-            this.webView21.Location = new System.Drawing.Point(45, 28);
+            this.webView21.Location = new System.Drawing.Point(617, 224);
             this.webView21.Name = "webView21";
-            this.webView21.Size = new System.Drawing.Size(749, 468);
+            this.webView21.Size = new System.Drawing.Size(182, 86);
             this.webView21.TabIndex = 5;
             this.webView21.ZoomFactor = 1D;
             this.webView21.Click += new System.EventHandler(this.webView21_Click);
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(45, 28);
+            this.pictureBox1.Location = new System.Drawing.Point(147, 166);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(749, 468);
+            this.pictureBox1.Size = new System.Drawing.Size(313, 260);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // lblNomefilme
             // 
             this.lblNomefilme.AutoSize = true;
             this.lblNomefilme.BackColor = System.Drawing.Color.Transparent;
-            this.lblNomefilme.Location = new System.Drawing.Point(114, 211);
+            this.lblNomefilme.Location = new System.Drawing.Point(183, 224);
             this.lblNomefilme.Name = "lblNomefilme";
             this.lblNomefilme.Size = new System.Drawing.Size(87, 15);
             this.lblNomefilme.TabIndex = 7;
             this.lblNomefilme.Text = "Nome do filme";
+            this.lblNomefilme.Click += new System.EventHandler(this.lblNomefilme_Click_1);
             // 
             // lblDescricao
             // 
             this.lblDescricao.AutoSize = true;
             this.lblDescricao.BackColor = System.Drawing.Color.Transparent;
-            this.lblDescricao.Location = new System.Drawing.Point(117, 263);
+            this.lblDescricao.Location = new System.Drawing.Point(183, 266);
             this.lblDescricao.Name = "lblDescricao";
             this.lblDescricao.Size = new System.Drawing.Size(58, 15);
             this.lblDescricao.TabIndex = 8;
@@ -80,7 +84,7 @@
             // btnAssistir
             // 
             this.btnAssistir.BackColor = System.Drawing.Color.Transparent;
-            this.btnAssistir.Location = new System.Drawing.Point(117, 313);
+            this.btnAssistir.Location = new System.Drawing.Point(183, 307);
             this.btnAssistir.Name = "btnAssistir";
             this.btnAssistir.Size = new System.Drawing.Size(75, 23);
             this.btnAssistir.TabIndex = 9;
@@ -94,10 +98,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1061, 613);
-            this.Controls.Add(this.webView21);
             this.Controls.Add(this.btnAssistir);
-            this.Controls.Add(this.lblDescricao);
             this.Controls.Add(this.lblNomefilme);
+            this.Controls.Add(this.lblDescricao);
+            this.Controls.Add(this.webView21);
             this.Controls.Add(this.pictureBox1);
             this.Name = "TelaReproducao";
             this.Text = "TelaReproducao";
