@@ -94,10 +94,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1061, 613);
+            this.Controls.Add(this.webView21);
             this.Controls.Add(this.btnAssistir);
             this.Controls.Add(this.lblDescricao);
             this.Controls.Add(this.lblNomefilme);
-            this.Controls.Add(this.webView21);
             this.Controls.Add(this.pictureBox1);
             this.Name = "TelaReproducao";
             this.Text = "TelaReproducao";
