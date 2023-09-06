@@ -36,12 +36,13 @@ namespace pi_serasa_streaming
             foreach(Reproducao reproducao in reproducoes) 
             {
                 
-                PictureBox imagem= new PictureBox();
+                PictureBox imagem = new PictureBox();
                 imagem.LoadAsync(reproducao.link_imagem);
                 imagem.SizeMode = PictureBoxSizeMode.Zoom;
-                imagem.Size = new Size(100, 100);
+                imagem.Size = new Size(200, 200);
                 panel3.Controls.Add(imagem);
                 imagem.Location = new Point(panel3.Width, 0);
+                //imagem.Click imagem.id
             }
 
         }
@@ -66,7 +67,6 @@ namespace pi_serasa_streaming
             CarregaForm(new Resenha());
             btnResenha.BackColor = Color.Gray;
             btnProducoes.BackColor = Color.Black;
-            
         }
 
         private void btnProducoes_Click(object sender, EventArgs e)
@@ -74,6 +74,7 @@ namespace pi_serasa_streaming
             CarregaForm(new Principal());
             btnProducoes.BackColor = Color.Gray;
             btnResenha.BackColor = Color.Black;
+            panel1.Controls.Clear();
             
             
         }

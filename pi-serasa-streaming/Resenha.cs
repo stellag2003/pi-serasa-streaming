@@ -47,9 +47,9 @@ namespace pi_serasa_streaming
 
         private void Resenha_Load(object sender, EventArgs e)
         {
-            Comentario comentario = new Comentario();
-            comentarios = comentario.buscaTodos();
-            txtComentario.Clear();
+            //Comentario comentario = new Comentario();
+            //comentarios = comentario.Insere();
+            //txtComentario.Clear();
 
         }
 
@@ -57,7 +57,6 @@ namespace pi_serasa_streaming
         {
             Comentario comentario = new Comentario();
             comentarios = comentario.buscaTodos();
-
         }
     }
 }

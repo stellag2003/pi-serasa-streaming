@@ -28,44 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
-            btnComentar = new Button();
-            label1 = new Label();
-            txtComentario = new TextBox();
-            iconPictureBox9 = new FontAwesome.Sharp.IconPictureBox();
-            label4 = new Label();
-            iconPictureBox6 = new FontAwesome.Sharp.IconPictureBox();
-            textBox1 = new TextBox();
-            iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
-            iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
-            iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            panel2 = new Panel();
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)iconPictureBox9).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)iconPictureBox6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)iconPictureBox5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)iconPictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
-            panel2.SuspendLayout();
-            SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnComentar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtComentario = new System.Windows.Forms.TextBox();
+            this.iconPictureBox9 = new FontAwesome.Sharp.IconPictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.iconPictureBox6 = new FontAwesome.Sharp.IconPictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
+            this.iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
+            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.SuspendLayout();
             // 
             // panel1
             // 
-            panel1.BackColor = SystemColors.ActiveCaptionText;
-            panel1.Controls.Add(btnComentar);
-            panel1.Controls.Add(label1);
-            panel1.Controls.Add(txtComentario);
-            panel1.Controls.Add(iconPictureBox9);
-            panel1.Controls.Add(textBox1);
-            panel1.Controls.Add(iconPictureBox5);
-            panel1.Controls.Add(iconPictureBox4);
-            panel1.Controls.Add(iconPictureBox1);
-            panel1.Controls.Add(panel2);
-            panel1.Location = new Point(10, 12);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(995, 577);
-            panel1.TabIndex = 0;
-            panel1.Paint += panel1_Paint;
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.Controls.Add(this.btnComentar);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.txtComentario);
+            this.panel1.Controls.Add(this.iconPictureBox5);
+            this.panel1.Controls.Add(this.iconPictureBox4);
+            this.panel1.Controls.Add(this.iconPictureBox1);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Location = new System.Drawing.Point(10, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(995, 577);
+            this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // btnComentar
             // 
@@ -91,64 +89,64 @@
             // 
             // txtComentario
             // 
-            txtComentario.BackColor = SystemColors.ControlDark;
-            txtComentario.Location = new Point(32, 420);
-            txtComentario.Multiline = true;
-            txtComentario.Name = "txtComentario";
-            txtComentario.Size = new Size(304, 67);
-            txtComentario.TabIndex = 16;
-            txtComentario.TextChanged += txtComentario_TextChanged;
+            this.txtComentario.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.txtComentario.Location = new System.Drawing.Point(32, 420);
+            this.txtComentario.Multiline = true;
+            this.txtComentario.Name = "txtComentario";
+            this.txtComentario.Size = new System.Drawing.Size(304, 67);
+            this.txtComentario.TabIndex = 16;
+            this.txtComentario.TextChanged += new System.EventHandler(this.txtComentario_TextChanged);
             // 
             // iconPictureBox9
             // 
-            iconPictureBox9.BackColor = SystemColors.ActiveCaptionText;
-            iconPictureBox9.ForeColor = Color.Gray;
-            iconPictureBox9.IconChar = FontAwesome.Sharp.IconChar.CircleUser;
-            iconPictureBox9.IconColor = Color.Gray;
-            iconPictureBox9.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconPictureBox9.IconSize = 41;
-            iconPictureBox9.Location = new Point(518, 111);
-            iconPictureBox9.Name = "iconPictureBox9";
-            iconPictureBox9.Size = new Size(41, 44);
-            iconPictureBox9.TabIndex = 14;
-            iconPictureBox9.TabStop = false;
+            this.iconPictureBox9.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.iconPictureBox9.ForeColor = System.Drawing.Color.Gray;
+            this.iconPictureBox9.IconChar = FontAwesome.Sharp.IconChar.CircleUser;
+            this.iconPictureBox9.IconColor = System.Drawing.Color.Gray;
+            this.iconPictureBox9.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox9.IconSize = 41;
+            this.iconPictureBox9.Location = new System.Drawing.Point(0, 26);
+            this.iconPictureBox9.Name = "iconPictureBox9";
+            this.iconPictureBox9.Size = new System.Drawing.Size(41, 44);
+            this.iconPictureBox9.TabIndex = 14;
+            this.iconPictureBox9.TabStop = false;
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.BackColor = Color.Black;
-            label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.ForeColor = SystemColors.Control;
-            label4.Location = new Point(92, 190);
-            label4.Name = "label4";
-            label4.Size = new Size(62, 15);
-            label4.TabIndex = 11;
-            label4.Text = "Comentar";
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Black;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.SystemColors.Control;
+            this.label4.Location = new System.Drawing.Point(93, 189);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(62, 15);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Comentar";
             // 
             // iconPictureBox6
             // 
-            iconPictureBox6.BackColor = SystemColors.ActiveCaptionText;
-            iconPictureBox6.ForeColor = Color.Red;
-            iconPictureBox6.IconChar = FontAwesome.Sharp.IconChar.Heart;
-            iconPictureBox6.IconColor = Color.Red;
-            iconPictureBox6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconPictureBox6.IconSize = 27;
-            iconPictureBox6.Location = new Point(47, 178);
-            iconPictureBox6.Name = "iconPictureBox6";
-            iconPictureBox6.Size = new Size(27, 27);
-            iconPictureBox6.TabIndex = 9;
-            iconPictureBox6.TabStop = false;
-            iconPictureBox6.Click += iconPictureBox6_Click;
+            this.iconPictureBox6.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.iconPictureBox6.ForeColor = System.Drawing.Color.Red;
+            this.iconPictureBox6.IconChar = FontAwesome.Sharp.IconChar.Heart;
+            this.iconPictureBox6.IconColor = System.Drawing.Color.Red;
+            this.iconPictureBox6.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconPictureBox6.IconSize = 27;
+            this.iconPictureBox6.Location = new System.Drawing.Point(47, 177);
+            this.iconPictureBox6.Name = "iconPictureBox6";
+            this.iconPictureBox6.Size = new System.Drawing.Size(27, 27);
+            this.iconPictureBox6.TabIndex = 9;
+            this.iconPictureBox6.TabStop = false;
+            this.iconPictureBox6.Click += new System.EventHandler(this.iconPictureBox6_Click);
             // 
             // textBox1
             // 
-            textBox1.BackColor = SystemColors.ControlDark;
-            textBox1.Location = new Point(565, 111);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(268, 145);
-            textBox1.TabIndex = 7;
-            textBox1.TextChanged += textBox1_TextChanged;
+            this.textBox1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.textBox1.Location = new System.Drawing.Point(47, 26);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(268, 145);
+            this.textBox1.TabIndex = 7;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // iconPictureBox5
             // 
@@ -199,28 +197,40 @@
             panel2.Size = new Size(328, 434);
             panel2.TabIndex = 19;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.iconPictureBox6);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.iconPictureBox9);
+            this.panel2.Location = new System.Drawing.Point(518, 111);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(374, 232);
+            this.panel2.TabIndex = 19;
+            // 
             // Resenha
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Black;
-            BackgroundImageLayout = ImageLayout.None;
-            ClientSize = new Size(1017, 602);
-            Controls.Add(panel1);
-            FormBorderStyle = FormBorderStyle.None;
-            Name = "Resenha";
-            Text = "Resenha";
-            Load += Resenha_Load;
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)iconPictureBox9).EndInit();
-            ((System.ComponentModel.ISupportInitialize)iconPictureBox6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)iconPictureBox5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)iconPictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)iconPictureBox1).EndInit();
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ClientSize = new System.Drawing.Size(1017, 602);
+            this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "Resenha";
+            this.Text = "Resenha";
+            this.Load += new System.EventHandler(this.Resenha_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
