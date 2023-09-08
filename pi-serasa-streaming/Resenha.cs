@@ -26,7 +26,7 @@ namespace pi_serasa_streaming
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
             WindowState = FormWindowState.Maximized;
-            panel1.Location = new Point(ClientSize.Width / 2 - panel1.Size.Width / 2, ClientSize.Height / 2 - panel1.Size.Height / 2);
+            panel1.Location = new Point(ClientSize.Width / 3 - panel1.Size.Width / 3, ClientSize.Height / 3 - panel1.Size.Height / 2);
         }
 
         public void button1_Click(object sender, EventArgs e)
