@@ -53,7 +53,7 @@
             panel24 = new Panel();
             panel25 = new Panel();
             btnProducoes = new Button();
-            wilBitTextBox1 = new WiLBiT.WiLBiTTextBox();
+            Pesquisa = new WiLBiT.WiLBiTTextBox();
             btnResenha = new Button();
             painel = new Panel();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox2).BeginInit();
@@ -74,12 +74,13 @@
             iconPictureBox2.IconColor = Color.Gray;
             iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             iconPictureBox2.IconSize = 27;
-            iconPictureBox2.Location = new Point(1043, 16);
+            iconPictureBox2.Location = new Point(875, 16);
             iconPictureBox2.Name = "iconPictureBox2";
             iconPictureBox2.Size = new Size(27, 27);
             iconPictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             iconPictureBox2.TabIndex = 5;
             iconPictureBox2.TabStop = false;
+            iconPictureBox2.Click += iconPictureBox2_Click;
             // 
             // iconPictureBox1
             // 
@@ -312,27 +313,31 @@
             btnProducoes.UseVisualStyleBackColor = false;
             btnProducoes.Click += btnProducoes_Click;
             // 
-            // wilBitTextBox1
+            // Pesquisa
             // 
-            wilBitTextBox1.BackColor = Color.Black;
-            wilBitTextBox1.BorderColor = Color.DimGray;
-            wilBitTextBox1.BorderFocusColor = Color.DimGray;
-            wilBitTextBox1.BorderRadius = 4;
-            wilBitTextBox1.BorderSize = 2;
-            wilBitTextBox1.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            wilBitTextBox1.ForeColor = Color.FromArgb(64, 64, 64);
-            wilBitTextBox1.Location = new Point(886, 14);
-            wilBitTextBox1.Margin = new Padding(4);
-            wilBitTextBox1.Multiline = false;
-            wilBitTextBox1.Name = "wilBitTextBox1";
-            wilBitTextBox1.Padding = new Padding(10, 7, 10, 7);
-            wilBitTextBox1.PasswordChar = false;
-            wilBitTextBox1.PlaceholderColor = Color.DarkGray;
-            wilBitTextBox1.PlaceholderText = "";
-            wilBitTextBox1.Size = new Size(160, 29);
-            wilBitTextBox1.TabIndex = 3;
-            wilBitTextBox1.Texts = "";
-            wilBitTextBox1.UnderlinedStyle = false;
+            Pesquisa.AccessibleRole = AccessibleRole.Grip;
+            Pesquisa.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            Pesquisa.BackColor = Color.Black;
+            Pesquisa.BorderColor = Color.Black;
+            Pesquisa.BorderFocusColor = Color.DimGray;
+            Pesquisa.BorderRadius = 4;
+            Pesquisa.BorderSize = 2;
+            Pesquisa.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            Pesquisa.ForeColor = Color.Gray;
+            Pesquisa.Location = new Point(909, 16);
+            Pesquisa.Margin = new Padding(4);
+            Pesquisa.Multiline = false;
+            Pesquisa.Name = "Pesquisa";
+            Pesquisa.Padding = new Padding(10, 7, 10, 7);
+            Pesquisa.PasswordChar = false;
+            Pesquisa.PlaceholderColor = Color.DarkGray;
+            Pesquisa.PlaceholderText = "Filmes, Séries, Atores...";
+            Pesquisa.Size = new Size(160, 29);
+            Pesquisa.TabIndex = 3;
+            Pesquisa.Texts = "";
+            Pesquisa.UnderlinedStyle = false;
+            Pesquisa.Visible = false;
+            Pesquisa._TextChanged += Pesquisa__TextChanged;
             // 
             // btnResenha
             // 
@@ -355,7 +360,7 @@
             // painel
             // 
             painel.Controls.Add(btnResenha);
-            painel.Controls.Add(wilBitTextBox1);
+            painel.Controls.Add(Pesquisa);
             painel.Controls.Add(btnProducoes);
             painel.Controls.Add(panel1);
             painel.Controls.Add(iconPictureBox2);
@@ -364,6 +369,7 @@
             painel.Name = "painel";
             painel.Size = new Size(1255, 869);
             painel.TabIndex = 0;
+            painel.Paint += painel_Paint;
             // 
             // Principal
             // 
@@ -415,7 +421,7 @@
         private Panel panel24;
         private Panel panel25;
         private Button btnProducoes;
-        private WiLBiT.WiLBiTTextBox wilBitTextBox1;
+        private WiLBiT.WiLBiTTextBox Pesquisa;
         private Button btnResenha;
         private Panel painel;
     }

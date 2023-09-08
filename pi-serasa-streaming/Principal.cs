@@ -103,5 +103,21 @@ namespace pi_serasa_streaming
         {
 
         }
+
+        private void iconPictureBox2_Click(object sender, EventArgs e)
+        {
+            Pesquisa.Visible = true;
+
+        }
+
+        private void painel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Pesquisa__TextChanged(object sender, EventArgs e)
+        {
+            //Pesquisa.Texts.;
+        }
     }
 }
