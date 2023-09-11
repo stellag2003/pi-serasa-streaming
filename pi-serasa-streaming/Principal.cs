@@ -109,7 +109,10 @@ namespace pi_serasa_streaming
         public void iconPictureBox2_Click(object sender, EventArgs e)
         {
             Pesquisa.Visible = true;
-            //Pesquisa.TopLevelControl = this;
+            string pesquisa = Pesquisa.Texts;
+
+            string query = $"select * from streamingdadosslq like %{pesquisa}%;"; 
+
             
 
         }
