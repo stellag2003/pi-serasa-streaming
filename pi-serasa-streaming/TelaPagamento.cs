@@ -69,20 +69,19 @@ namespace pi_serasa_streaming
             if (txtCartao.Texts.Length == 0 || txtCartao.Texts.Length >= 17)
             {
                 MessageBox.Show("Digite um número válido");
-
             }
 
-            if (txtNome.Texts.Length == 0 || txtNome.Texts.Length >= 80) 
+            if (txtNome.Texts.Length == 0 || txtNome.Texts.Length >= 80)
             {
                 MessageBox.Show("Digite um nome válido");
             }
 
-            if(txtCPF.Texts.Length == 0 || txtCPF.Texts.Length >= 12)
+            if (txtCPF.Texts.Length == 0 || txtCPF.Texts.Length >= 12)
             {
                 MessageBox.Show("Digite um CPF válido");
             }
 
-            if (txtCVV.Texts.Length == 0 || txtCVV.Texts.Length >= 4) 
+            if (txtCVV.Texts.Length == 0 || txtCVV.Texts.Length >= 4)
             {
                 MessageBox.Show("Digite um CVV válido");
             }

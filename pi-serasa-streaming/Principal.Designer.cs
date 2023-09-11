@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
-            iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
+            btnPesquisar = new FontAwesome.Sharp.IconPictureBox();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             panel1 = new Panel();
             panel15 = new Panel();
@@ -56,7 +56,7 @@
             Pesquisa = new WiLBiT.WiLBiTTextBox();
             btnResenha = new Button();
             painel = new Panel();
-            ((System.ComponentModel.ISupportInitialize)iconPictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btnPesquisar).BeginInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
@@ -65,22 +65,22 @@
             painel.SuspendLayout();
             SuspendLayout();
             // 
-            // iconPictureBox2
+            // btnPesquisar
             // 
-            iconPictureBox2.BackColor = SystemColors.ActiveCaptionText;
-            iconPictureBox2.BorderStyle = BorderStyle.FixedSingle;
-            iconPictureBox2.ForeColor = Color.Gray;
-            iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.Sistrix;
-            iconPictureBox2.IconColor = Color.Gray;
-            iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconPictureBox2.IconSize = 27;
-            iconPictureBox2.Location = new Point(875, 16);
-            iconPictureBox2.Name = "iconPictureBox2";
-            iconPictureBox2.Size = new Size(27, 27);
-            iconPictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            iconPictureBox2.TabIndex = 5;
-            iconPictureBox2.TabStop = false;
-            iconPictureBox2.Click += iconPictureBox2_Click;
+            btnPesquisar.BackColor = SystemColors.ActiveCaptionText;
+            btnPesquisar.BorderStyle = BorderStyle.FixedSingle;
+            btnPesquisar.ForeColor = Color.Gray;
+            btnPesquisar.IconChar = FontAwesome.Sharp.IconChar.Sistrix;
+            btnPesquisar.IconColor = Color.Gray;
+            btnPesquisar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnPesquisar.IconSize = 27;
+            btnPesquisar.Location = new Point(875, 16);
+            btnPesquisar.Name = "btnPesquisar";
+            btnPesquisar.Size = new Size(27, 27);
+            btnPesquisar.SizeMode = PictureBoxSizeMode.Zoom;
+            btnPesquisar.TabIndex = 5;
+            btnPesquisar.TabStop = false;
+            btnPesquisar.Click += iconPictureBox2_Click;
             // 
             // iconPictureBox1
             // 
@@ -363,7 +363,7 @@
             painel.Controls.Add(Pesquisa);
             painel.Controls.Add(btnProducoes);
             painel.Controls.Add(panel1);
-            painel.Controls.Add(iconPictureBox2);
+            painel.Controls.Add(btnPesquisar);
             painel.Controls.Add(iconPictureBox1);
             painel.Location = new Point(59, 31);
             painel.Name = "painel";
@@ -382,7 +382,7 @@
             Name = "Principal";
             Text = "Principal";
             Load += Principal_Load;
-            ((System.ComponentModel.ISupportInitialize)iconPictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btnPesquisar).EndInit();
             ((System.ComponentModel.ISupportInitialize)iconPictureBox1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -397,7 +397,7 @@
 
         #endregion
 
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
+        private FontAwesome.Sharp.IconPictureBox btnPesquisar;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private Panel panel1;
         private Panel panel15;

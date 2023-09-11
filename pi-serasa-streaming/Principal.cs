@@ -104,9 +104,13 @@ namespace pi_serasa_streaming
 
         }
 
-        private void iconPictureBox2_Click(object sender, EventArgs e)
+       
+
+        public void iconPictureBox2_Click(object sender, EventArgs e)
         {
             Pesquisa.Visible = true;
+            //Pesquisa.TopLevelControl = this;
+            
 
         }
 
@@ -115,7 +119,7 @@ namespace pi_serasa_streaming
 
         }
 
-        private void Pesquisa__TextChanged(object sender, EventArgs e)
+        public void Pesquisa__TextChanged(object sender, EventArgs e)
         {
             //Pesquisa.Texts.;
         }

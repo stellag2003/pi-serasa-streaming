@@ -164,7 +164,7 @@
             // 
             btnConfirmar.BackColor = SystemColors.ActiveCaptionText;
             btnConfirmar.BackgroundColor = SystemColors.ActiveCaptionText;
-            btnConfirmar.BorderColor = Color.Red;
+            btnConfirmar.BorderColor = Color.White;
             btnConfirmar.BorderRadius = 10;
             btnConfirmar.BorderSize = 2;
             btnConfirmar.FlatAppearance.BorderSize = 0;
