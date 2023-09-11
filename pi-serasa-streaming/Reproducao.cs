@@ -19,20 +19,22 @@ namespace pi_serasa_streaming
         public int avaliacao;
         public string link_filme;
         public string link_imagem;
+        public string link_assistir;
 
         public Reproducao()
         {
 
         }
 
-        public Reproducao(int id, string nome,  string descricao, int avaliacao, string link_filme, string link_imagem)
+        public Reproducao(int id, string nome,  string descricao, int avaliacao, string link_filme, string link_imagem, string link_assistir)
         {
             this.id = id;
             this.nome = nome;
             this.descricao = descricao;
             this.avaliacao = avaliacao;
             this.link_filme = link_filme;
-            this.link_imagem= link_imagem;
+            this.link_imagem = link_imagem;
+            this.link_assistir = link_assistir;
         }
 
         public List<Reproducao> buscaTodosFilmes()
@@ -72,7 +74,7 @@ namespace pi_serasa_streaming
 
         public void AdicionarFilmes(Reproducao reproducao)
         {
-            string query = $"INSERT INTO usuario (nome,descricao, link_filme, link_imagem) VALUES('{reproducao.nome}','{reproducao.descricao}','{reproducao.link_filme}', '{reproducao.link_imagem}');";
+            string query = $"INSERT INTO usuario (nome, descricao, link_filme, link_assistir) VALUES('{reproducao.nome}','{reproducao.descricao}','{reproducao.link_filme}', '{reproducao.link_assistir}');";
             Conexao.executaQuery(query);
         }
 
@@ -84,10 +86,10 @@ namespace pi_serasa_streaming
             string descricao = (linha["descricao"].ToString());
             string link_filme = (linha["link_filme"].ToString());
             string link_imagem = (linha["link_imagem"].ToString());
+            string link_assistir = (linha["link_assistir"].ToString());
 
 
-
-            Reproducao reproducao = new Reproducao(id, nome, descricao, avaliacao, link_filme, link_imagem);
+            Reproducao reproducao = new Reproducao(id, nome, descricao, avaliacao, link_filme, link_imagem, link_assistir);
             return reproducao;
 
         }

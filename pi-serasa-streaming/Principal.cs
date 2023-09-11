@@ -43,7 +43,7 @@ namespace pi_serasa_streaming
                 imagem.SizeMode = PictureBoxSizeMode.Zoom;
                 imagem.Size = new Size(200, 200);
                 panel3.Controls.Add(imagem);
-                imagem.Location = new Point(panel3.Width, 0);
+                imagem.Location = new Point(panel3.Width, panel3.Height);
                 //imagem.Click imagem.id
             }
 
@@ -51,9 +51,7 @@ namespace pi_serasa_streaming
 
         public void Principal_Load(object sender, EventArgs e)
         {
-            //Reproducao reproducao = new Reproducao();
-            //reproducoes = reproducao.buscaTodosFilmes();
-            //renderizaInterface();
+            
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -63,20 +61,13 @@ namespace pi_serasa_streaming
 
         public void btnResenha_Click(object sender, EventArgs e)
         {
-            //painel.Controls.Clear();
-            CarregaForm(new Resenha());
-            btnResenha.BackColor = Color.Gray;
-            btnProducoes.BackColor = Color.Black;
+         
 
         }
 
         public void btnProducoes_Click(object sender, EventArgs e)
         {
-            CarregaForm(new Principal());
-            btnProducoes.BackColor = Color.Gray;
-            btnResenha.BackColor = Color.Black;
-
-
+           
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -104,17 +95,14 @@ namespace pi_serasa_streaming
 
         }
 
-       
-
         public void iconPictureBox2_Click(object sender, EventArgs e)
         {
-            Pesquisa.Visible = true;
             string pesquisa = Pesquisa.Texts;
 
-            string query = $"select * from streamingdadosslq like %{pesquisa}%;"; 
+            string query = $"SELECT * FROM reproducao WHERE nome LIKE '{pesquisa}%';";
+            CarregaForm(new TelaPesquisa());
 
             
-
         }
 
         private void painel_Paint(object sender, PaintEventArgs e)
@@ -125,6 +113,42 @@ namespace pi_serasa_streaming
         public void Pesquisa__TextChanged(object sender, EventArgs e)
         {
             //Pesquisa.Texts.;
+        }
+
+        private void Pesquisa__TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Principal_Load_1(object sender, EventArgs e)
+        {
+            Reproducao reproducao = new Reproducao();
+            reproducoes = reproducao.buscaTodosFilmes();
+            renderizaInterface();
+        }
+
+        private void btnResenha_Click_1(object sender, EventArgs e)
+        {
+            CarregaForm(new Resenha());
+            btnResenha.BackColor = Color.Gray;
+            btnProducoes.BackColor = Color.Black;
+        }
+
+        private void btnProducoes_Click_1(object sender, EventArgs e)
+        {
+            CarregaForm(new Principal());
+            btnProducoes.BackColor = Color.Gray;
+            btnResenha.BackColor = Color.Black;
+        }
+
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+           
         }
     }
 }
