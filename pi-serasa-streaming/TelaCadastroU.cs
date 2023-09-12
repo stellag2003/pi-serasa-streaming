@@ -62,6 +62,8 @@ namespace pi_serasa_streaming
 
             limpaCampos();
 
+            TelaPagamento telaPagamrnto = new TelaPagamento();
+            telaPagamrnto.Show();
         }
     }
 }

@@ -44,5 +44,6 @@ namespace pi_serasa_streaming
             TelaCadastroU telaCadastro = new TelaCadastroU();
             telaCadastro.Show();
         }
+       
     }
 }

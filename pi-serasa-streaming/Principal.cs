@@ -35,17 +35,40 @@ namespace pi_serasa_streaming
         void renderizaInterface()
         {
 
-            foreach (Reproducao reproducao in reproducoes)
-            {
+            // alterar aqui quantos filmes por linha
+            int fixo_por_linha = 5;
 
+            int quantidade_linha = fixo_por_linha;
+            int altura_linha = 0;
+            int numero_linha = 0;
+            int tamanho_imagem = 200;
+            int margem = 10;
+
+            for (int i = 0; i < reproducoes.Count; i++)
+            {
+                Reproducao reproducao = reproducoes[i];
                 PictureBox imagem = new PictureBox();
                 imagem.LoadAsync(reproducao.link_imagem);
                 imagem.SizeMode = PictureBoxSizeMode.Zoom;
                 imagem.Size = new Size(200, 200);
                 panel3.Controls.Add(imagem);
-                imagem.Location = new Point(panel3.Width, panel3.Height);
-                //imagem.Click imagem.id
-            }
+
+                if( quantidade_linha == i)
+                {
+                    quantidade_linha *= 2;
+                    altura_linha += tamanho_imagem;
+                }
+
+                if(numero_linha > fixo_por_linha - 1)
+                {
+                    numero_linha = 0;
+                }
+                int posicao_imagem = tamanho_imagem * numero_linha + margem;
+                numero_linha++;
+
+                imagem.Location = new Point(posicao_imagem + margem, altura_linha);
+
+            }            
 
         }
 
@@ -122,6 +145,11 @@ namespace pi_serasa_streaming
 
         private void Principal_Load_1(object sender, EventArgs e)
         {
+
+            WindowState = FormWindowState.Maximized;
+            painel.Location = new Point(ClientSize.Width / 2 - painel.Size.Width / 2 , ClientSize.Height / 2 - painel.Height / 2);
+
+
             Reproducao reproducao = new Reproducao();
             reproducoes = reproducao.buscaTodosFilmes();
             renderizaInterface();
