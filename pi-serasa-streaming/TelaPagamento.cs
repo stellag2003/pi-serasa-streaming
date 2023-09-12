@@ -91,5 +91,14 @@ namespace pi_serasa_streaming
         {
 
         }
+
+        private void btnConfirmar_Click_1(object sender, EventArgs e)
+        {
+             string cpf;
+             string cvv;
+             string numeroCartao;
+
+            string 
+        }
     }
 }

@@ -4,7 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-/*
+
 namespace pi_serasa_streaming
 {
     internal class Pagamento
@@ -23,7 +23,7 @@ namespace pi_serasa_streaming
 
         }
 
-        public Pagamento(int id, int usuarioPremium, Usuario usuario)
+        public Pagamento(int id, int usuarioPremium, string cpf, string cvv, string numeroCartao, Usuario usuario)
         {
             this.id = id;
             this.usuarioPremium = usuarioPremium;
@@ -50,13 +50,13 @@ namespace pi_serasa_streaming
                 return pagamentos;
         }
 
-        public void AdicionarPagamento(Pagamento pagamento)
+        public void AdicionarPagamento(Pagamento pagamento, Usuario usuario)
         {
-            string query = $"INSERT INTO pagamento (usuarioPremium,cpf, cvv, numeroCartao) VALUES('{pagamento.usuarioPremium}','{pagamento.cpf}','{pagamento.cvv}', '{pagamento.numeroCartao}');";
+            string query = $"INSERT INTO pagamento (usuarioPremium,cpf, cvv, numeroCartao) VALUES('{pagamento.usuarioPremium = 1}','{pagamento.cpf}','{pagamento.cvv}', '{pagamento.numeroCartao}');";
             Conexao.executaQuery(query);
         }
 
-        public Pagamento VerificaPag(int usuarioPremium)
+        public void VerificaPag(int usuarioPremium)
         {
             string query = $"SELECT * FROM pagamento WHERE usuario_id = '{usuarioPremium}';";
             Conexao.executaQuery(query);
@@ -65,13 +65,13 @@ namespace pi_serasa_streaming
 
             //aqui vai estar errado, estou pensando em um modo de ficar correto.
 
-            if (query == 1)
+            if (int.Parse(query) == 1)
             {
-                return true;
+                MessageBox.Show("Você é usuário premium");
             }
             else
             {
-                return false;
+                MessageBox.Show("Você precisa ser premium para ter acesso! ");
             }
         }
 
@@ -89,4 +89,3 @@ namespace pi_serasa_streaming
     }
 
 }
-*/
