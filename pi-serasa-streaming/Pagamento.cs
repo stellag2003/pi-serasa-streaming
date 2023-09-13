@@ -79,7 +79,7 @@ namespace pi_serasa_streaming
         {
             int id = int.Parse(linha["id"].ToString());
             int usuarioPremium = int.Parse(linha["usuarioPremium"].ToString());
-            Pagamento pagamento = new Pagamento(id, usuarioPremium, usuario);
+            Pagamento pagamento = new Pagamento(id, usuarioPremium,cpf,cvv,numeroCartao,usuario);
             return pagamento;
         }
 
