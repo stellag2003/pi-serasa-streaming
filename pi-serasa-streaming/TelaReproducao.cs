@@ -17,7 +17,7 @@ namespace pi_serasa_streaming
         public TelaReproducao()
         {
             InitializeComponent();
-           
+
         }
 
         private void TelaReproducao_Load(object sender, EventArgs e)
@@ -29,8 +29,8 @@ namespace pi_serasa_streaming
             Reproducao filme = reproducao.BuscaPorId(10);
 
             WindowState = FormWindowState.Maximized;
-         
-            pictureBox1.Size = new Size( ClientSize.Width , ClientSize.Height );
+
+            pictureBox1.Size = new Size(ClientSize.Width, ClientSize.Height);
 
             pictureBox1.Dock = DockStyle.Fill;
 
@@ -45,7 +45,7 @@ namespace pi_serasa_streaming
             lblNomefilme.Text = filme.nome;
             lblDescricao.Text = filme.descricao;
             pictureBox1.LoadAsync(filme.link_assistir);
-            
+
 
 
         }
@@ -67,7 +67,7 @@ namespace pi_serasa_streaming
 
         private void webView21_Click(object sender, EventArgs e)
         {
-           
+
 
         }
 
