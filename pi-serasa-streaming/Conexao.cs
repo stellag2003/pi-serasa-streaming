@@ -11,7 +11,9 @@ namespace pi_serasa_streaming
 {
     internal class Conexao
     {
-       const string host = "srv793.hstgr.io";
+
+        // Site para ver o banco: https://auth-db793.hstgr.io/
+        const string host = "srv793.hstgr.io";
        const string banco = "u647084545_serasa_ssgc";
        const string usuario = "u647084545_serasa_ssgc";
        const string senha = "Serasa2023";
