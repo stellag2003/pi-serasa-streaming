@@ -26,8 +26,48 @@ namespace pi_serasa_streaming
             txtEmail.Clear();
             txtSenha.Clear();
             txtData.Clear();
-            btnTermos.Checked = false;
+           // btnTermos.Checked = false;
             comboGenero.Text= string.Empty;
+        }
+
+        private void ValidaForm()
+        {
+            if (txtNome.Text == "")
+            {
+                MessageBox.Show("Informe o nome do usuário");
+                txtNome.Focus();
+               // return false;
+            }
+            else if (txtEmail.Text == "")
+            {
+                MessageBox.Show("Informe o e-mail do usuário");
+                txtEmail.Focus();
+                //return false;
+            }
+            else if (txtSenha.Text == "")
+            {
+                MessageBox.Show("Informe uma senha");
+                txtSenha.Focus();
+               // return false;
+            }
+            else if (txtData.Text == "    -  -  ")
+            {
+                MessageBox.Show("Informe uma data de nascimento");
+                txtData.Focus();
+                //return false;
+            }
+            else if (comboGenero.Text == "")
+            {
+                MessageBox.Show("Selecione um gênero");
+                comboGenero.Focus();
+               // return false;
+            }
+            else if (btnTermos.Checked == true)
+            {
+                MessageBox.Show("Os termos de uso não foi confirmado");
+                btnTermos.Focus();
+                //return false;
+            }
         }
 
 
@@ -45,22 +85,22 @@ namespace pi_serasa_streaming
             string data_nascimento = txtData.Text;
             string genero = comboGenero.Text;
 
+            ValidaForm();
 
 
+            //if (nome == "" || senha == "" || email == "" || genero == "" || data_nascimento == "" || btnTermos.Checked == false) 
+            //{
+            //    MessageBox.Show("Usuário já cadastrado ou campo incorreto!");
+            //}
+            //else
+            //{
+            //    Usuario usuario = new Usuario(0, nome, email, senha, false, genero, data_nascimento, false);
+            //    usuario.Insere(usuario);
+            //    MessageBox.Show(" Cadastro conclúido com sucesso!");
+            //    painelCadastro.Visible = true;
+            //}
 
-            if (nome == "" || senha == "" || email == "" || genero == "" || data_nascimento == "" || btnTermos.Checked == false) 
-            {
-                MessageBox.Show("Usuário já cadastrado ou campo incorreto!");
-            }
-            else
-            {
-                Usuario usuario = new Usuario(0, nome, email, senha, false, genero, data_nascimento, false);
-                usuario.Insere(usuario);
-                MessageBox.Show(" Cadastro conclúido com sucesso!");
-                painelCadastro.Visible = true;
-            }
-
-            limpaCampos();
+           //limpaCampos();
 
             TelaPagamento telaPagamrnto = new TelaPagamento();
             telaPagamrnto.Show();
