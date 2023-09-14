@@ -98,7 +98,12 @@ namespace pi_serasa_streaming
              string cvv;
              string numeroCartao;
 
-            string 
+           
+        }
+
+        private void TelaPagamento_Load_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

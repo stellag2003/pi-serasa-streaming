@@ -61,9 +61,10 @@ namespace pi_serasa_streaming
             }
 
             limpaCampos();
-
-            TelaPagamento telaPagamrnto = new TelaPagamento();
-            telaPagamrnto.Show();
+            Principal principal= new Principal();
+            principal.Show();
+          //  TelaPagamento telaPagamrnto = new TelaPagamento();
+           // telaPagamrnto.Show();
         }
     }
 }

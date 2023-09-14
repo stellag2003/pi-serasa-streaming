@@ -23,9 +23,9 @@ namespace pi_serasa_streaming
         void CarregaForm(Form form)
         {
             form.TopLevel = false;
-            panel1.Controls.Clear();
-            panel1.Controls.Add(form);
-            panel1.Visible = true;
+            painel.Controls.Clear();
+            painel.Controls.Add(form);
+            //panel1.Visible = true;
             form.Location = new Point(panel1.Width / 3 - form.Width / 3, panel1.Height / 3 - form.Height / 2);
             form.Show();
 
@@ -36,7 +36,7 @@ namespace pi_serasa_streaming
         {
 
             // alterar aqui quantos filmes por linha
-            int fixo_por_linha = 5;
+            int fixo_por_linha = 10;
 
             int quantidade_linha = fixo_por_linha;
             int altura_linha = 0;
@@ -50,7 +50,7 @@ namespace pi_serasa_streaming
                 PictureBox imagem = new PictureBox();
                 imagem.LoadAsync(reproducao.link_imagem);
                 imagem.SizeMode = PictureBoxSizeMode.Zoom;
-                imagem.Size = new Size(200, 200);
+                imagem.Size = new Size(190, 200);
                 panel3.Controls.Add(imagem);
 
                 if( quantidade_linha == i)
@@ -135,7 +135,7 @@ namespace pi_serasa_streaming
 
         public void Pesquisa__TextChanged(object sender, EventArgs e)
         {
-            //Pesquisa.Texts.;
+           // Pesquisa.Texts.;
         }
 
         private void Pesquisa__TextChanged_1(object sender, EventArgs e)
@@ -145,7 +145,6 @@ namespace pi_serasa_streaming
 
         private void Principal_Load_1(object sender, EventArgs e)
         {
-
             WindowState = FormWindowState.Maximized;
             painel.Location = new Point(ClientSize.Width / 2 - painel.Size.Width / 2 , ClientSize.Height / 2 - painel.Height / 2);
 
@@ -160,6 +159,9 @@ namespace pi_serasa_streaming
             CarregaForm(new Resenha());
             btnResenha.BackColor = Color.Gray;
             btnProducoes.BackColor = Color.Black;
+
+           
+
         }
 
         private void btnProducoes_Click_1(object sender, EventArgs e)
@@ -167,6 +169,7 @@ namespace pi_serasa_streaming
             CarregaForm(new Principal());
             btnProducoes.BackColor = Color.Gray;
             btnResenha.BackColor = Color.Black;
+
         }
 
         private void btnPesquisar_Click(object sender, EventArgs e)

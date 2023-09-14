@@ -72,7 +72,7 @@
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(268, 23);
-            this.txtSenha.TabIndex = 22;
+            this.txtSenha.TabIndex = 3;
             this.txtSenha.UseSystemPasswordChar = true;
             // 
             // txtData
@@ -81,7 +81,7 @@
             this.txtData.Mask = "0000-00-00";
             this.txtData.Name = "txtData";
             this.txtData.Size = new System.Drawing.Size(267, 23);
-            this.txtData.TabIndex = 21;
+            this.txtData.TabIndex = 4;
             // 
             // button1
             // 
@@ -96,18 +96,18 @@
             // btnTermos
             // 
             this.btnTermos.AutoSize = true;
-            this.btnTermos.Checked = true;
             this.btnTermos.ForeColor = System.Drawing.Color.White;
             this.btnTermos.Location = new System.Drawing.Point(16, 484);
             this.btnTermos.Name = "btnTermos";
             this.btnTermos.Size = new System.Drawing.Size(366, 19);
             this.btnTermos.TabIndex = 19;
-            this.btnTermos.TabStop = true;
             this.btnTermos.Text = "Eu li e concordo com os Termos de Uso e Política de Privacidade.";
             this.btnTermos.UseVisualStyleBackColor = true;
             // 
             // comboGenero
             // 
+            this.comboGenero.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboGenero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboGenero.FormattingEnabled = true;
             this.comboGenero.Items.AddRange(new object[] {
             "feminino\t",
@@ -116,7 +116,7 @@
             this.comboGenero.Location = new System.Drawing.Point(52, 419);
             this.comboGenero.Name = "comboGenero";
             this.comboGenero.Size = new System.Drawing.Size(267, 23);
-            this.comboGenero.TabIndex = 1;
+            this.comboGenero.TabIndex = 5;
             // 
             // txtEmail
             // 
@@ -124,14 +124,14 @@
             this.txtEmail.Location = new System.Drawing.Point(51, 229);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(268, 23);
-            this.txtEmail.TabIndex = 16;
+            this.txtEmail.TabIndex = 2;
             // 
             // txtNome
             // 
             this.txtNome.Location = new System.Drawing.Point(51, 168);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(268, 23);
-            this.txtNome.TabIndex = 13;
+            this.txtNome.TabIndex = 1;
             // 
             // label5
             // 
@@ -151,9 +151,9 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(52, 337);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(127, 17);
+            this.label4.Size = new System.Drawing.Size(231, 17);
             this.label4.TabIndex = 5;
-            this.label4.Text = "Data de nascimento:";
+            this.label4.Text = "Data de nascimento: Ex-(ano-mês-dia)";
             // 
             // label3
             // 
@@ -184,9 +184,9 @@
             this.lblEmail.ForeColor = System.Drawing.Color.White;
             this.lblEmail.Location = new System.Drawing.Point(49, 148);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(130, 17);
+            this.lblEmail.Size = new System.Drawing.Size(47, 17);
             this.lblEmail.TabIndex = 2;
-            this.lblEmail.Text = "Nome e Sobrenome:";
+            this.lblEmail.Text = "Nome:";
             // 
             // label1
             // 
