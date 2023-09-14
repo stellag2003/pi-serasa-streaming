@@ -53,6 +53,8 @@ namespace pi_serasa_streaming
                 imagem.Size = new Size(190, 200);
                 panel3.Controls.Add(imagem);
 
+                imagem.MouseClick += new MouseEventHandler((o,a) => Program.filmeClicado(reproducao));
+
                 if( quantidade_linha == i)
                 {
                     quantidade_linha *= 2;
@@ -75,6 +77,8 @@ namespace pi_serasa_streaming
         public void Principal_Load(object sender, EventArgs e)
         {
             
+
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -159,8 +163,6 @@ namespace pi_serasa_streaming
             CarregaForm(new Resenha());
             btnResenha.BackColor = Color.Gray;
             btnProducoes.BackColor = Color.Black;
-
-           
 
         }
 

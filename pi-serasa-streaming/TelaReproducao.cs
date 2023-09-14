@@ -24,9 +24,9 @@ namespace pi_serasa_streaming
         {
 
 
-            Reproducao reproducao = new Reproducao();
+            //Reproducao reproducao = new Reproducao();
 
-            Reproducao filme = reproducao.BuscaPorId(10);
+            //Reproducao filme = reproducao.BuscaPorId(10);
 
             WindowState = FormWindowState.Maximized;
           
@@ -42,13 +42,9 @@ namespace pi_serasa_streaming
             lblDescricao.Size = new Size(ClientSize.Width, ClientSize.Height);
             pictureBox1.Visible = true;
 
-
-            lblNomefilme.Text = filme.nome;
-            lblDescricao.Text = filme.descricao;
-            pictureBox1.LoadAsync(filme.link_assistir);
-
-
-
+            lblNomefilme.Text = Program.reproducao.nome;
+            lblDescricao.Text = Program.reproducao.descricao;
+            pictureBox1.LoadAsync(Program.reproducao.link_assistir);
         }
 
         private void lblNomeFilme_Click(object sender, EventArgs e)
@@ -59,7 +55,7 @@ namespace pi_serasa_streaming
         private void btnAssistir_Click(object sender, EventArgs e)
         {
             Reproducao reproducao = new Reproducao();
-            Reproducao filme = reproducao.BuscaPorId(10);
+            Reproducao filme = reproducao.BuscaPorId(Program.reproducao.id);
             //MessageBox.Show(filme.link_filme);
             webView21.Source = new Uri(filme.link_filme);
             webView21.Dock = DockStyle.Fill;
@@ -78,11 +74,6 @@ namespace pi_serasa_streaming
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TelaReproducao_Load_1(object sender, EventArgs e)
         {
 
         }

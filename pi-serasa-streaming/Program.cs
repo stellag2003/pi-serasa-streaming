@@ -2,6 +2,15 @@ namespace pi_serasa_streaming
 {
     internal static class Program
     {
+        public static Reproducao reproducao;
+        public static void filmeClicado(Reproducao reproducao)
+        {
+            Program.reproducao = reproducao;
+            TelaReproducao reproducao1= new TelaReproducao();
+            reproducao1.Show();
+        }
+
+        
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>
@@ -11,7 +20,7 @@ namespace pi_serasa_streaming
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new TelaReproducao());
+            Application.Run(new Principal());
 
 
            
