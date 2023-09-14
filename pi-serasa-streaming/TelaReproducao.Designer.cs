@@ -28,99 +28,97 @@
         /// </summary>
         private void InitializeComponent()
         {
-            webView21 = new Microsoft.Web.WebView2.WinForms.WebView2();
-            pictureBox1 = new PictureBox();
-            lblNomefilme = new Label();
-            btnAssistir = new Button();
-            lblDescricao = new Label();
-            ((System.ComponentModel.ISupportInitialize)webView21).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            SuspendLayout();
+            this.webView21 = new Microsoft.Web.WebView2.WinForms.WebView2();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblNomefilme = new System.Windows.Forms.Label();
+            this.btnAssistir = new System.Windows.Forms.Button();
+            this.lblDescricao = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.webView21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.SuspendLayout();
             // 
             // webView21
             // 
-            webView21.AllowExternalDrop = true;
-            webView21.BackColor = Color.Black;
-            webView21.CreationProperties = null;
-            webView21.DefaultBackgroundColor = Color.White;
-            webView21.ForeColor = Color.White;
-            webView21.Location = new Point(407, 120);
-            webView21.Name = "webView21";
-            webView21.Size = new Size(600, 400);
-            webView21.TabIndex = 5;
-            webView21.ZoomFactor = 1D;
-            webView21.Click += webView21_Click;
+            this.webView21.AllowExternalDrop = true;
+            this.webView21.BackColor = System.Drawing.Color.Black;
+            this.webView21.CreationProperties = null;
+            this.webView21.DefaultBackgroundColor = System.Drawing.Color.White;
+            this.webView21.ForeColor = System.Drawing.Color.White;
+            this.webView21.Location = new System.Drawing.Point(407, 120);
+            this.webView21.Name = "webView21";
+            this.webView21.Size = new System.Drawing.Size(600, 400);
+            this.webView21.TabIndex = 5;
+            this.webView21.ZoomFactor = 1D;
             // 
             // pictureBox1
             // 
-            pictureBox1.BackColor = Color.Black;
-            pictureBox1.Location = new Point(407, 120);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(600, 400);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 6;
-            pictureBox1.TabStop = false;
+            this.pictureBox1.BackColor = System.Drawing.Color.Black;
+            this.pictureBox1.Location = new System.Drawing.Point(407, 120);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(600, 400);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
             // 
             // lblNomefilme
             // 
-            lblNomefilme.AutoSize = true;
-            lblNomefilme.BackColor = Color.Black;
-            lblNomefilme.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lblNomefilme.ForeColor = Color.Red;
-            lblNomefilme.Location = new Point(12, 32);
-            lblNomefilme.Name = "lblNomefilme";
-            lblNomefilme.Size = new Size(284, 50);
-            lblNomefilme.TabIndex = 7;
-            lblNomefilme.Text = "Nome do filme";
-            lblNomefilme.Click += lblNomefilme_Click_1;
+            this.lblNomefilme.AutoSize = true;
+            this.lblNomefilme.BackColor = System.Drawing.Color.Black;
+            this.lblNomefilme.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblNomefilme.ForeColor = System.Drawing.Color.Red;
+            this.lblNomefilme.Location = new System.Drawing.Point(12, 32);
+            this.lblNomefilme.Name = "lblNomefilme";
+            this.lblNomefilme.Size = new System.Drawing.Size(284, 50);
+            this.lblNomefilme.TabIndex = 7;
+            this.lblNomefilme.Text = "Nome do filme";
             // 
             // btnAssistir
             // 
-            btnAssistir.BackColor = Color.Black;
-            btnAssistir.FlatStyle = FlatStyle.Flat;
-            btnAssistir.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            btnAssistir.ForeColor = SystemColors.ButtonHighlight;
-            btnAssistir.Location = new Point(407, 566);
-            btnAssistir.Name = "btnAssistir";
-            btnAssistir.Size = new Size(99, 34);
-            btnAssistir.TabIndex = 9;
-            btnAssistir.Text = "Assistir";
-            btnAssistir.UseVisualStyleBackColor = false;
-            btnAssistir.Click += btnAssistir_Click;
+            this.btnAssistir.BackColor = System.Drawing.Color.Black;
+            this.btnAssistir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAssistir.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAssistir.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnAssistir.Location = new System.Drawing.Point(407, 563);
+            this.btnAssistir.Name = "btnAssistir";
+            this.btnAssistir.Size = new System.Drawing.Size(99, 34);
+            this.btnAssistir.TabIndex = 9;
+            this.btnAssistir.Text = "Assistir";
+            this.btnAssistir.UseVisualStyleBackColor = false;
             // 
             // lblDescricao
             // 
-            lblDescricao.AutoSize = true;
-            lblDescricao.BackColor = Color.Black;
-            lblDescricao.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            lblDescricao.ForeColor = Color.White;
-            lblDescricao.ImageAlign = ContentAlignment.MiddleLeft;
-            lblDescricao.Location = new Point(22, 120);
-            lblDescricao.MaximumSize = new Size(350, 0);
-            lblDescricao.Name = "lblDescricao";
-            lblDescricao.Size = new Size(113, 30);
-            lblDescricao.TabIndex = 8;
-            lblDescricao.Text = "Descrição:";
+            this.lblDescricao.AutoSize = true;
+            this.lblDescricao.BackColor = System.Drawing.Color.Black;
+            this.lblDescricao.Font = new System.Drawing.Font("Segoe UI Semibold", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblDescricao.ForeColor = System.Drawing.Color.White;
+            this.lblDescricao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblDescricao.Location = new System.Drawing.Point(22, 120);
+            this.lblDescricao.MaximumSize = new System.Drawing.Size(350, 0);
+            this.lblDescricao.Name = "lblDescricao";
+            this.lblDescricao.Size = new System.Drawing.Size(113, 30);
+            this.lblDescricao.TabIndex = 8;
+            this.lblDescricao.Text = "Descrição:";
             // 
             // TelaReproducao
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Black;
-            BackgroundImageLayout = ImageLayout.Zoom;
-            ClientSize = new Size(1061, 728);
-            Controls.Add(lblDescricao);
-            Controls.Add(lblNomefilme);
-            Controls.Add(btnAssistir);
-            Controls.Add(webView21);
-            Controls.Add(pictureBox1);
-            Name = "TelaReproducao";
-            Text = "TelaReproducao";
-            Load += TelaReproducao_Load;
-            ((System.ComponentModel.ISupportInitialize)webView21).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ClientSize = new System.Drawing.Size(1185, 728);
+            this.Controls.Add(this.webView21);
+            this.Controls.Add(this.lblDescricao);
+            this.Controls.Add(this.lblNomefilme);
+            this.Controls.Add(this.btnAssistir);
+            this.Controls.Add(this.pictureBox1);
+            this.Name = "TelaReproducao";
+            this.Text = "TelaReproducao";
+            this.Load += new System.EventHandler(this.TelaReproducao_Load_1);
+            ((System.ComponentModel.ISupportInitialize)(this.webView21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

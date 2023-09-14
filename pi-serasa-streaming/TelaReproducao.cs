@@ -29,6 +29,7 @@ namespace pi_serasa_streaming
             Reproducao filme = reproducao.BuscaPorId(10);
 
             WindowState = FormWindowState.Maximized;
+          
 
             pictureBox1.Size = new Size(ClientSize.Width, ClientSize.Height);
 
@@ -77,6 +78,11 @@ namespace pi_serasa_streaming
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TelaReproducao_Load_1(object sender, EventArgs e)
         {
 
         }

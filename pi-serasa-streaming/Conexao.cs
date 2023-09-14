@@ -11,10 +11,10 @@ namespace pi_serasa_streaming
 {
     internal class Conexao
     {
-       const string host = "10.60.45.23";
-       const string banco = "streamingdadosslq";
-       const string usuario = "senac";
-       const string senha = "senac";
+       const string host = "srv793.hstgr.io";
+       const string banco = "u647084545_serasa_ssgc";
+       const string usuario = "u647084545_serasa_ssgc";
+       const string senha = "Serasa2023";
 
         const string dadosConexao = $"Server={host};Database={banco};Uid={usuario};Pwd={senha};";
         static MySqlConnection conexao = new MySqlConnection(dadosConexao);

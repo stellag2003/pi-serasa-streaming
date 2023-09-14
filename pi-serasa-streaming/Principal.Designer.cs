@@ -63,7 +63,7 @@
             this.panel3.Location = new System.Drawing.Point(22, 235);
             this.panel3.Name = "panel3";
             this.panel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.panel3.Size = new System.Drawing.Size(1138, 172);
+            this.panel3.Size = new System.Drawing.Size(1096, 427);
             this.panel3.TabIndex = 8;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
@@ -170,7 +170,6 @@
             this.Pesquisa.TabIndex = 3;
             this.Pesquisa.Texts = "";
             this.Pesquisa.UnderlinedStyle = false;
-            this.Pesquisa.Visible = false;
             this.Pesquisa._TextChanged += new System.EventHandler(this.Pesquisa__TextChanged_1);
             // 
             // btnResenha
