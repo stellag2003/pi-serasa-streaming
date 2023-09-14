@@ -39,6 +39,7 @@ namespace pi_serasa_streaming
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             string nome = txtNome.Text;
             string email = txtEmail.Text;
             string senha = txtSenha.Text;
@@ -54,10 +55,12 @@ namespace pi_serasa_streaming
             }
             else
             {
+                TelaU telaUsuario = new TelaU();
                 Usuario usuario = new Usuario(0, nome, email, senha, false, genero, data_nascimento, false);
                 usuario.Insere(usuario);
                 MessageBox.Show(" Cadastro conclúido com sucesso!");
                 painelCadastro.Visible = true;
+                telaUsuario.Show();
             }
 
             limpaCampos();
