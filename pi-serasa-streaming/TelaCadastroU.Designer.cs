@@ -78,10 +78,11 @@
             // txtData
             // 
             this.txtData.Location = new System.Drawing.Point(52, 357);
-            this.txtData.Mask = "0000-00-00";
+            this.txtData.Mask = "00/00/0000";
             this.txtData.Name = "txtData";
             this.txtData.Size = new System.Drawing.Size(267, 23);
             this.txtData.TabIndex = 4;
+            this.txtData.ValidatingType = typeof(System.DateTime);
             // 
             // button1
             // 
