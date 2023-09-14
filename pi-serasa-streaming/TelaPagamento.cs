@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace pi_serasa_streaming
 {
@@ -94,11 +95,26 @@ namespace pi_serasa_streaming
 
         private void btnConfirmar_Click_1(object sender, EventArgs e)
         {
-             string cpf;
-             string cvv;
-             string numeroCartao;
+             string cpf = txtCPF.Text;
+             string cvv = txtCVV.Text;
+             string numeroCartao = txtCartao.Text;
+             string usuario = txtNome.Text;
+             
 
-           
+            if (cpf.Length == 11 || cvv.Length == 3 || numeroCartao != "" || usuario != "")
+            {
+                Pagamento pagamentos = new Pagamento();
+                pagamentos.AdicionarPagamento(pagamentos);
+                TelaU telaUsuario = new TelaU();
+                telaUsuario.Show();
+
+            }
+            else if (cpf.Length != 11 || cvv.Length != 3)
+            {
+                MessageBox.Show("CPF ou CVV com caracteres faltantes\nCPF: 11 dígitos\nCVV:3 dígitos");
+            }
+
+
         }
 
         private void TelaPagamento_Load_1(object sender, EventArgs e)

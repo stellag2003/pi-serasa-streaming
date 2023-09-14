@@ -58,6 +58,7 @@ namespace pi_serasa_streaming
                 TelaU telaUsuario = new TelaU();
                 Usuario usuario = new Usuario(0, nome, email, senha, false, genero, data_nascimento, false);
                 usuario.Insere(usuario);
+
                 MessageBox.Show(" Cadastro conclúido com sucesso!");
                 painelCadastro.Visible = true;
                 telaUsuario.Show();
@@ -68,6 +69,11 @@ namespace pi_serasa_streaming
             principal.Show();
           //  TelaPagamento telaPagamrnto = new TelaPagamento();
            // telaPagamrnto.Show();
+        }
+
+        private void txtNome_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
