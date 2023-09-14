@@ -66,11 +66,10 @@
             this.lblNomefilme.BackColor = System.Drawing.Color.Black;
             this.lblNomefilme.Font = new System.Drawing.Font("Segoe UI", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblNomefilme.ForeColor = System.Drawing.Color.Red;
-            this.lblNomefilme.Location = new System.Drawing.Point(12, 32);
+            this.lblNomefilme.Location = new System.Drawing.Point(55, 34);
             this.lblNomefilme.Name = "lblNomefilme";
-            this.lblNomefilme.Size = new System.Drawing.Size(284, 50);
+            this.lblNomefilme.Size = new System.Drawing.Size(0, 50);
             this.lblNomefilme.TabIndex = 7;
-            this.lblNomefilme.Text = "Nome do filme";
             // 
             // btnAssistir
             // 
@@ -84,6 +83,7 @@
             this.btnAssistir.TabIndex = 9;
             this.btnAssistir.Text = "Assistir";
             this.btnAssistir.UseVisualStyleBackColor = false;
+            this.btnAssistir.Click += new System.EventHandler(this.btnAssistir_Click);
             // 
             // lblDescricao
             // 
@@ -106,14 +106,14 @@
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1185, 728);
+            this.Controls.Add(this.lblNomefilme);
             this.Controls.Add(this.webView21);
             this.Controls.Add(this.lblDescricao);
-            this.Controls.Add(this.lblNomefilme);
             this.Controls.Add(this.btnAssistir);
             this.Controls.Add(this.pictureBox1);
             this.Name = "TelaReproducao";
             this.Text = "TelaReproducao";
-            this.Load += new System.EventHandler(this.TelaReproducao_Load_1);
+            this.Load += new System.EventHandler(this.TelaReproducao_Load);
             ((System.ComponentModel.ISupportInitialize)(this.webView21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
