@@ -46,8 +46,8 @@ namespace pi_serasa_streaming
             string data_nascimento = txtData.Text;
             string genero = comboGenero.Text;
 
-
-
+            string[] d = data_nascimento.Split("/");
+            data_nascimento = d[2] + "-" + d[1] + "-" + d[0];
 
             if (nome == "" || senha == "" || email == "" || genero == "" || data_nascimento == "" || btnTermos.Checked == false) 
             {
@@ -55,20 +55,14 @@ namespace pi_serasa_streaming
             }
             else
             {
-                TelaU telaUsuario = new TelaU();
                 Usuario usuario = new Usuario(0, nome, email, senha, false, genero, data_nascimento, false);
                 usuario.Insere(usuario);
 
                 MessageBox.Show(" Cadastro conclúido com sucesso!");
                 painelCadastro.Visible = true;
-                telaUsuario.Show();
+                this.Close();
             }
 
-            limpaCampos();
-            Principal principal= new Principal();
-            principal.Show();
-          //  TelaPagamento telaPagamrnto = new TelaPagamento();
-           // telaPagamrnto.Show();
         }
 
         private void txtNome_TextChanged(object sender, EventArgs e)

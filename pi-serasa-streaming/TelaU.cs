@@ -32,8 +32,17 @@ namespace pi_serasa_streaming
                 usuario = txtEmail.Text;
                 senha = txtSenha.Text;
 
-            Principal usuarioPrincipal = new Principal();
+            Usuario u = new Usuario();
+            u = u.Login(usuario, senha);
 
+
+            if(u == null)
+            {
+                MessageBox.Show("Login inválido");
+                return;
+            }
+
+            Principal usuarioPrincipal = new Principal();
             usuarioPrincipal.Show();
             
            

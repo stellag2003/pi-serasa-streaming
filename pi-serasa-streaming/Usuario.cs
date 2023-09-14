@@ -10,16 +10,19 @@ namespace pi_serasa_streaming
 {
     internal class Usuario
     {
-        int id;
-        string nome;
-        string email;
-        string senha;
-        bool moderador;
-        string genero;
-        string dataNascimento;
-        bool premium;
+        public int id;
+        public string nome;
+        public string email;
+        public string senha;
+        public bool moderador;
+        public string genero;
+        public string dataNascimento;
+        public bool premium;
 
+        public Usuario()
+        {
 
+        }
         public Usuario(int id, string nome, string email, string senha, bool moderador, string genero, string dataNascimento, bool premium)
         {
             this.id = id;
@@ -113,6 +116,18 @@ namespace pi_serasa_streaming
             Usuario usuario = carregaDados(tabela.Rows[0]);
             return usuario;
 
+        }
+
+        public Usuario Login(string email, string senha)
+        {
+            string query = $"SELECT * FROM usuario WHERE email = '{email}' AND senha= '{senha}';";
+            DataTable tabela = Conexao.executaQuery(query);
+            if( tabela.Rows.Count == 0)
+            {
+                return null;
+            }
+            Usuario usuario = carregaDados(tabela.Rows[0]);
+            return usuario;
         }
 
 
