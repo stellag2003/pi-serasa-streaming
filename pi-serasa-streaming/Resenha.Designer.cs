@@ -28,198 +28,166 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnComentar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtComentario = new System.Windows.Forms.TextBox();
-            this.iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
-            this.iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.iconPictureBox6 = new FontAwesome.Sharp.IconPictureBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.iconPictureBox9 = new FontAwesome.Sharp.IconPictureBox();
-            this.listComentarios = new System.Windows.Forms.ListView();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox9)).BeginInit();
-            this.SuspendLayout();
+            panel1 = new Panel();
+            iconPictureBox9 = new FontAwesome.Sharp.IconPictureBox();
+            label4 = new Label();
+            btnComentar = new Button();
+            label1 = new Label();
+            txtComentario = new TextBox();
+            iconPictureBox5 = new FontAwesome.Sharp.IconPictureBox();
+            iconPictureBox4 = new FontAwesome.Sharp.IconPictureBox();
+            iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            panel2 = new Panel();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)iconPictureBox9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)iconPictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)iconPictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel1.Controls.Add(this.btnComentar);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.txtComentario);
-            this.panel1.Controls.Add(this.iconPictureBox5);
-            this.panel1.Controls.Add(this.iconPictureBox4);
-            this.panel1.Controls.Add(this.iconPictureBox1);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(10, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(995, 577);
-            this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // btnComentar
-            // 
-            this.btnComentar.Location = new System.Drawing.Point(108, 507);
-            this.btnComentar.Name = "btnComentar";
-            this.btnComentar.Size = new System.Drawing.Size(160, 23);
-            this.btnComentar.TabIndex = 18;
-            this.btnComentar.Text = "Comentar";
-            this.btnComentar.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Black;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(32, 395);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 17);
-            this.label1.TabIndex = 17;
-            this.label1.Text = "Deixe seu comentário:";
-            // 
-            // txtComentario
-            // 
-            this.txtComentario.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.txtComentario.Location = new System.Drawing.Point(32, 420);
-            this.txtComentario.Multiline = true;
-            this.txtComentario.Name = "txtComentario";
-            this.txtComentario.Size = new System.Drawing.Size(304, 67);
-            this.txtComentario.TabIndex = 16;
-            this.txtComentario.TextChanged += new System.EventHandler(this.txtComentario_TextChanged);
-            // 
-            // iconPictureBox5
-            // 
-            this.iconPictureBox5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.iconPictureBox5.ForeColor = System.Drawing.Color.Yellow;
-            this.iconPictureBox5.IconChar = FontAwesome.Sharp.IconChar.Star;
-            this.iconPictureBox5.IconColor = System.Drawing.Color.Yellow;
-            this.iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox5.Location = new System.Drawing.Point(70, 324);
-            this.iconPictureBox5.Name = "iconPictureBox5";
-            this.iconPictureBox5.Size = new System.Drawing.Size(32, 32);
-            this.iconPictureBox5.TabIndex = 5;
-            this.iconPictureBox5.TabStop = false;
-            // 
-            // iconPictureBox4
-            // 
-            this.iconPictureBox4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.iconPictureBox4.ForeColor = System.Drawing.Color.Yellow;
-            this.iconPictureBox4.IconChar = FontAwesome.Sharp.IconChar.Star;
-            this.iconPictureBox4.IconColor = System.Drawing.Color.Yellow;
-            this.iconPictureBox4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox4.Location = new System.Drawing.Point(32, 324);
-            this.iconPictureBox4.Name = "iconPictureBox4";
-            this.iconPictureBox4.Size = new System.Drawing.Size(32, 32);
-            this.iconPictureBox4.TabIndex = 4;
-            this.iconPictureBox4.TabStop = false;
-            // 
-            // iconPictureBox1
-            // 
-            this.iconPictureBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconPictureBox1.IconColor = System.Drawing.SystemColors.ControlText;
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 192;
-            this.iconPictureBox1.Location = new System.Drawing.Point(32, 111);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(304, 192);
-            this.iconPictureBox1.TabIndex = 3;
-            this.iconPictureBox1.TabStop = false;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.listComentarios);
-            this.panel2.Controls.Add(this.iconPictureBox6);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.iconPictureBox9);
-            this.panel2.Location = new System.Drawing.Point(518, 111);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(374, 441);
-            this.panel2.TabIndex = 19;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // iconPictureBox6
-            // 
-            this.iconPictureBox6.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.iconPictureBox6.ForeColor = System.Drawing.Color.Red;
-            this.iconPictureBox6.IconChar = FontAwesome.Sharp.IconChar.Heart;
-            this.iconPictureBox6.IconColor = System.Drawing.Color.Red;
-            this.iconPictureBox6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox6.IconSize = 27;
-            this.iconPictureBox6.Location = new System.Drawing.Point(47, 177);
-            this.iconPictureBox6.Name = "iconPictureBox6";
-            this.iconPictureBox6.Size = new System.Drawing.Size(27, 27);
-            this.iconPictureBox6.TabIndex = 9;
-            this.iconPictureBox6.TabStop = false;
-            this.iconPictureBox6.Click += new System.EventHandler(this.iconPictureBox6_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Black;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(93, 189);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 15);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Comentar";
+            panel1.BackColor = SystemColors.ActiveCaptionText;
+            panel1.Controls.Add(iconPictureBox9);
+            panel1.Controls.Add(label4);
+            panel1.Controls.Add(btnComentar);
+            panel1.Controls.Add(label1);
+            panel1.Controls.Add(txtComentario);
+            panel1.Controls.Add(iconPictureBox5);
+            panel1.Controls.Add(iconPictureBox4);
+            panel1.Controls.Add(iconPictureBox1);
+            panel1.Controls.Add(panel2);
+            panel1.Location = new Point(10, 12);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(995, 577);
+            panel1.TabIndex = 0;
+            panel1.Paint += panel1_Paint;
             // 
             // iconPictureBox9
             // 
-            this.iconPictureBox9.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.iconPictureBox9.ForeColor = System.Drawing.Color.Gray;
-            this.iconPictureBox9.IconChar = FontAwesome.Sharp.IconChar.CircleUser;
-            this.iconPictureBox9.IconColor = System.Drawing.Color.Gray;
-            this.iconPictureBox9.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox9.IconSize = 41;
-            this.iconPictureBox9.Location = new System.Drawing.Point(0, 26);
-            this.iconPictureBox9.Name = "iconPictureBox9";
-            this.iconPictureBox9.Size = new System.Drawing.Size(41, 44);
-            this.iconPictureBox9.TabIndex = 14;
-            this.iconPictureBox9.TabStop = false;
+            iconPictureBox9.BackColor = SystemColors.ActiveCaptionText;
+            iconPictureBox9.ForeColor = Color.Gray;
+            iconPictureBox9.IconChar = FontAwesome.Sharp.IconChar.CircleUser;
+            iconPictureBox9.IconColor = Color.Gray;
+            iconPictureBox9.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconPictureBox9.IconSize = 41;
+            iconPictureBox9.Location = new Point(410, 111);
+            iconPictureBox9.Name = "iconPictureBox9";
+            iconPictureBox9.Size = new Size(41, 44);
+            iconPictureBox9.TabIndex = 14;
+            iconPictureBox9.TabStop = false;
             // 
-            // listComentarios
+            // label4
             // 
-            this.listComentarios.Location = new System.Drawing.Point(47, 26);
-            this.listComentarios.Name = "listComentarios";
-            this.listComentarios.Size = new System.Drawing.Size(280, 97);
-            this.listComentarios.TabIndex = 15;
-            this.listComentarios.UseCompatibleStateImageBehavior = false;
+            label4.AutoSize = true;
+            label4.BackColor = Color.Black;
+            label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.ForeColor = SystemColors.Control;
+            label4.Location = new Point(410, 201);
+            label4.Name = "label4";
+            label4.Size = new Size(62, 15);
+            label4.TabIndex = 11;
+            label4.Text = "Comentar";
+            // 
+            // btnComentar
+            // 
+            btnComentar.Location = new Point(108, 507);
+            btnComentar.Name = "btnComentar";
+            btnComentar.Size = new Size(160, 23);
+            btnComentar.TabIndex = 18;
+            btnComentar.Text = "Comentar";
+            btnComentar.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Black;
+            label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = SystemColors.Control;
+            label1.Location = new Point(32, 395);
+            label1.Name = "label1";
+            label1.Size = new Size(146, 17);
+            label1.TabIndex = 17;
+            label1.Text = "Deixe seu comentário:";
+            // 
+            // txtComentario
+            // 
+            txtComentario.BackColor = SystemColors.ControlDark;
+            txtComentario.Location = new Point(32, 420);
+            txtComentario.Multiline = true;
+            txtComentario.Name = "txtComentario";
+            txtComentario.Size = new Size(304, 67);
+            txtComentario.TabIndex = 16;
+            txtComentario.TextChanged += txtComentario_TextChanged;
+            // 
+            // iconPictureBox5
+            // 
+            iconPictureBox5.BackColor = SystemColors.ActiveCaptionText;
+            iconPictureBox5.ForeColor = Color.Yellow;
+            iconPictureBox5.IconChar = FontAwesome.Sharp.IconChar.Star;
+            iconPictureBox5.IconColor = Color.Yellow;
+            iconPictureBox5.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconPictureBox5.Location = new Point(70, 324);
+            iconPictureBox5.Name = "iconPictureBox5";
+            iconPictureBox5.Size = new Size(32, 32);
+            iconPictureBox5.TabIndex = 5;
+            iconPictureBox5.TabStop = false;
+            // 
+            // iconPictureBox4
+            // 
+            iconPictureBox4.BackColor = SystemColors.ActiveCaptionText;
+            iconPictureBox4.ForeColor = Color.Yellow;
+            iconPictureBox4.IconChar = FontAwesome.Sharp.IconChar.Star;
+            iconPictureBox4.IconColor = Color.Yellow;
+            iconPictureBox4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconPictureBox4.Location = new Point(32, 324);
+            iconPictureBox4.Name = "iconPictureBox4";
+            iconPictureBox4.Size = new Size(32, 32);
+            iconPictureBox4.TabIndex = 4;
+            iconPictureBox4.TabStop = false;
+            // 
+            // iconPictureBox1
+            // 
+            iconPictureBox1.BackColor = SystemColors.ActiveCaptionText;
+            iconPictureBox1.ForeColor = SystemColors.ControlText;
+            iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.None;
+            iconPictureBox1.IconColor = SystemColors.ControlText;
+            iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconPictureBox1.IconSize = 192;
+            iconPictureBox1.Location = new Point(32, 111);
+            iconPictureBox1.Name = "iconPictureBox1";
+            iconPictureBox1.Size = new Size(304, 192);
+            iconPictureBox1.TabIndex = 3;
+            iconPictureBox1.TabStop = false;
+            // 
+            // panel2
+            // 
+            panel2.AutoScroll = true;
+            panel2.Location = new Point(518, 111);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(374, 10);
+            panel2.TabIndex = 19;
+            panel2.Paint += panel2_Paint;
             // 
             // Resenha
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1017, 602);
-            this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "Resenha";
-            this.Text = "Resenha";
-            this.Load += new System.EventHandler(this.Resenha_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox9)).EndInit();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Black;
+            BackgroundImageLayout = ImageLayout.None;
+            ClientSize = new Size(1017, 602);
+            Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Name = "Resenha";
+            Text = "Resenha";
+            Load += Resenha_Load;
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)iconPictureBox9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)iconPictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)iconPictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)iconPictureBox1).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
@@ -227,7 +195,6 @@
         private Panel panel1;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private Label label4;
-        private FontAwesome.Sharp.IconPictureBox iconPictureBox6;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox5;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox4;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox9;
@@ -235,6 +202,5 @@
         private TextBox txtComentario;
         private Button btnComentar;
         private Panel panel2;
-        private ListView listComentarios;
     }
 }

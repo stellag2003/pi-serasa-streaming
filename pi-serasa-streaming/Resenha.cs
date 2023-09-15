@@ -12,7 +12,7 @@ namespace pi_serasa_streaming
 {
     public partial class Resenha : Form
     {
-        List<string> comentarios = new List<string>();
+        List<Comentario> comentarios = new List<Comentario>();
 
         public Resenha()
         {
@@ -27,7 +27,7 @@ namespace pi_serasa_streaming
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
             WindowState = FormWindowState.Maximized;
-            panel1.Location = new Point(ClientSize.Width / 3 - panel1.Size.Width / 3, ClientSize.Height / 3 - panel1.Size.Height / 2);
+            panel1.Location = new Point(ClientSize.Width / 2 - panel1.Size.Width / 2, ClientSize.Height / 2 - panel1.Size.Height / 2);
         }
 
         public void button1_Click(object sender, EventArgs e)
@@ -36,16 +36,14 @@ namespace pi_serasa_streaming
             Comentario comentario = new Comentario();
             comentario.Insere(comentario1);
 
-            //TextBox textBox = new TextBox();
-            //textBox.Text = comentario.ToString();
-            //panel2.Controls.Clear();
-            //panel2.Controls.Add(textBox);
-
-            listComentarios.Show();
-            for (int i = 0; i < comentarios.Count; i++)
+            foreach(Comentario co in comentarios) 
             {
-                listComentarios.Items.Add(comentarios[i]);
+              TextBox textBox = new TextBox();
+              textBox.Text = comentario.ToString();
+              panel2.Controls.Add(textBox);
+              return;
             }
+
 
         }
 
@@ -68,10 +66,10 @@ namespace pi_serasa_streaming
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
-            
+
             //Comentario comentario = new Comentario();
             //comentarios = comentario.buscaTodos();
-            
+
         }
     }
 }

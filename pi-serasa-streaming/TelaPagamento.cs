@@ -67,25 +67,25 @@ namespace pi_serasa_streaming
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
-            if (txtCartao.Texts.Length == 0 || txtCartao.Texts.Length >= 17)
-            {
-                MessageBox.Show("Digite um número válido");
-            }
+            //if (txtCartao.Texts.Length == 0 || txtCartao.Texts.Length >= 17)
+            //{
+            //    MessageBox.Show("Digite um número válido");
+            //}
 
-            if (txtNome.Texts.Length == 0 || txtNome.Texts.Length >= 80)
-            {
-                MessageBox.Show("Digite um nome válido");
-            }
+            //if (txtNome.Texts.Length == 0 || txtNome.Texts.Length >= 80)
+            //{
+            //    MessageBox.Show("Digite um nome válido");
+            //}
 
-            if (txtCPF.Texts.Length == 0 || txtCPF.Texts.Length >= 12)
-            {
-                MessageBox.Show("Digite um CPF válido");
-            }
+            //if (txtCPF.Texts.Length == 0 || txtCPF.Texts.Length >= 12)
+            //{
+            //    MessageBox.Show("Digite um CPF válido");
+            //}
 
-            if (txtCVV.Texts.Length == 0 || txtCVV.Texts.Length >= 4)
-            {
-                MessageBox.Show("Digite um CVV válido");
-            }
+            //if (txtCVV.Texts.Length == 0 || txtCVV.Texts.Length >= 4)
+            //{
+            //    MessageBox.Show("Digite um CVV válido");
+            //}
         }
 
         private void txtNome__TextChanged(object sender, EventArgs e)
@@ -95,11 +95,11 @@ namespace pi_serasa_streaming
 
         private void btnConfirmar_Click_1(object sender, EventArgs e)
         {
-             string cpf = txtCPF.Text;
-             string cvv = txtCVV.Text;
-             string numeroCartao = txtCartao.Text;
-             string usuario = txtNome.Text;
-             
+            string cpf = txtCPF.Text;
+            string cvv = txtCVV.Text;
+            string numeroCartao = txtCartao.Text;
+            string usuario = txtNome.Text;
+
 
             if (cpf.Length == 11 || cvv.Length == 3 || numeroCartao != "" || usuario != "")
             {
@@ -119,7 +119,18 @@ namespace pi_serasa_streaming
 
         private void TelaPagamento_Load_1(object sender, EventArgs e)
         {
+            WindowState = FormWindowState.Maximized;
+            panel1.Location = new Point(ClientSize.Width / 2 - panel1.Size.Width / 2, ClientSize.Height / 2 - panel1.Height / 2);
+        }
 
+        private void panel1_Paint_2(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void txtCartao__TextChanged_1(object sender, EventArgs e)
+        {
+          
         }
     }
 }
