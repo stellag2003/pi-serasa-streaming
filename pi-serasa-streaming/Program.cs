@@ -10,7 +10,9 @@ namespace pi_serasa_streaming
             reproducao1.Show();
         }
 
+        public static List<string> nomeFilme = new List<string>();
         
+
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>
@@ -20,7 +22,7 @@ namespace pi_serasa_streaming
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new TelaCadastroU());
+            Application.Run(new Principal());
 
 
            
