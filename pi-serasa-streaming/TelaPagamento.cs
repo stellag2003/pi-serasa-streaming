@@ -101,20 +101,21 @@ namespace pi_serasa_streaming
             string usuario = txtNome.Text;
 
 
-            if (cpf.Length == 11 || cvv.Length == 3 || numeroCartao != "" || usuario != "")
+            if (cpf.Count() == 11 || cvv.Count() == 3 || numeroCartao != "" || usuario != "")
             {
                 Pagamento pagamentos = new Pagamento();
                 pagamentos.AdicionarPagamento(pagamentos);
-                TelaU telaUsuario = new TelaU();
-                telaUsuario.Show();
+                //TelaU telaUsuario = new TelaU();
+                //telaUsuario.Show();
 
             }
-            else if (cpf.Length != 11 || cvv.Length != 3)
+            else if (cpf.Count() == 11 || cvv.Count() == 3)
             {
                 MessageBox.Show("CPF ou CVV com caracteres faltantes\nCPF: 11 dígitos\nCVV:3 dígitos");
             }
 
-
+            TelaU telaUsuario = new TelaU();
+            telaUsuario.Show();
         }
 
         private void TelaPagamento_Load_1(object sender, EventArgs e)
