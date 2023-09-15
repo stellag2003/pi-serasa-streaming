@@ -114,8 +114,8 @@ namespace pi_serasa_streaming
                 MessageBox.Show("CPF ou CVV com caracteres faltantes\nCPF: 11 dígitos\nCVV:3 dígitos");
             }
 
-            TelaU telaUsuario = new TelaU();
-            telaUsuario.Show();
+            Principal p = new Principal();
+            p.Show();
         }
 
         private void TelaPagamento_Load_1(object sender, EventArgs e)
@@ -132,6 +132,11 @@ namespace pi_serasa_streaming
         private void txtCartao__TextChanged_1(object sender, EventArgs e)
         {
           
+        }
+
+        private void btnConfirmar_Click_2(object sender, EventArgs e)
+        {
+
         }
     }
 }

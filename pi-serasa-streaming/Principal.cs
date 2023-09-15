@@ -124,10 +124,7 @@ namespace pi_serasa_streaming
 
         public void iconPictureBox2_Click(object sender, EventArgs e)
         {
-            string pesquisa = Pesquisa.Texts;
-
-            string query = $"SELECT * FROM reproducao WHERE nome LIKE '{pesquisa}%';";
-            CarregaForm(new TelaPesquisa());
+            
 
             
         }
@@ -176,7 +173,10 @@ namespace pi_serasa_streaming
 
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
+            string pesquisa = Pesquisa.Texts;
 
+            string query = $"SELECT * FROM reproducao WHERE nome LIKE '{pesquisa}%';";
+            CarregaForm(new TelaPesquisa());
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
