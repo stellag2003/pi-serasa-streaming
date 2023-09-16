@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 using System.Windows.Forms;
 
 namespace pi_serasa_streaming
@@ -29,11 +30,16 @@ namespace pi_serasa_streaming
             //Reproducao filme = reproducao.BuscaPorId(10);
 
             WindowState = FormWindowState.Maximized;
-          
+            painel.Location = new Point(ClientSize.Width / 2 - painel.Size.Width / 2 + 40, ClientSize.Height / 2 - painel.Height / 2 + 50);
+            menu.Location = new Point(400, -30);
+            menu.Size = new Size(ClientSize.Width, 100);
 
-            pictureBox1.Size = new Size(ClientSize.Width, ClientSize.Height);
+            pictureBox1.Location = new Point(400, 100);
+            pictureBox1.Size = new Size(860, 500);
 
-            pictureBox1.Dock = DockStyle.Fill;
+            painelND.Location = new Point(0, 100);
+            painelND.Size = new Size(ClientSize.Width, 550);
+            // pictureBox1.Dock = DockStyle.Fill;
 
 
 
@@ -74,6 +80,11 @@ namespace pi_serasa_streaming
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void webView21_Click_1(object sender, EventArgs e)
         {
 
         }
