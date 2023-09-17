@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +15,7 @@ namespace pi_serasa_streaming
     public partial class Principal : Form
     {
         List<Reproducao> reproducoes = new List<Reproducao>();
+        //List<string> nomeFilme= new List<string>();
 
         public Principal()
         {
@@ -173,10 +174,17 @@ namespace pi_serasa_streaming
 
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
-            string pesquisa = Pesquisa.Texts;
+            string nome = Pesquisa.Text;
 
-            string query = $"SELECT * FROM reproducao WHERE nome LIKE '{pesquisa}%';";
-            CarregaForm(new TelaPesquisa());
+            Reproducao reproducao = new Reproducao();
+            reproducao.BuscaFilmeNome(nome);
+
+            for (int i = 0; i < Program.nomeFilme.Count ; i++)
+            {
+                   lista.Items.Add(Program.nomeFilme[i]);
+
+            }
+    
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)

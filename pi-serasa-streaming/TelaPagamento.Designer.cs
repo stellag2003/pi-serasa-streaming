@@ -173,7 +173,7 @@
             btnConfirmar.Text = "Confirmar";
             btnConfirmar.TextColor = Color.White;
             btnConfirmar.UseVisualStyleBackColor = false;
-            btnConfirmar.Click += btnConfirmar_Click_1;
+            btnConfirmar.Click += btnConfirmar_Click_2;
             // 
             // txtCVV
             // 
@@ -259,7 +259,6 @@
             txtCartao.TabIndex = 9;
             txtCartao.Texts = "";
             txtCartao.UnderlinedStyle = false;
-            txtCartao._TextChanged += txtCartao__TextChanged_1;
             // 
             // panel1
             // 
@@ -271,7 +270,6 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(334, 512);
             panel1.TabIndex = 13;
-            panel1.Paint += panel1_Paint_2;
             // 
             // TelaPagamento
             // 
@@ -282,7 +280,7 @@
             Controls.Add(panel1);
             Name = "TelaPagamento";
             Text = "TelaPagamento";
-            Load += TelaPagamento_Load_1;
+            Load += TelaPagamento_Load_2;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             painelDados.ResumeLayout(false);

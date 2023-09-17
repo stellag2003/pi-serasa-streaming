@@ -28,193 +28,214 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.painelCadastro = new System.Windows.Forms.Panel();
-            this.txtSenha = new System.Windows.Forms.TextBox();
-            this.txtData = new System.Windows.Forms.MaskedTextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnTermos = new System.Windows.Forms.RadioButton();
-            this.comboGenero = new System.Windows.Forms.ComboBox();
-            this.txtEmail = new System.Windows.Forms.TextBox();
-            this.txtNome = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblEmail = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.painelCadastro.SuspendLayout();
-            this.SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaCadastroU));
+            painelCadastro = new Panel();
+            txtSenha = new TextBox();
+            txtData = new MaskedTextBox();
+            button1 = new Button();
+            btnTermos = new RadioButton();
+            comboGenero = new ComboBox();
+            txtEmail = new TextBox();
+            txtNome = new TextBox();
+            label5 = new Label();
+            label4 = new Label();
+            label3 = new Label();
+            label2 = new Label();
+            lblEmail = new Label();
+            label1 = new Label();
+            menu = new Panel();
+            pictureBox1 = new PictureBox();
+            painelCadastro.SuspendLayout();
+            menu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            SuspendLayout();
             // 
             // painelCadastro
             // 
-            this.painelCadastro.BackColor = System.Drawing.Color.Black;
-            this.painelCadastro.Controls.Add(this.txtSenha);
-            this.painelCadastro.Controls.Add(this.txtData);
-            this.painelCadastro.Controls.Add(this.button1);
-            this.painelCadastro.Controls.Add(this.btnTermos);
-            this.painelCadastro.Controls.Add(this.comboGenero);
-            this.painelCadastro.Controls.Add(this.txtEmail);
-            this.painelCadastro.Controls.Add(this.txtNome);
-            this.painelCadastro.Controls.Add(this.label5);
-            this.painelCadastro.Controls.Add(this.label4);
-            this.painelCadastro.Controls.Add(this.label3);
-            this.painelCadastro.Controls.Add(this.label2);
-            this.painelCadastro.Controls.Add(this.lblEmail);
-            this.painelCadastro.Controls.Add(this.label1);
-            this.painelCadastro.Location = new System.Drawing.Point(178, 23);
-            this.painelCadastro.Name = "painelCadastro";
-            this.painelCadastro.Size = new System.Drawing.Size(396, 597);
-            this.painelCadastro.TabIndex = 0;
+            painelCadastro.BackColor = Color.Black;
+            painelCadastro.Controls.Add(txtSenha);
+            painelCadastro.Controls.Add(txtData);
+            painelCadastro.Controls.Add(button1);
+            painelCadastro.Controls.Add(btnTermos);
+            painelCadastro.Controls.Add(comboGenero);
+            painelCadastro.Controls.Add(txtEmail);
+            painelCadastro.Controls.Add(txtNome);
+            painelCadastro.Controls.Add(label5);
+            painelCadastro.Controls.Add(label4);
+            painelCadastro.Controls.Add(label3);
+            painelCadastro.Controls.Add(label2);
+            painelCadastro.Controls.Add(lblEmail);
+            painelCadastro.Controls.Add(label1);
+            painelCadastro.Location = new Point(28, 29);
+            painelCadastro.Name = "painelCadastro";
+            painelCadastro.Size = new Size(396, 597);
+            painelCadastro.TabIndex = 0;
             // 
             // txtSenha
             // 
-            this.txtSenha.Location = new System.Drawing.Point(52, 295);
-            this.txtSenha.Name = "txtSenha";
-            this.txtSenha.PasswordChar = '*';
-            this.txtSenha.Size = new System.Drawing.Size(268, 23);
-            this.txtSenha.TabIndex = 3;
-            this.txtSenha.UseSystemPasswordChar = true;
+            txtSenha.Location = new Point(52, 295);
+            txtSenha.Name = "txtSenha";
+            txtSenha.PasswordChar = '*';
+            txtSenha.Size = new Size(268, 23);
+            txtSenha.TabIndex = 3;
+            txtSenha.UseSystemPasswordChar = true;
             // 
             // txtData
             // 
-            this.txtData.Location = new System.Drawing.Point(52, 357);
-            this.txtData.Mask = "00/00/0000";
-            this.txtData.Name = "txtData";
-            this.txtData.Size = new System.Drawing.Size(267, 23);
-            this.txtData.TabIndex = 4;
-            this.txtData.ValidatingType = typeof(System.DateTime);
+            txtData.Location = new Point(52, 357);
+            txtData.Mask = "00/00/0000";
+            txtData.Name = "txtData";
+            txtData.Size = new Size(267, 23);
+            txtData.TabIndex = 4;
+            txtData.ValidatingType = typeof(DateTime);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(112, 542);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(142, 27);
-            this.button1.TabIndex = 20;
-            this.button1.Text = "Cadastrar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            button1.Location = new Point(112, 542);
+            button1.Name = "button1";
+            button1.Size = new Size(142, 27);
+            button1.TabIndex = 7;
+            button1.Text = "Cadastrar";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // btnTermos
             // 
-            this.btnTermos.AutoSize = true;
-            this.btnTermos.ForeColor = System.Drawing.Color.White;
-            this.btnTermos.Location = new System.Drawing.Point(16, 484);
-            this.btnTermos.Name = "btnTermos";
-            this.btnTermos.Size = new System.Drawing.Size(366, 19);
-            this.btnTermos.TabIndex = 19;
-            this.btnTermos.Text = "Eu li e concordo com os Termos de Uso e Política de Privacidade.";
-            this.btnTermos.UseVisualStyleBackColor = true;
+            btnTermos.AutoSize = true;
+            btnTermos.ForeColor = Color.White;
+            btnTermos.Location = new Point(16, 484);
+            btnTermos.Name = "btnTermos";
+            btnTermos.Size = new Size(366, 19);
+            btnTermos.TabIndex = 6;
+            btnTermos.Text = "Eu li e concordo com os Termos de Uso e Política de Privacidade.";
+            btnTermos.UseVisualStyleBackColor = true;
             // 
             // comboGenero
             // 
-            this.comboGenero.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboGenero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboGenero.FormattingEnabled = true;
-            this.comboGenero.Items.AddRange(new object[] {
-            "feminino\t",
-            "masculino",
-            "prefiro não declarar"});
-            this.comboGenero.Location = new System.Drawing.Point(52, 419);
-            this.comboGenero.Name = "comboGenero";
-            this.comboGenero.Size = new System.Drawing.Size(267, 23);
-            this.comboGenero.TabIndex = 5;
+            comboGenero.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboGenero.FlatStyle = FlatStyle.Flat;
+            comboGenero.FormattingEnabled = true;
+            comboGenero.Items.AddRange(new object[] { "feminino\t", "masculino", "prefiro não declarar" });
+            comboGenero.Location = new Point(52, 419);
+            comboGenero.Name = "comboGenero";
+            comboGenero.Size = new Size(267, 23);
+            comboGenero.TabIndex = 5;
             // 
             // txtEmail
             // 
-            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtEmail.Location = new System.Drawing.Point(51, 229);
-            this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(268, 23);
-            this.txtEmail.TabIndex = 2;
+            txtEmail.BorderStyle = BorderStyle.FixedSingle;
+            txtEmail.Location = new Point(51, 229);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(268, 23);
+            txtEmail.TabIndex = 2;
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(51, 168);
-            this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(268, 23);
-            this.txtNome.TabIndex = 1;
-            //this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
+            txtNome.Location = new Point(51, 168);
+            txtNome.Name = "txtNome";
+            txtNome.Size = new Size(268, 23);
+            txtNome.TabIndex = 1;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(52, 399);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(54, 17);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Gênero:";
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.ForeColor = Color.White;
+            label5.Location = new Point(52, 399);
+            label5.Name = "label5";
+            label5.Size = new Size(54, 17);
+            label5.TabIndex = 6;
+            label5.Text = "Gênero:";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(52, 337);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(231, 17);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Data de nascimento: Ex-(ano-mês-dia)";
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.ForeColor = Color.White;
+            label4.Location = new Point(52, 337);
+            label4.Name = "label4";
+            label4.Size = new Size(131, 17);
+            label4.TabIndex = 5;
+            label4.Text = "Data de nascimento: ";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(52, 275);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 17);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Senha:";
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(52, 275);
+            label3.Name = "label3";
+            label3.Size = new Size(46, 17);
+            label3.TabIndex = 4;
+            label3.Text = "Senha:";
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(52, 209);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 17);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "E-mail:";
+            label2.AutoSize = true;
+            label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(52, 209);
+            label2.Name = "label2";
+            label2.Size = new Size(47, 17);
+            label2.TabIndex = 3;
+            label2.Text = "E-mail:";
             // 
             // lblEmail
             // 
-            this.lblEmail.AutoSize = true;
-            this.lblEmail.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblEmail.ForeColor = System.Drawing.Color.White;
-            this.lblEmail.Location = new System.Drawing.Point(49, 148);
-            this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(47, 17);
-            this.lblEmail.TabIndex = 2;
-            this.lblEmail.Text = "Nome:";
+            lblEmail.AutoSize = true;
+            lblEmail.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            lblEmail.ForeColor = Color.White;
+            lblEmail.Location = new Point(49, 148);
+            lblEmail.Name = "lblEmail";
+            lblEmail.Size = new Size(47, 17);
+            lblEmail.TabIndex = 2;
+            lblEmail.Text = "Nome:";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(112, 90);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(151, 21);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Cadastro de Usuário";
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(112, 90);
+            label1.Name = "label1";
+            label1.Size = new Size(151, 21);
+            label1.TabIndex = 1;
+            label1.Text = "Cadastro de Usuário";
+            // 
+            // menu
+            // 
+            menu.Controls.Add(pictureBox1);
+            menu.Location = new Point(468, 81);
+            menu.Name = "menu";
+            menu.Size = new Size(382, 174);
+            menu.TabIndex = 1;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(55, 43);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(300, 56);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // TelaCadastroU
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(800, 647);
-            this.Controls.Add(this.painelCadastro);
-            this.Name = "TelaCadastroU";
-            this.Text = " ";
-            this.Load += new System.EventHandler(this.TelaCadastroU_Load);
-            this.painelCadastro.ResumeLayout(false);
-            this.painelCadastro.PerformLayout();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Black;
+            ClientSize = new Size(988, 647);
+            Controls.Add(menu);
+            Controls.Add(painelCadastro);
+            Name = "TelaCadastroU";
+            Text = " ";
+            Load += TelaCadastroU_Load;
+            painelCadastro.ResumeLayout(false);
+            painelCadastro.PerformLayout();
+            menu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
@@ -233,5 +254,7 @@
         private TextBox txtNome;
         private MaskedTextBox txtData;
         private TextBox txtSenha;
+        private Panel menu;
+        private PictureBox pictureBox1;
     }
 }
