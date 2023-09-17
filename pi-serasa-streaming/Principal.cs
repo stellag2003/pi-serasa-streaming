@@ -53,15 +53,15 @@ namespace pi_serasa_streaming
                 imagem.Size = new Size(190, 200);
                 panel3.Controls.Add(imagem);
 
-                imagem.MouseClick += new MouseEventHandler((o,a) => Program.filmeClicado(reproducao));
+                imagem.MouseClick += new MouseEventHandler((o, a) => Program.filmeClicado(reproducao));
 
-                if( quantidade_linha == i)
+                if (quantidade_linha == i)
                 {
                     quantidade_linha *= 2;
                     altura_linha += tamanho_imagem;
                 }
 
-                if(numero_linha > fixo_por_linha - 1)
+                if (numero_linha > fixo_por_linha - 1)
                 {
                     numero_linha = 0;
                 }
@@ -70,13 +70,13 @@ namespace pi_serasa_streaming
 
                 imagem.Location = new Point(posicao_imagem + margem, altura_linha);
 
-            }            
+            }
 
         }
 
         public void Principal_Load(object sender, EventArgs e)
         {
-            
+
 
 
         }
@@ -88,13 +88,13 @@ namespace pi_serasa_streaming
 
         public void btnResenha_Click(object sender, EventArgs e)
         {
-         
+
 
         }
 
         public void btnProducoes_Click(object sender, EventArgs e)
         {
-           
+
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -124,12 +124,9 @@ namespace pi_serasa_streaming
 
         public void iconPictureBox2_Click(object sender, EventArgs e)
         {
-            string pesquisa = Pesquisa.Texts;
-
-            string query = $"SELECT * FROM reproducao WHERE nome LIKE '{pesquisa}%';";
-            CarregaForm(new TelaPesquisa());
-
             
+
+
         }
 
         private void painel_Paint(object sender, PaintEventArgs e)
@@ -139,7 +136,7 @@ namespace pi_serasa_streaming
 
         public void Pesquisa__TextChanged(object sender, EventArgs e)
         {
-           // Pesquisa.Texts.;
+            // Pesquisa.Texts.;
         }
 
         private void Pesquisa__TextChanged_1(object sender, EventArgs e)
@@ -150,7 +147,7 @@ namespace pi_serasa_streaming
         private void Principal_Load_1(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Maximized;
-            painel.Location = new Point(ClientSize.Width / 2 - painel.Size.Width / 2 , ClientSize.Height / 2 - painel.Height / 2);
+            painel.Location = new Point(ClientSize.Width / 2 - painel.Size.Width / 2, ClientSize.Height / 2 - painel.Height / 2);
 
 
             Reproducao reproducao = new Reproducao();
@@ -176,12 +173,20 @@ namespace pi_serasa_streaming
 
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
+            string pesquisa = Pesquisa.Texts;
 
+            string query = $"SELECT * FROM reproducao WHERE nome LIKE '{pesquisa}%';";
+            CarregaForm(new TelaPesquisa());
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
-           
+
+        }
+
+        private void painel_Paint_1(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

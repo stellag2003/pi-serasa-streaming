@@ -33,13 +33,17 @@ namespace pi_serasa_streaming
         public void button1_Click(object sender, EventArgs e)
         {
             string comentario1 = txtComentario.Text;
+            Comentario c = new Comentario(comentario1);
+            comentarios.Add(c);
+            panel2.Controls.Clear();
+
             Comentario comentario = new Comentario();
             comentario.Insere(comentario1);
 
-            foreach(Comentario co in comentarios) 
+            foreach(Comentario comentario in comentarios) 
             {
               TextBox textBox = new TextBox();
-              textBox.Text = comentario.ToString();
+              textBox.Text = comentario.BuscarPorComentario();
               panel2.Controls.Add(textBox);
               return;
             }
