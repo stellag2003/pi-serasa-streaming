@@ -46,6 +46,8 @@ namespace pi_serasa_streaming
                 return;
             }
 
+            Program.usuario = u;
+
             Principal usuarioPrincipal = new Principal();
             usuarioPrincipal.Show();
 

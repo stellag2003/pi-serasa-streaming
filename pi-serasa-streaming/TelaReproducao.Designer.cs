@@ -38,6 +38,7 @@
             pictureBox2 = new PictureBox();
             painel = new Panel();
             painelND = new Panel();
+            btnComentar = new Button();
             label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)webView21).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -86,10 +87,11 @@
             // btnAssistir
             // 
             btnAssistir.BackColor = Color.Red;
+            btnAssistir.FlatAppearance.BorderSize = 0;
             btnAssistir.FlatStyle = FlatStyle.Flat;
             btnAssistir.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnAssistir.ForeColor = SystemColors.ButtonHighlight;
-            btnAssistir.Location = new Point(88, 422);
+            btnAssistir.Location = new Point(4, 425);
             btnAssistir.Name = "btnAssistir";
             btnAssistir.Size = new Size(99, 34);
             btnAssistir.TabIndex = 9;
@@ -141,17 +143,34 @@
             painel.Name = "painel";
             painel.Size = new Size(1239, 720);
             painel.TabIndex = 12;
+            painel.Paint += painel_Paint;
             // 
             // painelND
             // 
+            painelND.Controls.Add(btnComentar);
             painelND.Controls.Add(label2);
             painelND.Controls.Add(lblNomefilme);
             painelND.Controls.Add(btnAssistir);
             painelND.Controls.Add(lblDescricao);
             painelND.Location = new Point(11, 160);
             painelND.Name = "painelND";
-            painelND.Size = new Size(200, 472);
+            painelND.Size = new Size(237, 472);
             painelND.TabIndex = 12;
+            // 
+            // btnComentar
+            // 
+            btnComentar.BackColor = Color.RoyalBlue;
+            btnComentar.FlatAppearance.BorderSize = 0;
+            btnComentar.FlatStyle = FlatStyle.Flat;
+            btnComentar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnComentar.ForeColor = SystemColors.ButtonHighlight;
+            btnComentar.Location = new Point(109, 425);
+            btnComentar.Name = "btnComentar";
+            btnComentar.Size = new Size(99, 34);
+            btnComentar.TabIndex = 12;
+            btnComentar.Text = "Comentar";
+            btnComentar.UseVisualStyleBackColor = false;
+            btnComentar.Click += btnComentar_Click;
             // 
             // label2
             // 
@@ -199,5 +218,6 @@
         private Panel painel;
         private Panel painelND;
         private Label label2;
+        private Button btnComentar;
     }
 }

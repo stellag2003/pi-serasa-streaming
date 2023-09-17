@@ -28,467 +28,226 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.btnResenha = new System.Windows.Forms.Button();
-            this.iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
-            this.wilBitPanel1 = new WiLBiT.WiLBiTPanel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.wilBitTextBox1 = new WiLBiT.WiLBiTTextBox();
-            this.iconMenuItem1 = new FontAwesome.Sharp.IconMenuItem();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel3.SuspendLayout();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel8.SuspendLayout();
-            this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            this.panel12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).BeginInit();
-            this.wilBitPanel1.SuspendLayout();
-            this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(0, 50);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(948, 205);
-            this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-83, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1050, 205);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            panel3 = new Panel();
+            label3 = new Label();
+            panel8 = new Panel();
+            label4 = new Label();
+            iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
+            panel2 = new Panel();
+            panel13 = new Panel();
+            btnResenha = new Button();
+            iconPictureBox2 = new FontAwesome.Sharp.IconPictureBox();
+            wilBitPanel1 = new WiLBiT.WiLBiTPanel();
+            button1 = new Button();
+            wilBitTextBox1 = new WiLBiT.WiLBiTTextBox();
+            iconMenuItem1 = new FontAwesome.Sharp.IconMenuItem();
+            panel14 = new Panel();
+            panel3.SuspendLayout();
+            panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)iconPictureBox1).BeginInit();
+            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)iconPictureBox2).BeginInit();
+            wilBitPanel1.SuspendLayout();
+            SuspendLayout();
             // 
             // panel3
             // 
-            this.panel3.AutoScroll = true;
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.panel7);
-            this.panel3.Controls.Add(this.panel6);
-            this.panel3.Controls.Add(this.panel5);
-            this.panel3.Controls.Add(this.panel4);
-            this.panel3.Location = new System.Drawing.Point(21, 277);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(902, 141);
-            this.panel3.TabIndex = 2;
+            panel3.AutoScroll = true;
+            panel3.Controls.Add(label3);
+            panel3.Location = new Point(21, 277);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(902, 141);
+            panel3.TabIndex = 2;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(22, -2);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(128, 18);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Mais assistidos";
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.Gray;
-            this.panel7.Controls.Add(this.pictureBox9);
-            this.panel7.Location = new System.Drawing.Point(689, 23);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(200, 100);
-            this.panel7.TabIndex = 3;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(200, 100);
-            this.pictureBox9.TabIndex = 3;
-            this.pictureBox9.TabStop = false;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.Gray;
-            this.panel6.Controls.Add(this.pictureBox4);
-            this.panel6.Location = new System.Drawing.Point(470, 23);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(200, 100);
-            this.panel6.TabIndex = 2;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(200, 100);
-            this.pictureBox4.TabIndex = 2;
-            this.pictureBox4.TabStop = false;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.Gray;
-            this.panel5.Controls.Add(this.pictureBox3);
-            this.panel5.Location = new System.Drawing.Point(247, 23);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(200, 100);
-            this.panel5.TabIndex = 1;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(200, 100);
-            this.pictureBox3.TabIndex = 1;
-            this.pictureBox3.TabStop = false;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Gray;
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.pictureBox2);
-            this.panel4.Location = new System.Drawing.Point(22, 23);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(200, 100);
-            this.panel4.TabIndex = 0;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(-1, -1);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(200, 100);
-            this.pictureBox2.TabIndex = 0;
-            this.pictureBox2.TabStop = false;
+            label3.AutoSize = true;
+            label3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(22, -2);
+            label3.Name = "label3";
+            label3.Size = new Size(116, 20);
+            label3.TabIndex = 4;
+            label3.Text = "Mais assistidos";
             // 
             // panel8
             // 
-            this.panel8.AutoScroll = true;
-            this.panel8.Controls.Add(this.label4);
-            this.panel8.Controls.Add(this.panel9);
-            this.panel8.Controls.Add(this.panel10);
-            this.panel8.Controls.Add(this.panel11);
-            this.panel8.Controls.Add(this.panel12);
-            this.panel8.Location = new System.Drawing.Point(22, 446);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(901, 141);
-            this.panel8.TabIndex = 4;
+            panel8.AutoScroll = true;
+            panel8.Controls.Add(label4);
+            panel8.Location = new Point(22, 446);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(901, 141);
+            panel8.TabIndex = 4;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(22, -3);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(133, 18);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Recomendados";
-            // 
-            // panel9
-            // 
-            this.panel9.BackColor = System.Drawing.Color.Gray;
-            this.panel9.Controls.Add(this.pictureBox8);
-            this.panel9.Location = new System.Drawing.Point(689, 22);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(200, 100);
-            this.panel9.TabIndex = 3;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(200, 100);
-            this.pictureBox8.TabIndex = 4;
-            this.pictureBox8.TabStop = false;
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.Gray;
-            this.panel10.Controls.Add(this.pictureBox5);
-            this.panel10.Location = new System.Drawing.Point(470, 22);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(200, 100);
-            this.panel10.TabIndex = 2;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(200, 100);
-            this.pictureBox5.TabIndex = 3;
-            this.pictureBox5.TabStop = false;
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.Gray;
-            this.panel11.Controls.Add(this.pictureBox6);
-            this.panel11.Location = new System.Drawing.Point(247, 22);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(200, 100);
-            this.panel11.TabIndex = 1;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(200, 100);
-            this.pictureBox6.TabIndex = 4;
-            this.pictureBox6.TabStop = false;
-            // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.Color.Gray;
-            this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel12.Controls.Add(this.pictureBox7);
-            this.panel12.Location = new System.Drawing.Point(22, 22);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(200, 100);
-            this.panel12.TabIndex = 0;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(-1, -1);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(200, 100);
-            this.pictureBox7.TabIndex = 5;
-            this.pictureBox7.TabStop = false;
+            label4.AutoSize = true;
+            label4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.ForeColor = Color.White;
+            label4.Location = new Point(22, -3);
+            label4.Name = "label4";
+            label4.Size = new Size(122, 20);
+            label4.TabIndex = 5;
+            label4.Text = "Recomendados";
             // 
             // iconPictureBox1
             // 
-            this.iconPictureBox1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.User;
-            this.iconPictureBox1.IconColor = System.Drawing.SystemColors.AppWorkspace;
-            this.iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox1.IconSize = 28;
-            this.iconPictureBox1.Location = new System.Drawing.Point(932, 3);
-            this.iconPictureBox1.Name = "iconPictureBox1";
-            this.iconPictureBox1.Size = new System.Drawing.Size(31, 28);
-            this.iconPictureBox1.TabIndex = 2;
-            this.iconPictureBox1.TabStop = false;
-            this.iconPictureBox1.Click += new System.EventHandler(this.iconPictureBox1_Click);
+            iconPictureBox1.ForeColor = SystemColors.AppWorkspace;
+            iconPictureBox1.IconChar = FontAwesome.Sharp.IconChar.User;
+            iconPictureBox1.IconColor = SystemColors.AppWorkspace;
+            iconPictureBox1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconPictureBox1.IconSize = 28;
+            iconPictureBox1.Location = new Point(932, 3);
+            iconPictureBox1.Name = "iconPictureBox1";
+            iconPictureBox1.Size = new Size(31, 28);
+            iconPictureBox1.TabIndex = 2;
+            iconPictureBox1.TabStop = false;
+            iconPictureBox1.Click += iconPictureBox1_Click;
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Black;
-            this.panel2.Controls.Add(this.panel13);
-            this.panel2.Controls.Add(this.btnResenha);
-            this.panel2.Controls.Add(this.iconPictureBox2);
-            this.panel2.Controls.Add(this.wilBitPanel1);
-            this.panel2.Controls.Add(this.wilBitTextBox1);
-            this.panel2.Controls.Add(this.iconPictureBox1);
-            this.panel2.Location = new System.Drawing.Point(0, 2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(966, 615);
-            this.panel2.TabIndex = 1;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            panel2.BackColor = Color.Black;
+            panel2.Controls.Add(panel13);
+            panel2.Controls.Add(btnResenha);
+            panel2.Controls.Add(iconPictureBox2);
+            panel2.Controls.Add(wilBitPanel1);
+            panel2.Controls.Add(wilBitTextBox1);
+            panel2.Controls.Add(iconPictureBox1);
+            panel2.Location = new Point(12, 26);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(954, 591);
+            panel2.TabIndex = 1;
+            panel2.Paint += panel2_Paint;
             // 
             // panel13
             // 
-            this.panel13.Location = new System.Drawing.Point(25, 36);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(942, 570);
-            this.panel13.TabIndex = 5;
+            panel13.Location = new Point(25, 36);
+            panel13.Name = "panel13";
+            panel13.Size = new Size(942, 570);
+            panel13.TabIndex = 5;
             // 
             // btnResenha
             // 
-            this.btnResenha.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnResenha.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnResenha.FlatAppearance.BorderSize = 0;
-            this.btnResenha.ForeColor = System.Drawing.Color.White;
-            this.btnResenha.Location = new System.Drawing.Point(457, -3);
-            this.btnResenha.Name = "btnResenha";
-            this.btnResenha.Size = new System.Drawing.Size(111, 36);
-            this.btnResenha.TabIndex = 1;
-            this.btnResenha.Text = "Resenhas";
-            this.btnResenha.UseVisualStyleBackColor = false;
-            this.btnResenha.Click += new System.EventHandler(this.btnResenha_Click);
+            btnResenha.BackColor = SystemColors.ActiveCaptionText;
+            btnResenha.FlatAppearance.BorderColor = Color.Black;
+            btnResenha.FlatAppearance.BorderSize = 0;
+            btnResenha.ForeColor = Color.White;
+            btnResenha.Location = new Point(457, -3);
+            btnResenha.Name = "btnResenha";
+            btnResenha.Size = new Size(111, 36);
+            btnResenha.TabIndex = 1;
+            btnResenha.Text = "Resenhas";
+            btnResenha.UseVisualStyleBackColor = false;
+            btnResenha.Click += btnResenha_Click;
             // 
             // iconPictureBox2
             // 
-            this.iconPictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.iconPictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.iconPictureBox2.ForeColor = System.Drawing.Color.Gray;
-            this.iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.Sistrix;
-            this.iconPictureBox2.IconColor = System.Drawing.Color.Gray;
-            this.iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconPictureBox2.IconSize = 27;
-            this.iconPictureBox2.Location = new System.Drawing.Point(894, 3);
-            this.iconPictureBox2.Name = "iconPictureBox2";
-            this.iconPictureBox2.Size = new System.Drawing.Size(27, 27);
-            this.iconPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.iconPictureBox2.TabIndex = 4;
-            this.iconPictureBox2.TabStop = false;
+            iconPictureBox2.BackColor = SystemColors.ActiveCaptionText;
+            iconPictureBox2.BorderStyle = BorderStyle.FixedSingle;
+            iconPictureBox2.ForeColor = Color.Gray;
+            iconPictureBox2.IconChar = FontAwesome.Sharp.IconChar.Sistrix;
+            iconPictureBox2.IconColor = Color.Gray;
+            iconPictureBox2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconPictureBox2.IconSize = 27;
+            iconPictureBox2.Location = new Point(894, 3);
+            iconPictureBox2.Name = "iconPictureBox2";
+            iconPictureBox2.Size = new Size(27, 27);
+            iconPictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            iconPictureBox2.TabIndex = 4;
+            iconPictureBox2.TabStop = false;
             // 
             // wilBitPanel1
             // 
-            this.wilBitPanel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.wilBitPanel1.BorderColor = System.Drawing.Color.Peru;
-            this.wilBitPanel1.BorderRadius = 6;
-            this.wilBitPanel1.BorderSize = 0;
-            this.wilBitPanel1.Controls.Add(this.button1);
-            this.wilBitPanel1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.wilBitPanel1.ForeColor = System.Drawing.Color.RosyBrown;
-            this.wilBitPanel1.Location = new System.Drawing.Point(283, -7);
-            this.wilBitPanel1.Name = "wilBitPanel1";
-            this.wilBitPanel1.Size = new System.Drawing.Size(168, 46);
-            this.wilBitPanel1.TabIndex = 0;
+            wilBitPanel1.BackColor = SystemColors.ActiveCaptionText;
+            wilBitPanel1.BorderColor = Color.Peru;
+            wilBitPanel1.BorderRadius = 6;
+            wilBitPanel1.BorderSize = 0;
+            wilBitPanel1.Controls.Add(button1);
+            wilBitPanel1.Font = new Font("Segoe UI", 9F, FontStyle.Italic, GraphicsUnit.Point);
+            wilBitPanel1.ForeColor = Color.RosyBrown;
+            wilBitPanel1.Location = new Point(283, -7);
+            wilBitPanel1.Name = "wilBitPanel1";
+            wilBitPanel1.Size = new Size(168, 46);
+            wilBitPanel1.TabIndex = 0;
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(27, 7);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 36);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Produções";
-            this.button1.UseVisualStyleBackColor = false;
+            button1.BackColor = SystemColors.ActiveCaptionText;
+            button1.FlatAppearance.BorderColor = Color.Black;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(27, 7);
+            button1.Name = "button1";
+            button1.Size = new Size(111, 36);
+            button1.TabIndex = 0;
+            button1.Text = "Produções";
+            button1.UseVisualStyleBackColor = false;
             // 
             // wilBitTextBox1
             // 
-            this.wilBitTextBox1.BackColor = System.Drawing.Color.Black;
-            this.wilBitTextBox1.BorderColor = System.Drawing.Color.DimGray;
-            this.wilBitTextBox1.BorderFocusColor = System.Drawing.Color.DimGray;
-            this.wilBitTextBox1.BorderRadius = 4;
-            this.wilBitTextBox1.BorderSize = 2;
-            this.wilBitTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.wilBitTextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.wilBitTextBox1.Location = new System.Drawing.Point(750, 1);
-            this.wilBitTextBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.wilBitTextBox1.Multiline = false;
-            this.wilBitTextBox1.Name = "wilBitTextBox1";
-            this.wilBitTextBox1.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.wilBitTextBox1.PasswordChar = false;
-            this.wilBitTextBox1.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.wilBitTextBox1.PlaceholderText = "";
-            this.wilBitTextBox1.Size = new System.Drawing.Size(160, 29);
-            this.wilBitTextBox1.TabIndex = 1;
-            this.wilBitTextBox1.Texts = "";
-            this.wilBitTextBox1.UnderlinedStyle = false;
+            wilBitTextBox1.BackColor = Color.Black;
+            wilBitTextBox1.BorderColor = Color.DimGray;
+            wilBitTextBox1.BorderFocusColor = Color.DimGray;
+            wilBitTextBox1.BorderRadius = 4;
+            wilBitTextBox1.BorderSize = 2;
+            wilBitTextBox1.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            wilBitTextBox1.ForeColor = Color.FromArgb(64, 64, 64);
+            wilBitTextBox1.Location = new Point(750, 1);
+            wilBitTextBox1.Margin = new Padding(4);
+            wilBitTextBox1.Multiline = false;
+            wilBitTextBox1.Name = "wilBitTextBox1";
+            wilBitTextBox1.Padding = new Padding(10, 7, 10, 7);
+            wilBitTextBox1.PasswordChar = false;
+            wilBitTextBox1.PlaceholderColor = Color.DarkGray;
+            wilBitTextBox1.PlaceholderText = "";
+            wilBitTextBox1.Size = new Size(160, 29);
+            wilBitTextBox1.TabIndex = 1;
+            wilBitTextBox1.Texts = "";
+            wilBitTextBox1.UnderlinedStyle = false;
             // 
             // iconMenuItem1
             // 
-            this.iconMenuItem1.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconMenuItem1.IconColor = System.Drawing.Color.Black;
-            this.iconMenuItem1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconMenuItem1.Name = "iconMenuItem1";
-            this.iconMenuItem1.Size = new System.Drawing.Size(32, 19);
-            this.iconMenuItem1.Text = "iconMenuItem1";
+            iconMenuItem1.IconChar = FontAwesome.Sharp.IconChar.None;
+            iconMenuItem1.IconColor = Color.Black;
+            iconMenuItem1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            iconMenuItem1.Name = "iconMenuItem1";
+            iconMenuItem1.Size = new Size(32, 19);
+            iconMenuItem1.Text = "iconMenuItem1";
             // 
             // panel14
             // 
-            this.panel14.Location = new System.Drawing.Point(1040, 155);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(200, 100);
-            this.panel14.TabIndex = 5;
+            panel14.Location = new Point(1040, 155);
+            panel14.Name = "panel14";
+            panel14.Size = new Size(200, 100);
+            panel14.TabIndex = 5;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1330, 717);
-            this.Controls.Add(this.panel14);
-            this.Controls.Add(this.panel8);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel2);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            this.panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            this.panel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            this.panel10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.panel11.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            this.panel12.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).EndInit();
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox2)).EndInit();
-            this.wilBitPanel1.ResumeLayout(false);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Black;
+            ClientSize = new Size(1330, 467);
+            Controls.Add(panel14);
+            Controls.Add(panel8);
+            Controls.Add(panel3);
+            Controls.Add(panel2);
+            Name = "Form1";
+            Text = "Form1";
+            Load += Form1_Load;
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
+            panel8.ResumeLayout(false);
+            panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)iconPictureBox1).EndInit();
+            panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)iconPictureBox2).EndInit();
+            wilBitPanel1.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
         #endregion
-
-        private Panel panel1;
         private Panel panel3;
-        private Panel panel7;
-        private Panel panel6;
-        private Panel panel5;
-        private Panel panel4;
         private Panel panel8;
-        private Panel panel9;
-        private Panel panel10;
-        private Panel panel11;
-        private Panel panel12;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private Panel panel2;
         private WiLBiT.WiLBiTPanel wilBitPanel1;
@@ -496,15 +255,6 @@
         private FontAwesome.Sharp.IconMenuItem iconMenuItem1;
         private Label label3;
         private Label label4;
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox9;
-        private PictureBox pictureBox4;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox8;
-        private PictureBox pictureBox5;
-        private PictureBox pictureBox6;
-        private PictureBox pictureBox7;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox2;
         private Button btnResenha;
         private Button button1;

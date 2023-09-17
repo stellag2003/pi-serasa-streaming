@@ -2,7 +2,7 @@ namespace pi_serasa_streaming
 {
     public partial class Form1 : Form
     {
-    
+        
 
         public Form1()
         {
@@ -31,21 +31,21 @@ namespace pi_serasa_streaming
 
         private void Form1_Load(object sender, EventArgs e)
         {
-             //filmes.Clear();
-             //for (int i = 0; i < filmes.Count; i++)
+            //filmes.Clear();
+            //for (int i = 0; i < filmes.Count; i++)
             // {
-                // filmes.Add(filmes[i]);
+            // filmes.Add(filmes[i]);
             // }
 
             WindowState = FormWindowState.Maximized;
-            panel13.Location = new Point(ClientSize.Width / 2 - panel13.Size.Width / 2 , ClientSize.Height / 2 - panel13.Size.Height / 2);
+            panel13.Location = new Point(ClientSize.Width / 2 - panel13.Size.Width / 2, ClientSize.Height / 2 - panel13.Size.Height / 2);
 
 
         }
 
         private void lblResenha_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btnResenha_Click(object sender, EventArgs e)

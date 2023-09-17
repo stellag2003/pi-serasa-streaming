@@ -2,6 +2,7 @@ namespace pi_serasa_streaming
 {
     internal static class Program
     {
+        public static Usuario usuario;
         public static Reproducao reproducao;
         public static void filmeClicado(Reproducao reproducao)
         {

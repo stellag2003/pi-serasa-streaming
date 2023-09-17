@@ -88,5 +88,16 @@ namespace pi_serasa_streaming
         {
 
         }
+
+        private void btnComentar_Click(object sender, EventArgs e)
+        {
+            Resenha resenha = new Resenha();
+            resenha.Show();
+        }
+
+        private void painel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -75,9 +75,9 @@
             // btnEntrar
             // 
             btnEntrar.ForeColor = Color.Black;
-            btnEntrar.Location = new Point(126, 215);
+            btnEntrar.Location = new Point(111, 218);
             btnEntrar.Name = "btnEntrar";
-            btnEntrar.Size = new Size(100, 23);
+            btnEntrar.Size = new Size(113, 26);
             btnEntrar.TabIndex = 6;
             btnEntrar.Text = "Entrar";
             btnEntrar.UseVisualStyleBackColor = true;

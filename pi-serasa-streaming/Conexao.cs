@@ -18,9 +18,9 @@ namespace pi_serasa_streaming
        const string usuario = "u647084545_serasa_ssgc";
        const string senha = "Serasa2023";
 
-        const string dadosConexao = $"Server={host};Database={banco};Uid={usuario};Pwd={senha};";
+        const string dadosConexao = $"Server={host};Database={banco};Uid={usuario};Pwd={senha};Convert Zero Datetime = true";
         static MySqlConnection conexao = new MySqlConnection(dadosConexao);
-
+        
 
                
         
