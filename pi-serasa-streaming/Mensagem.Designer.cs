@@ -30,8 +30,9 @@
         {
             btnVoltar = new WiLBiT.WiLBiTButton();
             btnSair = new WiLBiT.WiLBiTButton();
-            Dados = new ListBox();
             panel1 = new Panel();
+            lista = new ListView();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // btnVoltar
@@ -68,26 +69,23 @@
             btnSair.UseVisualStyleBackColor = false;
             btnSair.Click += btnSair_Click;
             // 
-            // Dados
-            // 
-            Dados.BackColor = SystemColors.ActiveCaptionText;
-            Dados.BorderStyle = BorderStyle.None;
-            Dados.ForeColor = SystemColors.Menu;
-            Dados.FormattingEnabled = true;
-            Dados.ItemHeight = 15;
-            Dados.Location = new Point(21, 23);
-            Dados.Name = "Dados";
-            Dados.Size = new Size(206, 120);
-            Dados.TabIndex = 2;
-            Dados.SelectedIndexChanged += lista_SelectedIndexChanged;
-            // 
             // panel1
             // 
+            panel1.Controls.Add(lista);
             panel1.Location = new Point(5, 12);
             panel1.Name = "panel1";
             panel1.Size = new Size(238, 198);
             panel1.TabIndex = 3;
             panel1.Paint += panel1_Paint;
+            // 
+            // lista
+            // 
+            lista.Location = new Point(16, 24);
+            lista.Name = "lista";
+            lista.Size = new Size(206, 106);
+            lista.TabIndex = 0;
+            lista.UseCompatibleStateImageBehavior = false;
+            lista.View = View.List;
             // 
             // Mensagem
             // 
@@ -95,13 +93,13 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaptionText;
             ClientSize = new Size(255, 222);
-            Controls.Add(Dados);
             Controls.Add(btnSair);
             Controls.Add(btnVoltar);
             Controls.Add(panel1);
             Name = "Mensagem";
             Text = "Mensagem";
             Load += Mensagem_Load;
+            panel1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -109,7 +107,7 @@
 
         private WiLBiT.WiLBiTButton btnVoltar;
         private WiLBiT.WiLBiTButton btnSair;
-        private ListBox Dados;
         private Panel panel1;
+        private ListView lista;
     }
 }

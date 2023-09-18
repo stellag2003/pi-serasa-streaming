@@ -12,7 +12,9 @@ namespace pi_serasa_streaming
         }
 
         public static List<Reproducao> nomeFilme = new List<Reproducao>();
-        
+
+        public static List<Usuario> u = new List<Usuario>();
+
 
         /// <summary>
         ///  The main entry point for the application.

@@ -186,14 +186,14 @@ namespace pi_serasa_streaming
             Reproducao reproducao = new Reproducao();
             reproducao.BuscaFilmeNome(nome);
 
-            listView1.Clear();
 
             for (int i = 0; i < Program.nomeFilme.Count; i++)
             {
                 listView1.Items.Add(Program.nomeFilme[i].nome);
-                
+
             }
-           
+            listView1.Clear();
+
 
         }
 

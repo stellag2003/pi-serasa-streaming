@@ -11,7 +11,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace pi_serasa_streaming
 {
-    //List<Usuario>  = new List<Usuario>();
+
     public partial class Mensagem : Form
     {
         public Mensagem()
@@ -31,15 +31,22 @@ namespace pi_serasa_streaming
 
         private void lista_SelectedIndexChanged(object sender, EventArgs e)
         {
+
             Usuario usuario = new Usuario();
-           // usuario.carregaDados();
+            usuario.BuscaPorId(2);
+
+            for (int i = 0; i < Program.u.Count; i++)
+            {
+                lista.Items.Add(Program.u[i].nome);
+            }
+            lista.Clear();
         }
 
         private void btnSair_Click(object sender, EventArgs e)
         {
             //Principal principal = new Principal();
             //principal.Close();
-            
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

@@ -33,13 +33,13 @@ namespace pi_serasa_streaming
             panel3 = new Panel();
             label3 = new Label();
             pictureBox1 = new PictureBox();
+            listView1 = new ListView();
             painel = new Panel();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             btnPesquisar = new FontAwesome.Sharp.IconPictureBox();
             btnProducoes = new Button();
             Pesquisa = new WiLBiT.WiLBiTTextBox();
             btnResenha = new Button();
-            listView1 = new ListView();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -85,10 +85,21 @@ namespace pi_serasa_streaming
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(44, 3);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1025, 205);
+            pictureBox1.Size = new Size(1074, 205);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 6;
             pictureBox1.TabStop = false;
+            // 
+            // listView1
+            // 
+            listView1.BackColor = SystemColors.HotTrack;
+            listView1.Location = new Point(968, 22);
+            listView1.Name = "listView1";
+            listView1.Size = new Size(150, 97);
+            listView1.TabIndex = 11;
+            listView1.UseCompatibleStateImageBehavior = false;
+            listView1.View = View.List;
+            listView1.SelectedIndexChanged += listView1_SelectedIndexChanged;
             // 
             // painel
             // 
@@ -193,16 +204,6 @@ namespace pi_serasa_streaming
             btnResenha.Text = "Resenhas";
             btnResenha.UseVisualStyleBackColor = false;
             btnResenha.Click += btnResenha_Click_1;
-            // 
-            // listView1
-            // 
-            listView1.Location = new Point(1002, 3);
-            listView1.Name = "listView1";
-            listView1.Size = new Size(150, 97);
-            listView1.TabIndex = 11;
-            listView1.UseCompatibleStateImageBehavior = false;
-            listView1.View = View.List;
-            listView1.SelectedIndexChanged += listView1_SelectedIndexChanged;
             // 
             // Principal
             // 
