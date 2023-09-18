@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaU));
             painelU = new Panel();
+            pictureBox1 = new PictureBox();
             label2 = new Label();
             btnEntrar = new Button();
             txtSenha = new TextBox();
@@ -37,16 +38,14 @@
             lblSenha = new Label();
             lblEmail = new Label();
             label1 = new Label();
-            menu = new Panel();
-            pictureBox1 = new PictureBox();
             painelU.SuspendLayout();
-            menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // painelU
             // 
             painelU.BackColor = Color.Black;
+            painelU.Controls.Add(pictureBox1);
             painelU.Controls.Add(label2);
             painelU.Controls.Add(btnEntrar);
             painelU.Controls.Add(txtSenha);
@@ -55,17 +54,29 @@
             painelU.Controls.Add(lblEmail);
             painelU.Controls.Add(label1);
             painelU.ForeColor = Color.CadetBlue;
-            painelU.Location = new Point(48, 54);
+            painelU.Location = new Point(52, 31);
             painelU.Name = "painelU";
-            painelU.Size = new Size(369, 373);
+            painelU.Size = new Size(372, 442);
             painelU.TabIndex = 0;
+            painelU.Paint += painelU_Paint;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(55, 3);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(300, 56);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 8.25F, FontStyle.Underline, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(62, 344);
+            label2.Location = new Point(89, 395);
             label2.Name = "label2";
             label2.Size = new Size(211, 13);
             label2.TabIndex = 7;
@@ -75,7 +86,7 @@
             // btnEntrar
             // 
             btnEntrar.ForeColor = Color.Black;
-            btnEntrar.Location = new Point(111, 218);
+            btnEntrar.Location = new Point(126, 270);
             btnEntrar.Name = "btnEntrar";
             btnEntrar.Size = new Size(113, 26);
             btnEntrar.TabIndex = 6;
@@ -85,7 +96,7 @@
             // 
             // txtSenha
             // 
-            txtSenha.Location = new Point(43, 163);
+            txtSenha.Location = new Point(43, 214);
             txtSenha.Name = "txtSenha";
             txtSenha.PasswordChar = '*';
             txtSenha.Size = new Size(257, 23);
@@ -94,7 +105,7 @@
             // 
             // txtEmail
             // 
-            txtEmail.Location = new Point(43, 91);
+            txtEmail.Location = new Point(43, 140);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(257, 23);
             txtEmail.TabIndex = 4;
@@ -102,9 +113,10 @@
             // lblSenha
             // 
             lblSenha.AutoSize = true;
+            lblSenha.BackColor = Color.Transparent;
             lblSenha.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             lblSenha.ForeColor = Color.White;
-            lblSenha.Location = new Point(44, 143);
+            lblSenha.Location = new Point(43, 184);
             lblSenha.Name = "lblSenha";
             lblSenha.Size = new Size(46, 17);
             lblSenha.TabIndex = 2;
@@ -113,9 +125,10 @@
             // lblEmail
             // 
             lblEmail.AutoSize = true;
+            lblEmail.BackColor = Color.Transparent;
             lblEmail.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             lblEmail.ForeColor = Color.White;
-            lblEmail.Location = new Point(43, 71);
+            lblEmail.Location = new Point(43, 110);
             lblEmail.Name = "lblEmail";
             lblEmail.Size = new Size(47, 17);
             lblEmail.TabIndex = 1;
@@ -124,46 +137,30 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(111, 22);
+            label1.Location = new Point(111, 75);
             label1.Name = "label1";
             label1.Size = new Size(128, 21);
             label1.TabIndex = 0;
             label1.Text = "Login de Usuário";
-            // 
-            // menu
-            // 
-            menu.Controls.Add(pictureBox1);
-            menu.Location = new Point(454, 54);
-            menu.Name = "menu";
-            menu.Size = new Size(382, 174);
-            menu.TabIndex = 2;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(55, 43);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(300, 56);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            label1.Click += label1_Click;
             // 
             // TelaU
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.Black;
+            BackColor = Color.PaleGreen;
+            BackgroundImage = Properties.Resources.papel_de_parede_login_editada1;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(892, 485);
-            Controls.Add(menu);
             Controls.Add(painelU);
             Name = "TelaU";
             Text = "TelaU";
             Load += TelaU_Load;
             painelU.ResumeLayout(false);
             painelU.PerformLayout();
-            menu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
@@ -178,7 +175,6 @@
         private Label lblEmail;
         private Label label1;
         private Label label2;
-        private Panel menu;
         private PictureBox pictureBox1;
     }
 }

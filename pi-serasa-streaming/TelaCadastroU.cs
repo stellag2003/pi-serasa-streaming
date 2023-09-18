@@ -7,6 +7,7 @@ using System.Linq;
 using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
@@ -19,6 +20,9 @@ namespace pi_serasa_streaming
         public TelaCadastroU()
         {
             InitializeComponent();
+            this.BackColor = Color.White;
+            painelCadastro.BackColor = Color.FromArgb(200, Color.Black);
+
         }
 
         void limpaCampos()
@@ -37,8 +41,7 @@ namespace pi_serasa_streaming
             WindowState = FormWindowState.Maximized;
             painelCadastro.Location = new Point(ClientSize.Width / 2 - painelCadastro.Size.Width / 2 + 40, ClientSize.Height / 2 - painelCadastro.Height / 2 + 50);
 
-            menu.Location = new Point(510, 0);
-            menu.Size = new Size(ClientSize.Width, 100);
+
 
         }
 
@@ -71,7 +74,12 @@ namespace pi_serasa_streaming
             }
 
             limpaCampos();
-            
+
+        }
+
+        private void painelCadastro_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

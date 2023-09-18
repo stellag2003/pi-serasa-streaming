@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaCadastroU));
             painelCadastro = new Panel();
+            pictureBox1 = new PictureBox();
             txtSenha = new TextBox();
             txtData = new MaskedTextBox();
             button1 = new Button();
@@ -43,16 +44,14 @@
             label2 = new Label();
             lblEmail = new Label();
             label1 = new Label();
-            menu = new Panel();
-            pictureBox1 = new PictureBox();
             painelCadastro.SuspendLayout();
-            menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // painelCadastro
             // 
             painelCadastro.BackColor = Color.Black;
+            painelCadastro.Controls.Add(pictureBox1);
             painelCadastro.Controls.Add(txtSenha);
             painelCadastro.Controls.Add(txtData);
             painelCadastro.Controls.Add(button1);
@@ -70,6 +69,18 @@
             painelCadastro.Name = "painelCadastro";
             painelCadastro.Size = new Size(396, 597);
             painelCadastro.TabIndex = 0;
+            painelCadastro.Paint += painelCadastro_Paint;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = Color.Transparent;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(52, 18);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(300, 56);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 0;
+            pictureBox1.TabStop = false;
             // 
             // txtSenha
             // 
@@ -139,6 +150,7 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = Color.White;
             label5.Location = new Point(52, 399);
@@ -150,6 +162,7 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = Color.White;
             label4.Location = new Point(52, 337);
@@ -161,6 +174,7 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.White;
             label3.Location = new Point(52, 275);
@@ -172,6 +186,7 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
             label2.Location = new Point(52, 209);
@@ -183,6 +198,7 @@
             // lblEmail
             // 
             lblEmail.AutoSize = true;
+            lblEmail.BackColor = Color.Transparent;
             lblEmail.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             lblEmail.ForeColor = Color.White;
             lblEmail.Location = new Point(49, 148);
@@ -194,6 +210,7 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
             label1.Location = new Point(112, 90);
@@ -202,38 +219,20 @@
             label1.TabIndex = 1;
             label1.Text = "Cadastro de Usuário";
             // 
-            // menu
-            // 
-            menu.Controls.Add(pictureBox1);
-            menu.Location = new Point(468, 81);
-            menu.Name = "menu";
-            menu.Size = new Size(382, 174);
-            menu.TabIndex = 1;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(55, 43);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(300, 56);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            // 
             // TelaCadastroU
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
+            BackgroundImage = Properties.Resources.capa_cadastro_editada1;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(988, 647);
-            Controls.Add(menu);
             Controls.Add(painelCadastro);
             Name = "TelaCadastroU";
             Text = " ";
             Load += TelaCadastroU_Load;
             painelCadastro.ResumeLayout(false);
             painelCadastro.PerformLayout();
-            menu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
@@ -254,7 +253,6 @@
         private TextBox txtNome;
         private MaskedTextBox txtData;
         private TextBox txtSenha;
-        private Panel menu;
         private PictureBox pictureBox1;
     }
 }

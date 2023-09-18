@@ -16,16 +16,24 @@ namespace pi_serasa_streaming
         public TelaU()
         {
             InitializeComponent();
+            this.BackColor = Color.White;
+            painelU.BackColor = Color.FromArgb(200, Color.Black);
+
         }
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            e.Graphics.DrawLine(Pens.Yellow, 0, 0, 100, 100);
+        }
+
+
 
         private void TelaU_Load(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Maximized;
-            painelU.Location = new Point(ClientSize.Width / 2 - painelU.Size.Width / 2 + 40, ClientSize.Height / 2 - painelU.Height / 2 + 50);
-
-            menu.Location = new Point(510, 70);
-            menu.Size = new Size(ClientSize.Width, 100);
-
+            painelU.Location = new Point(
+            this.ClientSize.Width / 2 - painelU.Size.Width / 2,
+            this.ClientSize.Height / 2 - painelU.Size.Height / 2);
+            painelU.Anchor = AnchorStyles.None;
         }
 
         private void btnEntrar_Click(object sender, EventArgs e)
@@ -60,5 +68,19 @@ namespace pi_serasa_streaming
             telaCadastro.Show();
         }
 
+        private void painelU_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void menu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
