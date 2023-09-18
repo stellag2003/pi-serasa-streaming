@@ -39,6 +39,7 @@ namespace pi_serasa_streaming
             btnProducoes = new Button();
             Pesquisa = new WiLBiT.WiLBiTTextBox();
             btnResenha = new Button();
+            listView1 = new ListView();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -49,58 +50,13 @@ namespace pi_serasa_streaming
             // 
             // panel1
             // 
+            panel1.Controls.Add(listView1);
             panel1.Controls.Add(panel3);
             panel1.Controls.Add(pictureBox1);
             panel1.Location = new Point(18, 68);
             panel1.Name = "panel1";
             panel1.Size = new Size(1183, 816);
             panel1.TabIndex = 10;
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lista = new System.Windows.Forms.ListView();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.painel = new System.Windows.Forms.Panel();
-            this.iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
-            this.btnPesquisar = new FontAwesome.Sharp.IconPictureBox();
-            this.btnProducoes = new System.Windows.Forms.Button();
-            this.Pesquisa = new WiLBiT.WiLBiTTextBox();
-            this.btnResenha = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.painel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconPictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnPesquisar)).BeginInit();
-            this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.lista);
-            this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(18, 68);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1183, 816);
-            this.panel1.TabIndex = 10;
-            // 
-            // lista
-            // 
-            this.lista.Location = new System.Drawing.Point(947, 81);
-            this.lista.Name = "lista";
-            this.lista.Size = new System.Drawing.Size(121, 97);
-            this.lista.TabIndex = 10;
-            this.lista.UseCompatibleStateImageBehavior = false;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(900, 70);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(186, 23);
-            this.comboBox1.TabIndex = 9;
             // 
             // panel3
             // 
@@ -127,7 +83,7 @@ namespace pi_serasa_streaming
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(22, 14);
+            pictureBox1.Location = new Point(44, 3);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(1025, 205);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -160,6 +116,7 @@ namespace pi_serasa_streaming
             iconPictureBox1.Size = new Size(29, 28);
             iconPictureBox1.TabIndex = 6;
             iconPictureBox1.TabStop = false;
+            iconPictureBox1.Click += iconPictureBox1_Click_1;
             // 
             // btnPesquisar
             // 
@@ -237,6 +194,16 @@ namespace pi_serasa_streaming
             btnResenha.UseVisualStyleBackColor = false;
             btnResenha.Click += btnResenha_Click_1;
             // 
+            // listView1
+            // 
+            listView1.Location = new Point(1002, 3);
+            listView1.Name = "listView1";
+            listView1.Size = new Size(150, 97);
+            listView1.TabIndex = 11;
+            listView1.UseCompatibleStateImageBehavior = false;
+            listView1.View = View.List;
+            listView1.SelectedIndexChanged += listView1_SelectedIndexChanged;
+            // 
             // Principal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -269,7 +236,6 @@ namespace pi_serasa_streaming
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private Button btnProducoes;
         private Button btnResenha;
-        private ComboBox comboBox1;
-        private ListView lista;
+        private ListView listView1;
     }
 }

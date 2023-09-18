@@ -26,7 +26,6 @@ namespace pi_serasa_streaming
         }
 
 
-
         private void TelaU_Load(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Maximized;

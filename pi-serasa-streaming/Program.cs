@@ -11,7 +11,7 @@ namespace pi_serasa_streaming
             reproducao1.Show();
         }
 
-        public static List<string> nomeFilme = new List<string>();
+        public static List<Reproducao> nomeFilme = new List<Reproducao>();
         
 
         /// <summary>

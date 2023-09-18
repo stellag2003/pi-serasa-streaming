@@ -125,7 +125,7 @@ namespace pi_serasa_streaming
 
         public void iconPictureBox2_Click(object sender, EventArgs e)
         {
-            
+
 
 
         }
@@ -147,8 +147,15 @@ namespace pi_serasa_streaming
 
         private void Principal_Load_1(object sender, EventArgs e)
         {
+
             WindowState = FormWindowState.Maximized;
-            painel.Location = new Point(ClientSize.Width / 2 - painel.Size.Width / 2, ClientSize.Height / 2 - painel.Height / 2);
+            painel.Location = new Point(
+            this.ClientSize.Width / 2 - painel.Size.Width / 2,
+            this.ClientSize.Height / 2 - painel.Size.Height / 2);
+            painel.Anchor = AnchorStyles.None;
+
+            //WindowState = FormWindowState.Maximized;
+            //painel.Location = new Point(ClientSize.Width / 2 - painel.Size.Width / 2, ClientSize.Height / 2 - painel.Height / 2);
 
 
             Reproducao reproducao = new Reproducao();
@@ -179,12 +186,15 @@ namespace pi_serasa_streaming
             Reproducao reproducao = new Reproducao();
             reproducao.BuscaFilmeNome(nome);
 
-            for (int i = 0; i < Program.nomeFilme.Count ; i++)
-            {
-                   lista.Items.Add(Program.nomeFilme[i]);
+            listView1.Clear();
 
+            for (int i = 0; i < Program.nomeFilme.Count; i++)
+            {
+                listView1.Items.Add(Program.nomeFilme[i].nome);
+                
             }
-    
+           
+
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
@@ -193,6 +203,17 @@ namespace pi_serasa_streaming
         }
 
         private void painel_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void iconPictureBox1_Click_1(object sender, EventArgs e)
+        {
+            Mensagem mensagem = new Mensagem();
+            mensagem.Show();
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
