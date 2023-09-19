@@ -28,21 +28,50 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
+            panel1 = new Panel();
+            ListaFilmes = new ListView();
+            panel1.SuspendLayout();
+            SuspendLayout();
+            // 
+            // panel1
+            // 
+            panel1.Controls.Add(ListaFilmes);
+            panel1.Location = new Point(22, 82);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(904, 468);
+            panel1.TabIndex = 0;
+            panel1.Paint += panel1_Paint;
+            // 
+            // ListaFilmes
+            // 
+            ListaFilmes.BackColor = SystemColors.InfoText;
+            ListaFilmes.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point);
+            ListaFilmes.ForeColor = Color.Linen;
+            ListaFilmes.Location = new Point(32, 24);
+            ListaFilmes.Name = "ListaFilmes";
+            ListaFilmes.Size = new Size(831, 411);
+            ListaFilmes.TabIndex = 0;
+            ListaFilmes.UseCompatibleStateImageBehavior = false;
+            ListaFilmes.View = View.Tile;
+            ListaFilmes.SelectedIndexChanged += ListaFilmes_SelectedIndexChanged;
             // 
             // TelaPesquisa
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(971, 637);
-            this.Name = "TelaPesquisa";
-            this.Text = "TelaPesquisa";
-            this.Load += new System.EventHandler(this.TelaPesquisa_Load);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaptionText;
+            ClientSize = new Size(971, 637);
+            Controls.Add(panel1);
+            Name = "TelaPesquisa";
+            Text = "TelaPesquisa";
+            Load += TelaPesquisa_Load;
+            panel1.ResumeLayout(false);
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Panel panel1;
+        private ListView ListaFilmes;
     }
 }

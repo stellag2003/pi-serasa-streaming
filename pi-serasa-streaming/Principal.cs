@@ -15,7 +15,7 @@ namespace pi_serasa_streaming
     public partial class Principal : Form
     {
         List<Reproducao> reproducoes = new List<Reproducao>();
-        //List<string> nomeFilme= new List<string>();
+        List<Reproducao> pesquisa = new List<Reproducao>();
 
         public Principal()
         {
@@ -140,7 +140,7 @@ namespace pi_serasa_streaming
             // Pesquisa.Texts.;
         }
 
-        private void Pesquisa__TextChanged_1(object sender, EventArgs e)
+        public void Pesquisa__TextChanged_1(object sender, EventArgs e)
         {
 
         }
@@ -181,18 +181,34 @@ namespace pi_serasa_streaming
 
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
-            string nome = Pesquisa.Text;
-
-            Reproducao reproducao = new Reproducao();
-            reproducao.BuscaFilmeNome(nome);
+            TelaPesquisa p = new TelaPesquisa();
+            p.Show();
 
 
-            for (int i = 0; i < Program.nomeFilme.Count; i++)
-            {
-                listView1.Items.Add(Program.nomeFilme[i].nome);
 
-            }
-            listView1.Clear();
+            //Reproducao reproducao = new Reproducao();
+            //reproducao.BuscaFilmeNome(nome);
+
+
+            //foreach (//ListView item in listView1.Items) 
+            //{
+            //    if(nome == item.SubItems[1].text)
+            //    {
+            //        listView1.Show(item);
+            //    }
+            //}
+
+
+
+
+
+
+            //for (int i = 0; i < Program.nomeFilme.Count; i++)
+            //{
+            //    listView1.Items.Add(Program.nomeFilme[i].nome);
+
+            //}
+            //listView1.Clear();
 
 
         }

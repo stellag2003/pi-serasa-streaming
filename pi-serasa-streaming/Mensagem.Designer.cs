@@ -80,12 +80,15 @@
             // 
             // lista
             // 
+            lista.BackColor = SystemColors.InfoText;
+            lista.ForeColor = SystemColors.InactiveBorder;
             lista.Location = new Point(16, 24);
             lista.Name = "lista";
             lista.Size = new Size(206, 106);
             lista.TabIndex = 0;
             lista.UseCompatibleStateImageBehavior = false;
             lista.View = View.List;
+            lista.SelectedIndexChanged += lista_SelectedIndexChanged_1;
             // 
             // Mensagem
             // 
@@ -96,6 +99,7 @@
             Controls.Add(btnSair);
             Controls.Add(btnVoltar);
             Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Mensagem";
             Text = "Mensagem";
             Load += Mensagem_Load;

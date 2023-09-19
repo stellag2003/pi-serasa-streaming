@@ -33,13 +33,12 @@ namespace pi_serasa_streaming
             panel3 = new Panel();
             label3 = new Label();
             pictureBox1 = new PictureBox();
-            listView1 = new ListView();
             painel = new Panel();
             iconPictureBox1 = new FontAwesome.Sharp.IconPictureBox();
             btnPesquisar = new FontAwesome.Sharp.IconPictureBox();
             btnProducoes = new Button();
-            Pesquisa = new WiLBiT.WiLBiTTextBox();
             btnResenha = new Button();
+            Pesquisa = new WiLBiT.WiLBiTTextBox();
             panel1.SuspendLayout();
             panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -50,7 +49,6 @@ namespace pi_serasa_streaming
             // 
             // panel1
             // 
-            panel1.Controls.Add(listView1);
             panel1.Controls.Add(panel3);
             panel1.Controls.Add(pictureBox1);
             panel1.Location = new Point(18, 68);
@@ -62,7 +60,7 @@ namespace pi_serasa_streaming
             // 
             panel3.AutoScroll = true;
             panel3.Controls.Add(label3);
-            panel3.Location = new Point(22, 235);
+            panel3.Location = new Point(44, 228);
             panel3.Name = "panel3";
             panel3.RightToLeft = RightToLeft.No;
             panel3.Size = new Size(1096, 427);
@@ -83,31 +81,20 @@ namespace pi_serasa_streaming
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(44, 3);
+            pictureBox1.Location = new Point(66, 3);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(1074, 205);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 6;
             pictureBox1.TabStop = false;
             // 
-            // listView1
-            // 
-            listView1.BackColor = SystemColors.HotTrack;
-            listView1.Location = new Point(968, 22);
-            listView1.Name = "listView1";
-            listView1.Size = new Size(150, 97);
-            listView1.TabIndex = 11;
-            listView1.UseCompatibleStateImageBehavior = false;
-            listView1.View = View.List;
-            listView1.SelectedIndexChanged += listView1_SelectedIndexChanged;
-            // 
             // painel
             // 
+            painel.Controls.Add(Pesquisa);
             painel.Controls.Add(iconPictureBox1);
             painel.Controls.Add(panel1);
             painel.Controls.Add(btnPesquisar);
             painel.Controls.Add(btnProducoes);
-            painel.Controls.Add(Pesquisa);
             painel.Controls.Add(btnResenha);
             painel.Location = new Point(26, 117);
             painel.Name = "painel";
@@ -162,31 +149,6 @@ namespace pi_serasa_streaming
             btnProducoes.UseVisualStyleBackColor = false;
             btnProducoes.Click += btnProducoes_Click_1;
             // 
-            // Pesquisa
-            // 
-            Pesquisa.AccessibleRole = AccessibleRole.Grip;
-            Pesquisa.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            Pesquisa.BackColor = Color.Black;
-            Pesquisa.BorderColor = Color.Black;
-            Pesquisa.BorderFocusColor = Color.DimGray;
-            Pesquisa.BorderRadius = 4;
-            Pesquisa.BorderSize = 2;
-            Pesquisa.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            Pesquisa.ForeColor = Color.Gray;
-            Pesquisa.Location = new Point(965, 22);
-            Pesquisa.Margin = new Padding(4);
-            Pesquisa.Multiline = false;
-            Pesquisa.Name = "Pesquisa";
-            Pesquisa.Padding = new Padding(10, 7, 10, 7);
-            Pesquisa.PasswordChar = false;
-            Pesquisa.PlaceholderColor = Color.DarkGray;
-            Pesquisa.PlaceholderText = "Filmes, Séries, Atores...";
-            Pesquisa.Size = new Size(160, 29);
-            Pesquisa.TabIndex = 3;
-            Pesquisa.Texts = "";
-            Pesquisa.UnderlinedStyle = false;
-            Pesquisa._TextChanged += Pesquisa__TextChanged_1;
-            // 
             // btnResenha
             // 
             btnResenha.BackColor = SystemColors.ActiveCaptionText;
@@ -204,6 +166,30 @@ namespace pi_serasa_streaming
             btnResenha.Text = "Resenhas";
             btnResenha.UseVisualStyleBackColor = false;
             btnResenha.Click += btnResenha_Click_1;
+            // 
+            // Pesquisa
+            // 
+            Pesquisa.AccessibleRole = AccessibleRole.Grip;
+            Pesquisa.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            Pesquisa.BackColor = Color.Black;
+            Pesquisa.BorderColor = Color.Black;
+            Pesquisa.BorderFocusColor = Color.DimGray;
+            Pesquisa.BorderRadius = 4;
+            Pesquisa.BorderSize = 2;
+            Pesquisa.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
+            Pesquisa.ForeColor = Color.Gray;
+            Pesquisa.Location = new Point(965, 24);
+            Pesquisa.Margin = new Padding(4);
+            Pesquisa.Multiline = false;
+            Pesquisa.Name = "Pesquisa";
+            Pesquisa.Padding = new Padding(10, 7, 10, 7);
+            Pesquisa.PasswordChar = false;
+            Pesquisa.PlaceholderColor = Color.DarkGray;
+            Pesquisa.PlaceholderText = "Filmes, Séries, Atores...";
+            Pesquisa.Size = new Size(160, 29);
+            Pesquisa.TabIndex = 11;
+            Pesquisa.Texts = "";
+            Pesquisa.UnderlinedStyle = false;
             // 
             // Principal
             // 
@@ -232,11 +218,10 @@ namespace pi_serasa_streaming
         private PictureBox pictureBox1;
         private Panel painel;
         public Panel panel3;
-        private WiLBiT.WiLBiTTextBox Pesquisa;
         private FontAwesome.Sharp.IconPictureBox btnPesquisar;
         private FontAwesome.Sharp.IconPictureBox iconPictureBox1;
         private Button btnProducoes;
         private Button btnResenha;
-        private ListView listView1;
+        private WiLBiT.WiLBiTTextBox Pesquisa;
     }
 }

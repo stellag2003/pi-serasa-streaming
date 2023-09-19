@@ -19,8 +19,36 @@ namespace pi_serasa_streaming
 
         private void TelaPesquisa_Load(object sender, EventArgs e)
         {
-            //Reproducao reproducao = new Reproducao();
-           // reproducoes = reproducao.BuscaFilmeNome();
+            Reproducao reproducao = new Reproducao();
+            Program.nomeFilme = reproducao.buscaTodosFilmes();
+
+            ListaFilmes.Clear();
+            for (int i = 0; i < Program.nomeFilme.Count; i++)
+            {
+                ListaFilmes.Items.Add(Program.nomeFilme[i].nome);
+
+            }
+            
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Pesquisa__TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPesquisar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ListaFilmes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

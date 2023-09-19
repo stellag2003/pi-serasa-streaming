@@ -22,6 +22,15 @@ namespace pi_serasa_streaming
         private void Mensagem_Load(object sender, EventArgs e)
         {
 
+            Usuario usuario = new Usuario();
+            Program.u = usuario.buscaTodos();
+
+            lista.Clear();
+            for (int i = 0; i < Program.u.Count; i++)
+            {
+                lista.Items.Add(Program.u[i].nome);
+            }
+
         }
 
         private void wilBitButton1_Click(object sender, EventArgs e)
@@ -32,24 +41,21 @@ namespace pi_serasa_streaming
         private void lista_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-            Usuario usuario = new Usuario();
-            usuario.BuscaPorId(2);
-
-            for (int i = 0; i < Program.u.Count; i++)
-            {
-                lista.Items.Add(Program.u[i].nome);
-            }
-            lista.Clear();
         }
 
         private void btnSair_Click(object sender, EventArgs e)
         {
-            //Principal principal = new Principal();
-            //principal.Close();
+            TelaU telaU = new TelaU();
+            telaU.Show();
 
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void lista_SelectedIndexChanged_1(object sender, EventArgs e)
         {
 
         }

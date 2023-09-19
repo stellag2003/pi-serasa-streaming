@@ -15,6 +15,8 @@ namespace pi_serasa_streaming
 
         public static List<Usuario> u = new List<Usuario>();
 
+        //string nome = Pesquisa.Text;
+
 
         /// <summary>
         ///  The main entry point for the application.
