@@ -20,8 +20,8 @@ namespace pi_serasa_streaming
         public TelaCadastroU()
         {
             InitializeComponent();
-            this.BackColor = Color.White;
-            painelCadastro.BackColor = Color.FromArgb(200, Color.Black);
+            //this.BackColor = Color.White;
+            //painelCadastro.BackColor = Color.FromArgb(200, Color.Black);
 
         }
 

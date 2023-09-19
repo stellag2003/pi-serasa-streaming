@@ -15,7 +15,7 @@ namespace pi_serasa_streaming
     public partial class Principal : Form
     {
         List<Reproducao> reproducoes = new List<Reproducao>();
-        List<Reproducao> pesquisa = new List<Reproducao>();
+        //List<string> nomeFilme= new List<string>();
 
         public Principal()
         {
@@ -140,7 +140,7 @@ namespace pi_serasa_streaming
             // Pesquisa.Texts.;
         }
 
-        public void Pesquisa__TextChanged_1(object sender, EventArgs e)
+        private void Pesquisa__TextChanged_1(object sender, EventArgs e)
         {
 
         }
@@ -165,42 +165,26 @@ namespace pi_serasa_streaming
 
         private void btnResenha_Click_1(object sender, EventArgs e)
         {
-            CarregaForm(new Resenha());
-            btnResenha.BackColor = Color.Gray;
-            btnProducoes.BackColor = Color.Black;
+            //CarregaForm(new Resenha());
+            //btnResenha.BackColor = Color.Gray;
+            //btnProducoes.BackColor = Color.Black;
 
         }
 
         private void btnProducoes_Click_1(object sender, EventArgs e)
         {
-            CarregaForm(new Principal());
-            btnProducoes.BackColor = Color.Gray;
-            btnResenha.BackColor = Color.Black;
+            //CarregaForm(new Principal());
+            //btnProducoes.BackColor = Color.Gray;
+            //btnResenha.BackColor = Color.Black;
 
         }
 
         private void btnPesquisar_Click(object sender, EventArgs e)
         {
-            TelaPesquisa p = new TelaPesquisa();
-            p.Show();
-
-
+            //string nome = Pesquisa.Text;
 
             //Reproducao reproducao = new Reproducao();
             //reproducao.BuscaFilmeNome(nome);
-
-
-            //foreach (//ListView item in listView1.Items) 
-            //{
-            //    if(nome == item.SubItems[1].text)
-            //    {
-            //        listView1.Show(item);
-            //    }
-            //}
-
-
-
-
 
 
             //for (int i = 0; i < Program.nomeFilme.Count; i++)
@@ -225,8 +209,8 @@ namespace pi_serasa_streaming
 
         private void iconPictureBox1_Click_1(object sender, EventArgs e)
         {
-            Mensagem mensagem = new Mensagem();
-            mensagem.Show();
+            //    Mensagem mensagem = new Mensagem();
+            //    mensagem.Show();
         }
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)

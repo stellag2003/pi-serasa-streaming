@@ -56,7 +56,7 @@
             painelU.ForeColor = Color.CadetBlue;
             painelU.Location = new Point(52, 31);
             painelU.Name = "painelU";
-            painelU.Size = new Size(372, 442);
+            painelU.Size = new Size(372, 506);
             painelU.TabIndex = 0;
             painelU.Paint += painelU_Paint;
             // 
@@ -64,7 +64,7 @@
             // 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(55, 3);
+            pictureBox1.Location = new Point(33, 0);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(300, 56);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -76,7 +76,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 8.25F, FontStyle.Underline, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(89, 395);
+            label2.Location = new Point(73, 480);
             label2.Name = "label2";
             label2.Size = new Size(211, 13);
             label2.TabIndex = 7;
@@ -85,10 +85,11 @@
             // 
             // btnEntrar
             // 
+            btnEntrar.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             btnEntrar.ForeColor = Color.Black;
-            btnEntrar.Location = new Point(126, 270);
+            btnEntrar.Location = new Point(111, 333);
             btnEntrar.Name = "btnEntrar";
-            btnEntrar.Size = new Size(113, 26);
+            btnEntrar.Size = new Size(128, 32);
             btnEntrar.TabIndex = 6;
             btnEntrar.Text = "Entrar";
             btnEntrar.UseVisualStyleBackColor = true;
@@ -96,7 +97,7 @@
             // 
             // txtSenha
             // 
-            txtSenha.Location = new Point(43, 214);
+            txtSenha.Location = new Point(43, 272);
             txtSenha.Name = "txtSenha";
             txtSenha.PasswordChar = '*';
             txtSenha.Size = new Size(257, 23);
@@ -105,7 +106,7 @@
             // 
             // txtEmail
             // 
-            txtEmail.Location = new Point(43, 140);
+            txtEmail.Location = new Point(44, 207);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(257, 23);
             txtEmail.TabIndex = 4;
@@ -116,7 +117,7 @@
             lblSenha.BackColor = Color.Transparent;
             lblSenha.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             lblSenha.ForeColor = Color.White;
-            lblSenha.Location = new Point(43, 184);
+            lblSenha.Location = new Point(44, 252);
             lblSenha.Name = "lblSenha";
             lblSenha.Size = new Size(46, 17);
             lblSenha.TabIndex = 2;
@@ -128,7 +129,7 @@
             lblEmail.BackColor = Color.Transparent;
             lblEmail.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             lblEmail.ForeColor = Color.White;
-            lblEmail.Location = new Point(43, 110);
+            lblEmail.Location = new Point(43, 187);
             lblEmail.Name = "lblEmail";
             lblEmail.Size = new Size(47, 17);
             lblEmail.TabIndex = 1;
@@ -140,7 +141,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(111, 75);
+            label1.Location = new Point(111, 119);
             label1.Name = "label1";
             label1.Size = new Size(128, 21);
             label1.TabIndex = 0;
@@ -151,10 +152,10 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.PaleGreen;
-            BackgroundImage = Properties.Resources.papel_de_parede_login_editada1;
+            AutoValidate = AutoValidate.EnablePreventFocusChange;
+            BackColor = Color.Black;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(892, 485);
+            ClientSize = new Size(892, 549);
             Controls.Add(painelU);
             Name = "TelaU";
             Text = "TelaU";

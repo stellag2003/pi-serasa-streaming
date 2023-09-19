@@ -65,9 +65,9 @@
             painelCadastro.Controls.Add(label2);
             painelCadastro.Controls.Add(lblEmail);
             painelCadastro.Controls.Add(label1);
-            painelCadastro.Location = new Point(28, 29);
+            painelCadastro.Location = new Point(402, 12);
             painelCadastro.Name = "painelCadastro";
-            painelCadastro.Size = new Size(396, 597);
+            painelCadastro.Size = new Size(409, 664);
             painelCadastro.TabIndex = 0;
             painelCadastro.Paint += painelCadastro_Paint;
             // 
@@ -75,7 +75,7 @@
             // 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(52, 18);
+            pictureBox1.Location = new Point(58, 0);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(300, 56);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -84,27 +84,28 @@
             // 
             // txtSenha
             // 
-            txtSenha.Location = new Point(52, 295);
+            txtSenha.Location = new Point(72, 290);
             txtSenha.Name = "txtSenha";
             txtSenha.PasswordChar = '*';
-            txtSenha.Size = new Size(268, 23);
+            txtSenha.Size = new Size(269, 23);
             txtSenha.TabIndex = 3;
             txtSenha.UseSystemPasswordChar = true;
             // 
             // txtData
             // 
-            txtData.Location = new Point(52, 357);
+            txtData.Location = new Point(72, 361);
             txtData.Mask = "00/00/0000";
             txtData.Name = "txtData";
-            txtData.Size = new Size(267, 23);
+            txtData.Size = new Size(269, 23);
             txtData.TabIndex = 4;
             txtData.ValidatingType = typeof(DateTime);
             // 
             // button1
             // 
-            button1.Location = new Point(112, 542);
+            button1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
+            button1.Location = new Point(135, 537);
             button1.Name = "button1";
-            button1.Size = new Size(142, 27);
+            button1.Size = new Size(151, 27);
             button1.TabIndex = 7;
             button1.Text = "Cadastrar";
             button1.UseVisualStyleBackColor = true;
@@ -114,7 +115,7 @@
             // 
             btnTermos.AutoSize = true;
             btnTermos.ForeColor = Color.White;
-            btnTermos.Location = new Point(16, 484);
+            btnTermos.Location = new Point(21, 492);
             btnTermos.Name = "btnTermos";
             btnTermos.Size = new Size(366, 19);
             btnTermos.TabIndex = 6;
@@ -127,24 +128,24 @@
             comboGenero.FlatStyle = FlatStyle.Flat;
             comboGenero.FormattingEnabled = true;
             comboGenero.Items.AddRange(new object[] { "feminino\t", "masculino", "prefiro não declarar" });
-            comboGenero.Location = new Point(52, 419);
+            comboGenero.Location = new Point(72, 435);
             comboGenero.Name = "comboGenero";
-            comboGenero.Size = new Size(267, 23);
+            comboGenero.Size = new Size(269, 23);
             comboGenero.TabIndex = 5;
             // 
             // txtEmail
             // 
             txtEmail.BorderStyle = BorderStyle.FixedSingle;
-            txtEmail.Location = new Point(51, 229);
+            txtEmail.Location = new Point(72, 220);
             txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(268, 23);
+            txtEmail.Size = new Size(269, 23);
             txtEmail.TabIndex = 2;
             // 
             // txtNome
             // 
-            txtNome.Location = new Point(51, 168);
+            txtNome.Location = new Point(72, 155);
             txtNome.Name = "txtNome";
-            txtNome.Size = new Size(268, 23);
+            txtNome.Size = new Size(269, 23);
             txtNome.TabIndex = 1;
             // 
             // label5
@@ -153,7 +154,7 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(52, 399);
+            label5.Location = new Point(70, 415);
             label5.Name = "label5";
             label5.Size = new Size(54, 17);
             label5.TabIndex = 6;
@@ -165,7 +166,7 @@
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(52, 337);
+            label4.Location = new Point(70, 341);
             label4.Name = "label4";
             label4.Size = new Size(131, 17);
             label4.TabIndex = 5;
@@ -177,7 +178,7 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(52, 275);
+            label3.Location = new Point(70, 270);
             label3.Name = "label3";
             label3.Size = new Size(46, 17);
             label3.TabIndex = 4;
@@ -189,7 +190,7 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(52, 209);
+            label2.Location = new Point(70, 200);
             label2.Name = "label2";
             label2.Size = new Size(47, 17);
             label2.TabIndex = 3;
@@ -201,7 +202,7 @@
             lblEmail.BackColor = Color.Transparent;
             lblEmail.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
             lblEmail.ForeColor = Color.White;
-            lblEmail.Location = new Point(49, 148);
+            lblEmail.Location = new Point(70, 135);
             lblEmail.Name = "lblEmail";
             lblEmail.Size = new Size(47, 17);
             lblEmail.TabIndex = 2;
@@ -213,7 +214,7 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(112, 90);
+            label1.Location = new Point(135, 88);
             label1.Name = "label1";
             label1.Size = new Size(151, 21);
             label1.TabIndex = 1;
@@ -224,9 +225,8 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Black;
-            BackgroundImage = Properties.Resources.capa_cadastro_editada1;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(988, 647);
+            ClientSize = new Size(1222, 711);
             Controls.Add(painelCadastro);
             Name = "TelaCadastroU";
             Text = " ";

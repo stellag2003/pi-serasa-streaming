@@ -16,14 +16,14 @@ namespace pi_serasa_streaming
         public TelaU()
         {
             InitializeComponent();
-            this.BackColor = Color.White;
-            painelU.BackColor = Color.FromArgb(200, Color.Black);
+            //this.BackColor = Color.White;
+            //painelU.BackColor = Color.FromArgb(200, Color.Black);
 
         }
-        protected override void OnPaint(PaintEventArgs e)
-        {
-            e.Graphics.DrawLine(Pens.Yellow, 0, 0, 100, 100);
-        }
+        //protected override void OnPaint(PaintEventArgs e)
+        //{
+        //    e.Graphics.DrawLine(Pens.Yellow, 0, 0, 100, 100);
+        //}
 
 
         private void TelaU_Load(object sender, EventArgs e)
