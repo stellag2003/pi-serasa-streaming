@@ -47,6 +47,16 @@ namespace pi_serasa_streaming
 
         private void button1_Click(object sender, EventArgs e)
         {
+           
+        }
+
+        private void painelCadastro_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
             string nome = txtNome.Text;
             string email = txtEmail.Text;
             string senha = txtSenha.Text;
@@ -69,16 +79,11 @@ namespace pi_serasa_streaming
                 painelCadastro.Visible = true;
                 // telaUsuario.Show();
                 this.Close();
-                Principal principal = new Principal();
-                principal.Show();
+                TelaU login = new TelaU();
+                login.Show();
             }
 
             limpaCampos();
-
-        }
-
-        private void painelCadastro_Paint(object sender, PaintEventArgs e)
-        {
 
         }
     }
