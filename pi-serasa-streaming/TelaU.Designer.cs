@@ -170,6 +170,7 @@
             this.ClientSize = new System.Drawing.Size(892, 549);
             this.Controls.Add(this.painelU);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaU";
             this.Text = "TelaU";
             this.Load += new System.EventHandler(this.TelaU_Load_1);

@@ -256,8 +256,9 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1222, 711);
             this.Controls.Add(this.painelCadastro);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaCadastroU";
-            this.Text = " ";
+            this.Text = " Brazuflix";
             this.Load += new System.EventHandler(this.TelaCadastroU_Load_1);
             this.painelCadastro.ResumeLayout(false);
             this.painelCadastro.PerformLayout();
