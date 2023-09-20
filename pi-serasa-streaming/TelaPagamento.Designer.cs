@@ -29,265 +29,265 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaPagamento));
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            label4 = new Label();
-            painelDados = new Panel();
-            txtNome = new WiLBiT.WiLBiTTextBox();
-            btnConfirmar = new WiLBiT.WiLBiTButton2();
-            txtCVV = new WiLBiT.WiLBiTTextBox();
-            txtCPF = new WiLBiT.WiLBiTTextBox();
-            label5 = new Label();
-            txtCartao = new WiLBiT.WiLBiTTextBox();
-            panel1 = new Panel();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            painelDados.SuspendLayout();
-            panel1.SuspendLayout();
-            SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.painelDados = new System.Windows.Forms.Panel();
+            this.txtNome = new WiLBiT.WiLBiTTextBox();
+            this.btnConfirmar = new WiLBiT.WiLBiTButton2();
+            this.txtCVV = new WiLBiT.WiLBiTTextBox();
+            this.txtCPF = new WiLBiT.WiLBiTTextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtCartao = new WiLBiT.WiLBiTTextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.painelDados.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.SuspendLayout();
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = SystemColors.ButtonFace;
-            label1.Location = new Point(67, 20);
-            label1.Name = "label1";
-            label1.Size = new Size(117, 17);
-            label1.TabIndex = 5;
-            label1.Text = "Número do cartão";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(67, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(117, 17);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Número do cartão";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = SystemColors.ButtonFace;
-            label2.Location = new Point(67, 92);
-            label2.Name = "label2";
-            label2.Size = new Size(101, 17);
-            label2.TabIndex = 6;
-            label2.Text = "Nome do titular";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label2.Location = new System.Drawing.Point(67, 92);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(101, 17);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Nome do titular";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = SystemColors.ButtonFace;
-            label3.Location = new Point(67, 170);
-            label3.Name = "label3";
-            label3.Size = new Size(29, 17);
-            label3.TabIndex = 7;
-            label3.Text = "CPF";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label3.Location = new System.Drawing.Point(67, 170);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(29, 17);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "CPF";
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(121, 53);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(52, 35);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 9;
-            pictureBox1.TabStop = false;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(121, 53);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(52, 35);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(179, 53);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(50, 35);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 10;
-            pictureBox2.TabStop = false;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(179, 53);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(50, 35);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 10;
+            this.pictureBox2.TabStop = false;
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.ForeColor = SystemColors.ButtonFace;
-            label4.Location = new Point(103, 24);
-            label4.Name = "label4";
-            label4.Size = new Size(151, 17);
-            label4.TabIndex = 11;
-            label4.Text = "Métodos de pagamento";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label4.Location = new System.Drawing.Point(103, 24);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(151, 17);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Métodos de pagamento";
             // 
             // painelDados
             // 
-            painelDados.Controls.Add(txtNome);
-            painelDados.Controls.Add(btnConfirmar);
-            painelDados.Controls.Add(txtCVV);
-            painelDados.Controls.Add(txtCPF);
-            painelDados.Controls.Add(label5);
-            painelDados.Controls.Add(txtCartao);
-            painelDados.Controls.Add(label1);
-            painelDados.Controls.Add(label3);
-            painelDados.Controls.Add(label2);
-            painelDados.ForeColor = SystemColors.ButtonFace;
-            painelDados.Location = new Point(22, 105);
-            painelDados.Name = "painelDados";
-            painelDados.Size = new Size(291, 388);
-            painelDados.TabIndex = 12;
+            this.painelDados.Controls.Add(this.txtNome);
+            this.painelDados.Controls.Add(this.btnConfirmar);
+            this.painelDados.Controls.Add(this.txtCVV);
+            this.painelDados.Controls.Add(this.txtCPF);
+            this.painelDados.Controls.Add(this.label5);
+            this.painelDados.Controls.Add(this.txtCartao);
+            this.painelDados.Controls.Add(this.label1);
+            this.painelDados.Controls.Add(this.label3);
+            this.painelDados.Controls.Add(this.label2);
+            this.painelDados.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.painelDados.Location = new System.Drawing.Point(22, 105);
+            this.painelDados.Name = "painelDados";
+            this.painelDados.Size = new System.Drawing.Size(291, 388);
+            this.painelDados.TabIndex = 12;
             // 
             // txtNome
             // 
-            txtNome.AccessibleRole = AccessibleRole.Grip;
-            txtNome.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            txtNome.AutoValidate = AutoValidate.EnableAllowFocusChange;
-            txtNome.BackColor = Color.Black;
-            txtNome.BorderColor = Color.Gray;
-            txtNome.BorderFocusColor = Color.DimGray;
-            txtNome.BorderRadius = 4;
-            txtNome.BorderSize = 2;
-            txtNome.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Underline, GraphicsUnit.Point);
-            txtNome.ForeColor = Color.Gray;
-            txtNome.Location = new Point(67, 113);
-            txtNome.Margin = new Padding(4);
-            txtNome.Multiline = true;
-            txtNome.Name = "txtNome";
-            txtNome.Padding = new Padding(10, 7, 10, 7);
-            txtNome.PasswordChar = false;
-            txtNome.PlaceholderColor = Color.DarkGray;
-            txtNome.PlaceholderText = "Ex: Maria dos Santos";
-            txtNome.RightToLeft = RightToLeft.No;
-            txtNome.Size = new Size(165, 29);
-            txtNome.TabIndex = 15;
-            txtNome.Texts = "";
-            txtNome.UnderlinedStyle = false;
+            this.txtNome.AccessibleRole = System.Windows.Forms.AccessibleRole.Grip;
+            this.txtNome.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.txtNome.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
+            this.txtNome.BackColor = System.Drawing.Color.Black;
+            this.txtNome.BorderColor = System.Drawing.Color.Gray;
+            this.txtNome.BorderFocusColor = System.Drawing.Color.DimGray;
+            this.txtNome.BorderRadius = 4;
+            this.txtNome.BorderSize = 2;
+            this.txtNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
+            this.txtNome.ForeColor = System.Drawing.Color.Gray;
+            this.txtNome.Location = new System.Drawing.Point(67, 113);
+            this.txtNome.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNome.Multiline = true;
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtNome.PasswordChar = false;
+            this.txtNome.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtNome.PlaceholderText = "Ex: Maria dos Santos";
+            this.txtNome.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtNome.Size = new System.Drawing.Size(165, 29);
+            this.txtNome.TabIndex = 15;
+            this.txtNome.Texts = "";
+            this.txtNome.UnderlinedStyle = false;
             // 
             // btnConfirmar
             // 
-            btnConfirmar.BackColor = SystemColors.ActiveCaptionText;
-            btnConfirmar.BackgroundColor = SystemColors.ActiveCaptionText;
-            btnConfirmar.BorderColor = Color.White;
-            btnConfirmar.BorderRadius = 10;
-            btnConfirmar.BorderSize = 2;
-            btnConfirmar.FlatAppearance.BorderSize = 0;
-            btnConfirmar.FlatStyle = FlatStyle.Flat;
-            btnConfirmar.ForeColor = Color.White;
-            btnConfirmar.Location = new Point(86, 321);
-            btnConfirmar.Name = "btnConfirmar";
-            btnConfirmar.Size = new Size(121, 40);
-            btnConfirmar.TabIndex = 14;
-            btnConfirmar.Text = "Confirmar";
-            btnConfirmar.TextColor = Color.White;
-            btnConfirmar.UseVisualStyleBackColor = false;
-            btnConfirmar.Click += btnConfirmar_Click_2;
+            this.btnConfirmar.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnConfirmar.BackgroundColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnConfirmar.BorderColor = System.Drawing.Color.White;
+            this.btnConfirmar.BorderRadius = 10;
+            this.btnConfirmar.BorderSize = 2;
+            this.btnConfirmar.FlatAppearance.BorderSize = 0;
+            this.btnConfirmar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConfirmar.ForeColor = System.Drawing.Color.White;
+            this.btnConfirmar.Location = new System.Drawing.Point(86, 321);
+            this.btnConfirmar.Name = "btnConfirmar";
+            this.btnConfirmar.Size = new System.Drawing.Size(121, 40);
+            this.btnConfirmar.TabIndex = 14;
+            this.btnConfirmar.Text = "Confirmar";
+            this.btnConfirmar.TextColor = System.Drawing.Color.White;
+            this.btnConfirmar.UseVisualStyleBackColor = false;
+            this.btnConfirmar.Click += new System.EventHandler(this.btnConfirmar_Click_3);
             // 
             // txtCVV
             // 
-            txtCVV.AccessibleRole = AccessibleRole.Grip;
-            txtCVV.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            txtCVV.BackColor = Color.Black;
-            txtCVV.BorderColor = Color.Gray;
-            txtCVV.BorderFocusColor = Color.DimGray;
-            txtCVV.BorderRadius = 4;
-            txtCVV.BorderSize = 2;
-            txtCVV.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Underline, GraphicsUnit.Point);
-            txtCVV.ForeColor = Color.Gray;
-            txtCVV.Location = new Point(67, 260);
-            txtCVV.Margin = new Padding(4);
-            txtCVV.Multiline = false;
-            txtCVV.Name = "txtCVV";
-            txtCVV.Padding = new Padding(10, 7, 10, 7);
-            txtCVV.PasswordChar = false;
-            txtCVV.PlaceholderColor = Color.DarkGray;
-            txtCVV.PlaceholderText = "Ex: 321";
-            txtCVV.Size = new Size(165, 29);
-            txtCVV.TabIndex = 13;
-            txtCVV.Texts = "";
-            txtCVV.UnderlinedStyle = false;
+            this.txtCVV.AccessibleRole = System.Windows.Forms.AccessibleRole.Grip;
+            this.txtCVV.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.txtCVV.BackColor = System.Drawing.Color.Black;
+            this.txtCVV.BorderColor = System.Drawing.Color.Gray;
+            this.txtCVV.BorderFocusColor = System.Drawing.Color.DimGray;
+            this.txtCVV.BorderRadius = 4;
+            this.txtCVV.BorderSize = 2;
+            this.txtCVV.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
+            this.txtCVV.ForeColor = System.Drawing.Color.Gray;
+            this.txtCVV.Location = new System.Drawing.Point(67, 260);
+            this.txtCVV.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCVV.Multiline = false;
+            this.txtCVV.Name = "txtCVV";
+            this.txtCVV.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtCVV.PasswordChar = false;
+            this.txtCVV.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtCVV.PlaceholderText = "Ex: 321";
+            this.txtCVV.Size = new System.Drawing.Size(165, 29);
+            this.txtCVV.TabIndex = 13;
+            this.txtCVV.Texts = "";
+            this.txtCVV.UnderlinedStyle = false;
             // 
             // txtCPF
             // 
-            txtCPF.AccessibleRole = AccessibleRole.Grip;
-            txtCPF.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            txtCPF.BackColor = Color.Black;
-            txtCPF.BorderColor = Color.Gray;
-            txtCPF.BorderFocusColor = Color.DimGray;
-            txtCPF.BorderRadius = 4;
-            txtCPF.BorderSize = 2;
-            txtCPF.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Underline, GraphicsUnit.Point);
-            txtCPF.ForeColor = Color.Gray;
-            txtCPF.Location = new Point(67, 191);
-            txtCPF.Margin = new Padding(4);
-            txtCPF.Multiline = false;
-            txtCPF.Name = "txtCPF";
-            txtCPF.Padding = new Padding(10, 7, 10, 7);
-            txtCPF.PasswordChar = false;
-            txtCPF.PlaceholderColor = Color.DarkGray;
-            txtCPF.PlaceholderText = "Ex: 123.456.789-10";
-            txtCPF.Size = new Size(165, 29);
-            txtCPF.TabIndex = 12;
-            txtCPF.Texts = "";
-            txtCPF.UnderlinedStyle = false;
+            this.txtCPF.AccessibleRole = System.Windows.Forms.AccessibleRole.Grip;
+            this.txtCPF.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.txtCPF.BackColor = System.Drawing.Color.Black;
+            this.txtCPF.BorderColor = System.Drawing.Color.Gray;
+            this.txtCPF.BorderFocusColor = System.Drawing.Color.DimGray;
+            this.txtCPF.BorderRadius = 4;
+            this.txtCPF.BorderSize = 2;
+            this.txtCPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
+            this.txtCPF.ForeColor = System.Drawing.Color.Gray;
+            this.txtCPF.Location = new System.Drawing.Point(67, 191);
+            this.txtCPF.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCPF.Multiline = false;
+            this.txtCPF.Name = "txtCPF";
+            this.txtCPF.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtCPF.PasswordChar = false;
+            this.txtCPF.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtCPF.PlaceholderText = "Ex: 123.456.789-10";
+            this.txtCPF.Size = new System.Drawing.Size(165, 29);
+            this.txtCPF.TabIndex = 12;
+            this.txtCPF.Texts = "";
+            this.txtCPF.UnderlinedStyle = false;
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.ForeColor = SystemColors.ButtonFace;
-            label5.Location = new Point(64, 239);
-            label5.Name = "label5";
-            label5.Size = new Size(32, 17);
-            label5.TabIndex = 10;
-            label5.Text = "CVV";
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label5.Location = new System.Drawing.Point(64, 239);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(32, 17);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "CVV";
             // 
             // txtCartao
             // 
-            txtCartao.AccessibleRole = AccessibleRole.Grip;
-            txtCartao.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            txtCartao.AutoValidate = AutoValidate.EnableAllowFocusChange;
-            txtCartao.BackColor = Color.Black;
-            txtCartao.BorderColor = Color.Gray;
-            txtCartao.BorderFocusColor = Color.DimGray;
-            txtCartao.BorderRadius = 4;
-            txtCartao.BorderSize = 2;
-            txtCartao.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Underline, GraphicsUnit.Point);
-            txtCartao.ForeColor = Color.Gray;
-            txtCartao.Location = new Point(67, 41);
-            txtCartao.Margin = new Padding(0);
-            txtCartao.Multiline = false;
-            txtCartao.Name = "txtCartao";
-            txtCartao.Padding = new Padding(10, 7, 10, 7);
-            txtCartao.PasswordChar = false;
-            txtCartao.PlaceholderColor = Color.DarkGray;
-            txtCartao.PlaceholderText = "Ex: 0000 0000 0000 0000";
-            txtCartao.RightToLeft = RightToLeft.No;
-            txtCartao.Size = new Size(165, 29);
-            txtCartao.TabIndex = 9;
-            txtCartao.Texts = "";
-            txtCartao.UnderlinedStyle = false;
+            this.txtCartao.AccessibleRole = System.Windows.Forms.AccessibleRole.Grip;
+            this.txtCartao.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.txtCartao.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
+            this.txtCartao.BackColor = System.Drawing.Color.Black;
+            this.txtCartao.BorderColor = System.Drawing.Color.Gray;
+            this.txtCartao.BorderFocusColor = System.Drawing.Color.DimGray;
+            this.txtCartao.BorderRadius = 4;
+            this.txtCartao.BorderSize = 2;
+            this.txtCartao.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
+            this.txtCartao.ForeColor = System.Drawing.Color.Gray;
+            this.txtCartao.Location = new System.Drawing.Point(67, 41);
+            this.txtCartao.Margin = new System.Windows.Forms.Padding(0);
+            this.txtCartao.Multiline = false;
+            this.txtCartao.Name = "txtCartao";
+            this.txtCartao.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtCartao.PasswordChar = false;
+            this.txtCartao.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtCartao.PlaceholderText = "Ex: 0000 0000 0000 0000";
+            this.txtCartao.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtCartao.Size = new System.Drawing.Size(165, 29);
+            this.txtCartao.TabIndex = 9;
+            this.txtCartao.Texts = "";
+            this.txtCartao.UnderlinedStyle = false;
             // 
             // panel1
             // 
-            panel1.Controls.Add(pictureBox2);
-            panel1.Controls.Add(painelDados);
-            panel1.Controls.Add(label4);
-            panel1.Controls.Add(pictureBox1);
-            panel1.Location = new Point(222, 12);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(334, 512);
-            panel1.TabIndex = 13;
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.painelDados);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Location = new System.Drawing.Point(222, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(334, 512);
+            this.panel1.TabIndex = 13;
             // 
             // TelaPagamento
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveCaptionText;
-            ClientSize = new Size(805, 578);
-            Controls.Add(panel1);
-            Name = "TelaPagamento";
-            Text = "TelaPagamento";
-            Load += TelaPagamento_Load_2;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            painelDados.ResumeLayout(false);
-            painelDados.PerformLayout();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.ClientSize = new System.Drawing.Size(805, 578);
+            this.Controls.Add(this.panel1);
+            this.Name = "TelaPagamento";
+            this.Text = "TelaPagamento";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.painelDados.ResumeLayout(false);
+            this.painelDados.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.ResumeLayout(false);
+
         }
 
         #endregion

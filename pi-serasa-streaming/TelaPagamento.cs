@@ -144,5 +144,11 @@ namespace pi_serasa_streaming
         {
 
         }
+
+        private void btnConfirmar_Click_3(object sender, EventArgs e)
+        {
+            Principal p = new Principal();
+            p.Show();
+        }
     }
 }

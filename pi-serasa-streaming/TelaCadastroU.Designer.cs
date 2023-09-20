@@ -83,31 +83,43 @@
             // 
             // txtSenha
             // 
+            this.txtSenha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtSenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSenha.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtSenha.ForeColor = System.Drawing.SystemColors.Window;
             this.txtSenha.Location = new System.Drawing.Point(72, 290);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.PasswordChar = '*';
-            this.txtSenha.Size = new System.Drawing.Size(269, 23);
+            this.txtSenha.Size = new System.Drawing.Size(269, 20);
             this.txtSenha.TabIndex = 3;
             this.txtSenha.UseSystemPasswordChar = true;
             // 
             // txtData
             // 
+            this.txtData.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtData.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtData.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtData.ForeColor = System.Drawing.SystemColors.Window;
             this.txtData.Location = new System.Drawing.Point(72, 361);
             this.txtData.Mask = "00/00/0000";
             this.txtData.Name = "txtData";
-            this.txtData.Size = new System.Drawing.Size(269, 23);
+            this.txtData.Size = new System.Drawing.Size(269, 20);
             this.txtData.TabIndex = 4;
             this.txtData.ValidatingType = typeof(System.DateTime);
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.SystemColors.Window;
             this.button1.Location = new System.Drawing.Point(135, 537);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(151, 27);
             this.button1.TabIndex = 7;
             this.button1.Text = "Cadastrar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // btnTermos
@@ -120,11 +132,15 @@
             this.btnTermos.TabIndex = 6;
             this.btnTermos.Text = "Eu li e concordo com os Termos de Uso e Política de Privacidade.";
             this.btnTermos.UseVisualStyleBackColor = true;
+            this.btnTermos.CheckedChanged += new System.EventHandler(this.btnTermos_CheckedChanged);
             // 
             // comboGenero
             // 
+            this.comboGenero.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.comboGenero.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboGenero.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboGenero.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.comboGenero.ForeColor = System.Drawing.SystemColors.Window;
             this.comboGenero.FormattingEnabled = true;
             this.comboGenero.Items.AddRange(new object[] {
             "feminino\t",
@@ -132,20 +148,29 @@
             "prefiro não declarar"});
             this.comboGenero.Location = new System.Drawing.Point(72, 435);
             this.comboGenero.Name = "comboGenero";
-            this.comboGenero.Size = new System.Drawing.Size(269, 23);
+            this.comboGenero.Size = new System.Drawing.Size(269, 28);
             this.comboGenero.TabIndex = 5;
             // 
             // txtEmail
             // 
-            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtEmail.ForeColor = System.Drawing.SystemColors.Window;
             this.txtEmail.Location = new System.Drawing.Point(72, 220);
+            this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(269, 23);
             this.txtEmail.TabIndex = 2;
             // 
             // txtNome
             // 
+            this.txtNome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtNome.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNome.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtNome.ForeColor = System.Drawing.SystemColors.Window;
             this.txtNome.Location = new System.Drawing.Point(72, 155);
+            this.txtNome.Multiline = true;
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(269, 23);
             this.txtNome.TabIndex = 1;
@@ -227,11 +252,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1222, 711);
             this.Controls.Add(this.painelCadastro);
             this.Name = "TelaCadastroU";
             this.Text = " ";
+            this.Load += new System.EventHandler(this.TelaCadastroU_Load_1);
             this.painelCadastro.ResumeLayout(false);
             this.painelCadastro.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -29,141 +29,155 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaU));
-            painelU = new Panel();
-            pictureBox1 = new PictureBox();
-            label2 = new Label();
-            btnEntrar = new Button();
-            txtSenha = new TextBox();
-            txtEmail = new TextBox();
-            lblSenha = new Label();
-            lblEmail = new Label();
-            label1 = new Label();
-            painelU.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            SuspendLayout();
+            this.painelU = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnEntrar = new System.Windows.Forms.Button();
+            this.txtSenha = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
+            this.lblSenha = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.painelU.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.SuspendLayout();
             // 
             // painelU
             // 
-            painelU.BackColor = Color.Black;
-            painelU.Controls.Add(pictureBox1);
-            painelU.Controls.Add(label2);
-            painelU.Controls.Add(btnEntrar);
-            painelU.Controls.Add(txtSenha);
-            painelU.Controls.Add(txtEmail);
-            painelU.Controls.Add(lblSenha);
-            painelU.Controls.Add(lblEmail);
-            painelU.Controls.Add(label1);
-            painelU.ForeColor = Color.CadetBlue;
-            painelU.Location = new Point(52, 31);
-            painelU.Name = "painelU";
-            painelU.Size = new Size(372, 506);
-            painelU.TabIndex = 0;
-            painelU.Paint += painelU_Paint;
+            this.painelU.BackColor = System.Drawing.Color.Black;
+            this.painelU.Controls.Add(this.pictureBox1);
+            this.painelU.Controls.Add(this.label2);
+            this.painelU.Controls.Add(this.btnEntrar);
+            this.painelU.Controls.Add(this.txtSenha);
+            this.painelU.Controls.Add(this.txtEmail);
+            this.painelU.Controls.Add(this.lblSenha);
+            this.painelU.Controls.Add(this.lblEmail);
+            this.painelU.Controls.Add(this.label1);
+            this.painelU.ForeColor = System.Drawing.Color.CadetBlue;
+            this.painelU.Location = new System.Drawing.Point(52, 31);
+            this.painelU.Name = "painelU";
+            this.painelU.Size = new System.Drawing.Size(372, 506);
+            this.painelU.TabIndex = 0;
             // 
             // pictureBox1
             // 
-            pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(33, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(300, 56);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(33, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(300, 56);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 8.25F, FontStyle.Underline, GraphicsUnit.Point);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(73, 480);
-            label2.Name = "label2";
-            label2.Size = new Size(211, 13);
-            label2.TabIndex = 7;
-            label2.Text = "Não possui uma conta? Criar uma conta";
-            label2.Click += label2_Click;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(73, 480);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(211, 13);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Não possui uma conta? Criar uma conta";
+            this.label2.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // btnEntrar
             // 
-            btnEntrar.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            btnEntrar.ForeColor = Color.Black;
-            btnEntrar.Location = new Point(111, 333);
-            btnEntrar.Name = "btnEntrar";
-            btnEntrar.Size = new Size(128, 32);
-            btnEntrar.TabIndex = 6;
-            btnEntrar.Text = "Entrar";
-            btnEntrar.UseVisualStyleBackColor = true;
-            btnEntrar.Click += btnEntrar_Click;
+            this.btnEntrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnEntrar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnEntrar.FlatAppearance.BorderSize = 0;
+            this.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEntrar.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnEntrar.ForeColor = System.Drawing.Color.White;
+            this.btnEntrar.Location = new System.Drawing.Point(111, 333);
+            this.btnEntrar.Name = "btnEntrar";
+            this.btnEntrar.Size = new System.Drawing.Size(128, 32);
+            this.btnEntrar.TabIndex = 6;
+            this.btnEntrar.Text = "Entrar";
+            this.btnEntrar.UseVisualStyleBackColor = false;
+            this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click_1);
             // 
             // txtSenha
             // 
-            txtSenha.Location = new Point(43, 272);
-            txtSenha.Name = "txtSenha";
-            txtSenha.PasswordChar = '*';
-            txtSenha.Size = new Size(257, 23);
-            txtSenha.TabIndex = 5;
-            txtSenha.UseSystemPasswordChar = true;
+            this.txtSenha.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtSenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSenha.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtSenha.ForeColor = System.Drawing.SystemColors.Window;
+            this.txtSenha.Location = new System.Drawing.Point(43, 272);
+            this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
+            this.txtSenha.Size = new System.Drawing.Size(257, 20);
+            this.txtSenha.TabIndex = 5;
+            this.txtSenha.UseSystemPasswordChar = true;
             // 
             // txtEmail
             // 
-            txtEmail.Location = new Point(44, 207);
-            txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(257, 23);
-            txtEmail.TabIndex = 4;
+            this.txtEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmail.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.txtEmail.ForeColor = System.Drawing.SystemColors.Window;
+            this.txtEmail.Location = new System.Drawing.Point(44, 207);
+            this.txtEmail.Multiline = true;
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(257, 23);
+            this.txtEmail.TabIndex = 4;
             // 
             // lblSenha
             // 
-            lblSenha.AutoSize = true;
-            lblSenha.BackColor = Color.Transparent;
-            lblSenha.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            lblSenha.ForeColor = Color.White;
-            lblSenha.Location = new Point(44, 252);
-            lblSenha.Name = "lblSenha";
-            lblSenha.Size = new Size(46, 17);
-            lblSenha.TabIndex = 2;
-            lblSenha.Text = "Senha:";
+            this.lblSenha.AutoSize = true;
+            this.lblSenha.BackColor = System.Drawing.Color.Transparent;
+            this.lblSenha.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblSenha.ForeColor = System.Drawing.Color.White;
+            this.lblSenha.Location = new System.Drawing.Point(44, 252);
+            this.lblSenha.Name = "lblSenha";
+            this.lblSenha.Size = new System.Drawing.Size(46, 17);
+            this.lblSenha.TabIndex = 2;
+            this.lblSenha.Text = "Senha:";
             // 
             // lblEmail
             // 
-            lblEmail.AutoSize = true;
-            lblEmail.BackColor = Color.Transparent;
-            lblEmail.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            lblEmail.ForeColor = Color.White;
-            lblEmail.Location = new Point(43, 187);
-            lblEmail.Name = "lblEmail";
-            lblEmail.Size = new Size(47, 17);
-            lblEmail.TabIndex = 1;
-            lblEmail.Text = "E-mail:";
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.BackColor = System.Drawing.Color.Transparent;
+            this.lblEmail.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblEmail.ForeColor = System.Drawing.Color.White;
+            this.lblEmail.Location = new System.Drawing.Point(43, 187);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(47, 17);
+            this.lblEmail.TabIndex = 1;
+            this.lblEmail.Text = "E-mail:";
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(111, 119);
-            label1.Name = "label1";
-            label1.Size = new Size(128, 21);
-            label1.TabIndex = 0;
-            label1.Text = "Login de Usuário";
-            label1.Click += label1_Click;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(111, 119);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(128, 21);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Login de Usuário";
             // 
             // TelaU
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            AutoValidate = AutoValidate.EnablePreventFocusChange;
-            BackColor = Color.Black;
-            BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(892, 549);
-            Controls.Add(painelU);
-            Name = "TelaU";
-            Text = "TelaU";
-            Load += TelaU_Load;
-            painelU.ResumeLayout(false);
-            painelU.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
+            this.BackColor = System.Drawing.Color.Black;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(892, 549);
+            this.Controls.Add(this.painelU);
+            this.DoubleBuffered = true;
+            this.Name = "TelaU";
+            this.Text = "TelaU";
+            this.Load += new System.EventHandler(this.TelaU_Load_1);
+            this.painelU.ResumeLayout(false);
+            this.painelU.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion

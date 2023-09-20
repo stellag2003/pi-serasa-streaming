@@ -16,8 +16,7 @@ namespace pi_serasa_streaming
         public TelaU()
         {
             InitializeComponent();
-            //this.BackColor = Color.White;
-            //painelU.BackColor = Color.FromArgb(200, Color.Black);
+            
 
         }
         //protected override void OnPaint(PaintEventArgs e)
@@ -33,9 +32,38 @@ namespace pi_serasa_streaming
             this.ClientSize.Width / 2 - painelU.Size.Width / 2,
             this.ClientSize.Height / 2 - painelU.Size.Height / 2);
             painelU.Anchor = AnchorStyles.None;
+
+
         }
 
         private void btnEntrar_Click(object sender, EventArgs e)
+        {
+            
+
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void painelU_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void menu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEntrar_Click_1(object sender, EventArgs e)
         {
             string usuario;
             string senha;
@@ -57,29 +85,24 @@ namespace pi_serasa_streaming
 
             Principal usuarioPrincipal = new Principal();
             usuarioPrincipal.Show();
-
-
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void label2_Click_1(object sender, EventArgs e)
         {
             TelaCadastroU telaCadastro = new TelaCadastroU();
             telaCadastro.Show();
         }
 
-        private void painelU_Paint(object sender, PaintEventArgs e)
+        private void TelaU_Load_1(object sender, EventArgs e)
         {
+            WindowState = FormWindowState.Maximized;
+            painelU.Location = new Point(
+            this.ClientSize.Width / 2 - painelU.Size.Width / 2,
+            this.ClientSize.Height / 2 - painelU.Size.Height / 2);
+            painelU.Anchor = AnchorStyles.None;
 
-        }
-
-        private void menu_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+            this.BackColor = Color.White;
+            painelU.BackColor = Color.FromArgb(200, Color.Black);
         }
     }
 }

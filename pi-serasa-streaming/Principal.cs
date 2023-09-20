@@ -217,5 +217,21 @@ namespace pi_serasa_streaming
         {
 
         }
+
+        private void panel3_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            TelaPagamento PAG = new TelaPagamento();
+            PAG.Show();
+        }
+
+        private void painel_Paint_2(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

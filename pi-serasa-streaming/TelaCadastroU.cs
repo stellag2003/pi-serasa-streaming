@@ -20,8 +20,7 @@ namespace pi_serasa_streaming
         public TelaCadastroU()
         {
             InitializeComponent();
-            //this.BackColor = Color.White;
-            //painelCadastro.BackColor = Color.FromArgb(200, Color.Black);
+            
 
         }
 
@@ -38,9 +37,7 @@ namespace pi_serasa_streaming
 
         private void TelaCadastroU_Load(object sender, EventArgs e)
         {
-            WindowState = FormWindowState.Maximized;
-            painelCadastro.Location = new Point(ClientSize.Width / 2 - painelCadastro.Size.Width / 2 + 40, ClientSize.Height / 2 - painelCadastro.Height / 2 + 50);
-
+            
 
 
         }
@@ -85,6 +82,19 @@ namespace pi_serasa_streaming
 
             limpaCampos();
 
+        }
+
+        private void btnTermos_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TelaCadastroU_Load_1(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Maximized;
+            painelCadastro.Location = new Point(ClientSize.Width / 2 - painelCadastro.Size.Width / 2 + 40, ClientSize.Height / 2 - painelCadastro.Height / 2 + 50);
+            this.BackColor = Color.White;
+            painelCadastro.BackColor = Color.FromArgb(200, Color.Black);
         }
     }
 }
