@@ -112,6 +112,8 @@ namespace pi_serasa_streaming
 
         }
 
+        
+
         private void btnComentar_Click(object sender, EventArgs e)
         {
             string comentario = txtComentario.Text;
@@ -119,6 +121,11 @@ namespace pi_serasa_streaming
             Coment coment = new Coment(0, Program.usuario.id, comentario, null);
             coment.Insere(coment);
             limpaCampos();
+
+            this.Close();
+            Resenha resenha= new Resenha();
+            resenha.Show();
+            
         }
 
         private void label4_Click(object sender, EventArgs e)

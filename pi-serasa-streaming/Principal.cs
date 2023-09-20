@@ -233,5 +233,10 @@ namespace pi_serasa_streaming
         {
 
         }
+
+        private void iconPictureBox1_Click_2(object sender, EventArgs e)
+        {
+
+        }
     }
 }
